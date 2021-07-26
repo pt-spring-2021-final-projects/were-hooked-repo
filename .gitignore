@@ -5,6 +5,9 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 .DS_Store
+.gradle/checksums/checksums.lock
+.gradle/checksums/md5-checksums.bin
+.gradle/checksums/sha1-checksums.bin
 
 ### STS ###
 .apt_generated
