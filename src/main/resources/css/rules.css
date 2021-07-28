@@ -1,0 +1,76 @@
+#rules-wrapper {
+	margin: 0 auto;
+	background-color: rgb(111, 151, 211);
+}
+
+header {
+	background-color: #f4f2f3;
+	padding: 1rem;
+}
+
+#title {
+	margin: 7rem 1.2rem 7rem 0.8rem;
+}
+
+h1 {
+	text-align: left;
+	color: #fff;
+	padding: 1rem;
+	font-weight: 200;
+}
+
+#rules-container {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid blue;
+	background-color: rgb(227, 235, 247);
+	margin: 0 auto;
+}
+
+.item {
+	margin: 0.4rem 1.3rem;
+	background-color: white;
+	box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.39);
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.39);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.39);
+}
+
+.itemTitle {
+    border:1px solid red;
+	text-align: left;
+    padding-left: .5rem;
+}
+
+.itemTitle h2 {
+    border-left: 2px solid blue;
+    margin: .5rem;
+    padding-left: .5rem;
+}
+
+.itemContent {
+    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+	padding: 1rem 2rem;
+}
+
+#requirements {
+    background-color: beige;
+    margin: 2rem auto;
+}
+
+.itemContent ul {
+    margin: auto 1rem;
+    padding: 0;
+}
+
+.itemContent a {
+    color: #fff;
+    background-color: blue;
+    border-radius: 5px;
+    font-size: large;
+    margin: .5rem;
+    padding: .9rem;
+    text-decoration: none;
+    text-align: center;
+}

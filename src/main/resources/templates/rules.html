@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+>
+	<head>
+		<title layout:title-pattern="$CONTENT_TITLE - $LAYOUT_TITLE">
+			We're Hooked
+		</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<link rel="stylesheet" type="text/css" href="/css/rules.css" />
+	</head>
+
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+			<a class="navbar-brand" href="#">We're Hooked</a>
+			<div class="collapse navbar-collapse" id="navbarColor01">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" th:href="@{/countries}"
+							>Countries</a
+						>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="content">
+				<div layout:fragment="page_content">
+					<div id="rules-wrapper">
+						<div id="title">
+							<h1>Ohio's Fishing Laws and Regulations</h1>
+						</div>
+						<div id="rules-container">
+							<div class="item">
+								<div class="itemTitle">
+									<h2>Fishing Regulations</h2>
+								</div>
+								<div class="itemContent">
+									<ul>
+										<li>Rule 1</li>
+										<li>Rule 2</li>
+										<li>Rule 3</li>
+									</ul>
+									<a
+										href="https://ohiodnr.gov/static/documents/wildlife/laws-regs-licenses/Ohio+Fishing+Regulations+21-22+ENGLISH.pdf"
+										target="_blank"
+										>2021-22' Ohio Fishing Regulations</a
+									>
+								</div>
+							</div>
+							<div class="item">
+								<div class="itemTitle">
+									<h2>Fishing Licenses</h2>
+								</div>
+								<div class="itemContent">
+									<a
+										href="https://my.visme.co/view/x4epn4yw-fishing-license-finder"
+										target="_blank"
+										>Flow Chart</a
+									>
+									<div class="expand">
+										<div id="requirements">
+											Requirements
+										</div>
+										<div id="requirementsContent">
+											<ul>
+												<li>
+													A fishing license is
+													required to take fish from
+													Ohio waters.
+												</li>
+												<li>
+													A fishing license is
+													required to take frogs or
+													turtles on public and
+													private property.
+												</li>
+												<li>
+													Persons fishing in privately
+													owned ponds, lakes, or
+													reservoirs that are open to
+													public fishing through an
+													agreement or lease with the
+													ODNR Division of Wildlife
+													are required to have a
+													fishing license.
+												</li>
+												<li>
+													Persons fishing must have
+													their license in their
+													possession while fishing and
+													must show the license to
+													anyone on request. Licenses
+													can be displayed using a
+													mobile device.
+												</li>
+												<li>
+													Members of the U.S. Armed
+													Forces on active duty
+													stationed in Ohio, but not
+													on leave or furlough are
+													required to purchase a
+													resident license.
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="expand">
+										<div id="exemptions">Exemptions</div>
+										<div id="exemptionsContent">
+											<ul>
+												<li>
+													Less than 16 years of age.
+													This includes frogs and
+													turtles
+												</li>
+												<li>
+													Persons fishing in privately
+													owned ponds, lakes, or
+													reservoirs to and from which
+													fish do not migrate are not
+													required to have a license
+													to take fish
+												</li>
+												<li>
+													Giving assistance to an
+													angler who has been issued
+													the free mobility impaired
+													or blind fishing license,
+													provided the two persons
+													together are using only one
+													line
+												</li>
+												<li>
+													Fishing, or taking frogs and
+													turtles, on land and water
+													which they or their parents
+													own, except where the land
+													is in or borders on state
+													parks or state-owned lakes
+												</li>
+												<li>
+													Fishing, or taking frogs and
+													turtles, on land and water
+													where they or their parents
+													are tenants on which they
+													reside, and from which they
+													derive the majority of their
+													income from agricultural
+													production on that land
+													(except state-owned lakes)
+												</li>
+												<li>
+													Members of the U.S. Armed
+													Forces on active duty while
+													on leave or furlough
+												</li>
+												<li>
+													All Ohio residents may fish
+													without a license on Free
+													Fishing Days (consult the
+													fishing regulations for
+													dates)
+												</li>
+											</ul>
+										</div>
+									</div>
+									<a
+										href="https://oh-web.s3licensing.com/"
+										target="blank"
+										>Purchase Your Fishing License Online</a
+									>
+									<a
+									href="https://my.visme.co/view/x4epn4yw-fishing-license-finder"
+									target="_blank"
+									>Flow Chart</a
+								>
+								</div>
+							</div>
+							<div class="item">
+								<div class="itemTitle">
+									<h2>Report a Tagged Fish</h2>
+								</div>
+								<div class="itemContent">
+									<p>
+										To study the behavior of fish, the
+										Division of Wildlife releases thousands
+										of tagged fish each year. This is to get
+										better understanding of their survival
+										and harvest patterns in public waters of
+										Ohio.
+									</p>
+									<a
+										href="https://ohiodnr.gov/wps/portal/gov/odnr/buy-and-apply/hunting-fishing-boating/fishing-resources/report-tagged-fish"
+										target="_blank"
+										>Report a Tagged Fish</a
+									>
+								</div>
+							</div>
+							<div class="item">
+								<div class="itemTitle">
+									<h2>Sport Fishing Rules</h2>
+								</div>
+								<div class="itemContent">
+									<a
+										href="https://codes.ohio.gov/ohio-administrative-code/rule-1501:31-13-01"
+										target="_blank"
+										>PDF File</a
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal" id="worldModal"></div>
+		<footer id="footer"></footer>
+		<!-- /.container -->
+
+		<script
+			type="text/javascript"
+			th:src="@{/static/js/common.js}"
+		></script>
+		<th:block layout:fragment="scripts">
+			<!--script_block-->
+		</th:block>
+	</body>
+</html>

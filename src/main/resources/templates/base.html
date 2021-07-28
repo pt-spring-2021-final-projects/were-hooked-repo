@@ -1,46 +1,54 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
-	  xmlns:th="http://www.thymeleaf.org"	
-  	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-  	  xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<html
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+>
 	<head>
-    	
-		<title layout:title-pattern="$CONTENT_TITLE - $LAYOUT_TITLE">We're Hooked</title>
+		<title layout:title-pattern="$CONTENT_TITLE - $LAYOUT_TITLE">
+			We're Hooked
+		</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		
-        <link rel="stylesheet" type="text/css" 
-        	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<link rel="stylesheet" type="text/css" href="/css/base.css">
 	</head>
- 
-   <body>
-	   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
 			<a class="navbar-brand" href="#">We're Hooked</a>
 			<div class="collapse navbar-collapse" id="navbarColor01">
-			    <ul class="navbar-nav mr-auto">
+				<ul class="navbar-nav mr-auto">
 					<li class="nav-item active">
-						<a class="nav-link" th:href="@{/countries}">Countries</a>
-			      	</li>
+						<a class="nav-link" th:href="@{/countries}"
+							>Countries</a
+						>
+					</li>
 				</ul>
 			</div>
 		</nav>
 		<div class="container">
 			<div class="content">
-				<div layout:fragment="page_content">
-							  
-				</div>
-	
+				<div layout:fragment="page_content"></div>
 			</div>
 		</div>
-		
-		<div class="modal" id="worldModal" >
-		</div>
+
+		<div class="modal" id="worldModal"></div>
 		<footer id="footer"></footer>
 		<!-- /.container -->
-		
-        <script type="text/javascript" th:src="@{/static/js/common.js}"></script>
+
+		<script
+			type="text/javascript"
+			th:src="@{/static/js/common.js}"
+		></script>
 		<th:block layout:fragment="scripts">
 			<!--script_block-->
 		</th:block>
 	</body>
-	
 </html>
