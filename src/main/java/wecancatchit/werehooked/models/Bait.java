@@ -33,7 +33,7 @@ public class Bait {
         return baitName;
     }
 
-    public Fish getFish(){
+    public Collection<Fish> getFish(){
         return fish;
     }
 
