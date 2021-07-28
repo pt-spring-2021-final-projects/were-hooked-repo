@@ -37,4 +37,6 @@ public string getArea() return area;
 public string getDepth() return depth;
 public string getCoordinates() return coordinates;
 public string getImage() return image;
+public string getType() return type;
+public boolean getisPublic
 
