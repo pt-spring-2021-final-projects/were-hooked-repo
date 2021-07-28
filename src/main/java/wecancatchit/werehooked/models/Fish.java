@@ -1,28 +1,28 @@
 package wecancatchit.werehooked.models;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.ManyToMany;
-
+import javax.persistence.*;
 
 
 @Entity
 public class Fish {
     @Id
     @GeneratedValue
-    @Lob
     private Long id;
     private String name;
+    @Lob
     private String description;
     private String habitat;
     private String image;
     private String season;
     private String currentRecord;
     private String bestTimeOfDay;
-    @ManytoMany
+
+    @ManyToMany
     private Water water;
-    @ManytoMany
+
+    @ManyToMany
     private Bait bait;
+
+    public Fish(){}
 
     public Fish(String name, String description, String habitat, String image, String season, String currentRecord, String bestTimeOfDay) {
         this.name = name;

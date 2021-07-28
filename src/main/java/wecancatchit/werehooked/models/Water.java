@@ -1,8 +1,6 @@
 package wecancatchit.werehooked.models;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Lob;
+import javax.persistence.*;
+import java.util.Collection;
 
 @Entity
 public class Water {
@@ -12,14 +10,23 @@ public class Water {
     private String name;
     @Lob
     private String description;
-    private double area;
-    private double depth;
+    private String area;
+    private String depth;
     private String coordinates;
     private String image;
     private String type;
-    private boolean isPublic;
-    public Water(String name, String description, double area, double depth, String coordinates, String image,
-            String type, boolean isPublic) {
+    private String isPublic;
+
+    @ManyToMany
+    private Collection<Fish> fish;
+
+    @OneToMany
+    private Collection<TackleShop> tackleShop;
+
+    public Water(){}
+
+    public Water(String name, String description, String area, String depth, String coordinates, String image,
+            String type, String isPublic) {
         this.name = name;
         this.description = description;
         this.area = area;
@@ -29,16 +36,17 @@ public class Water {
         this.type = type;
         this.isPublic = isPublic;
     }
+
     public String getName() {
         return name;
     }
     public String getDescription() {
         return description;
     }
-    public Double getArea() {
+    public String getArea() {
         return area;
     }
-    public Double getDepth() {
+    public String getDepth() {
         return depth;
     }
     public String getCoordinates() {
@@ -50,7 +58,16 @@ public class Water {
     public String getType() {
         return type;
     }
-    public boolean isPublic() {
+    public String isPublic() {
         return isPublic;
     }
+
+    public Collection<Fish> getFish(){
+        return fish;
+    }
+
+    public Collection<TackleShop> getTackleShop(){
+        return tackleShop;
+    }
+
 }
