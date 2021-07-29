@@ -1,6 +1,9 @@
 #rules-wrapper {
 	margin: 0 auto;
-	background-color: rgb(111, 151, 211);
+	background-color: rgb(227, 235, 247);
+}
+
+#rules-container {
 }
 
 header {
@@ -9,68 +12,109 @@ header {
 }
 
 #title {
-	margin: 7rem 1.2rem 7rem 0.8rem;
+	background-color: rgb(111, 151, 211);
 }
 
 h1 {
-	text-align: left;
+	text-align: center;
 	color: #fff;
-	padding: 1rem;
+	padding: 5rem 1rem;
 	font-weight: 200;
 }
 
 #rules-container {
 	display: flex;
 	flex-direction: column;
-	border: 1px solid blue;
 	background-color: rgb(227, 235, 247);
 	margin: 0 auto;
+	max-width: 785px;
 }
 
 .item {
 	margin: 0.4rem 1.3rem;
 	background-color: white;
-	box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.39);
-	-webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.39);
-	-moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.39);
-}
+	padding: 1.25rem;
+	box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.36);
+	-webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.36);
+	-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.36);}
 
 .itemTitle {
-    border:1px solid red;
 	text-align: left;
-    padding-left: .5rem;
+	padding-left: 0.5rem;
+	margin: 2rem auto;
 }
 
 .itemTitle h2 {
-    border-left: 2px solid blue;
-    margin: .5rem;
-    padding-left: .5rem;
+	border-left: 2px solid blue;
+	color: rgb(111, 151, 211);
+	font-weight: 200;
+	margin: 0.5rem;
+	padding-left: 0.5rem;
 }
 
 .itemContent {
-    border: 1px solid green;
-    display: flex;
-    flex-direction: column;
-	padding: 1rem 2rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.row {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.column {
+	border: 1px solid green;
+	
+	padding: .5rem;
+	margin: .5rem;
+	text-align: center;
+	cursor: pointer;
+	color: black;
+}
+
+.containerTab {
+	padding: 20px;
+	color: black;
+}
+
+.row:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.closebtn {
+	float: right;
+	color: grey;
+	font-size: 35px;
+	cursor: pointer;
 }
 
 #requirements {
-    background-color: beige;
-    margin: 2rem auto;
+	background-color: beige;
+	margin: 2rem auto;
 }
 
-.itemContent ul {
-    margin: auto 1rem;
-    padding: 0;
+.itemContent ul, p {
+	margin: auto 1rem;
+	padding: 1rem 1.5rem;
 }
 
-.itemContent a {
-    color: #fff;
-    background-color: blue;
-    border-radius: 5px;
-    font-size: large;
-    margin: .5rem;
-    padding: .9rem;
-    text-decoration: none;
-    text-align: center;
+.linkContainer {
+	padding: .75rem 1.5rem;
+}
+
+.linkContainer a {
+	display: block;
+	color: #666;
+	border-radius: 5px;
+	font-size: large;
+	padding: auto 1rem;
+	margin: 0.25rem auto;
+	text-decoration: none;
+	text-align: left;
+}
+
+@media screen and (min-width: 790px) {
+
 }
