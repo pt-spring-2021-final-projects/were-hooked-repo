@@ -22,7 +22,7 @@ public class Fish {
     private String bestTimeOfDay;
 
     @ManyToMany
-    private Collection<Water> water;
+    private Collection<Water> Water;
     
     @ManyToMany
     private Collection<Bait> bait;
