@@ -62,7 +62,7 @@ public class Water {
         return type;
     }
     public boolean isPublic() {
-        return isPublic;
+        return true;
     }
 
     @Override
@@ -90,5 +90,4 @@ public class Water {
         return true;
     }
 
-    
 }
