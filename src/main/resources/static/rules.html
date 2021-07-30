@@ -41,7 +41,7 @@
 		<div class="container">
 			<div class="content">
 				<div layout:fragment="page_content">
-					<div id="rules-wrapper">
+					<div id="content-wrapper">
 						<div id="title">
 							<h1>Ohio's Fishing Laws and Regulations</h1>
 						</div>
@@ -52,11 +52,12 @@
 								</div>
 								<div class="itemContent">
 									<ul>
+										<h3>Statewide</h3>
 										<li>Rule 1</li>
 										<li>Rule 2</li>
 										<li>Rule 3</li>
 									</ul>
-									<div class="linkContainer">
+									<div class="item-link">
 										<a
 											href="https://ohiodnr.gov/static/documents/wildlife/laws-regs-licenses/Ohio+Fishing+Regulations+21-22+ENGLISH.pdf"
 											target="_blank"
@@ -75,37 +76,16 @@
 									<h2>Fishing Licenses</h2>
 								</div>
 								<div class="itemContent">
-									<div class="linkContainer">
-										<a
-											href="https://oh-web.s3licensing.com/"
-											target="blank"
-										>
-											<i
-												class="fas fa-external-link-alt"
-											></i>
-											Purchase Your Fishing License
-											Online</a
-										>
-									</div>
-									<div class="linkContainer">
-										<a
-											href="https://my.visme.co/view/x4epn4yw-fishing-license-finder"
-											target="_blank"
-										>
-											<i
-												class="fas fa-external-link-alt"
-											></i>
-											Flow Chart</a
-										>
-									</div>
 									<div class="row">
 										<div
+											id="requirements"
 											class="column"
 											onclick="openTab('b1');"
 										>
 											Requirements
 										</div>
 										<div
+											id="exemptions"
 											class="column"
 											onclick="openTab('b2');"
 										>
@@ -122,7 +102,6 @@
 											class="closebtn"
 											>x</span
 										>
-										<h2>Requirements</h2>
 										<ul>
 											<li>
 												A fishing license is required to
@@ -170,7 +149,6 @@
 											class="closebtn"
 											>x</span
 										>
-										<h2>Exemptions</h2>
 										<ul>
 											<li>
 												Less than 16 years of age. This
@@ -223,6 +201,29 @@
 											</li>
 										</ul>
 									</div>
+									<div class="item-link">
+										<a
+											href="https://oh-web.s3licensing.com/"
+											target="blank"
+										>
+											<i
+												class="fas fa-external-link-alt"
+											></i>
+											Purchase Your Fishing License
+											Online</a
+										>
+									</div>
+									<div class="item-link">
+										<a
+											href="https://my.visme.co/view/x4epn4yw-fishing-license-finder"
+											target="_blank"
+										>
+											<i
+												class="fas fa-external-link-alt"
+											></i>
+											Flow Chart</a
+										>
+									</div>
 								</div>
 							</div>
 							<div class="item">
@@ -238,7 +239,7 @@
 										and harvest patterns in public waters of
 										Ohio.
 									</p>
-									<div class="linkContainer">
+									<div class="item-link">
 										<a
 											href="https://ohiodnr.gov/wps/portal/gov/odnr/buy-and-apply/hunting-fishing-boating/fishing-resources/report-tagged-fish"
 											target="_blank"
@@ -256,7 +257,7 @@
 									<h2>Sport Fishing Rules</h2>
 								</div>
 								<div class="itemContent">
-									<div class="linkContainer">
+									<div class="item-link">
 										<a
 											href="https://codes.ohio.gov/ohio-administrative-code/rule-1501:31-13-01"
 											target="_blank"

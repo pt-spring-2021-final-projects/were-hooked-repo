@@ -1,25 +1,6 @@
-#rules-wrapper {
+#content-wrapper {
 	margin: 0 auto;
 	background-color: rgb(227, 235, 247);
-}
-
-#rules-container {
-}
-
-header {
-	background-color: #f4f2f3;
-	padding: 1rem;
-}
-
-#title {
-	background-color: rgb(111, 151, 211);
-}
-
-h1 {
-	text-align: center;
-	color: #fff;
-	padding: 5rem 1rem;
-	font-weight: 200;
 }
 
 #rules-container {
@@ -28,6 +9,14 @@ h1 {
 	background-color: rgb(227, 235, 247);
 	margin: 0 auto;
 	max-width: 785px;
+}
+
+h1 {
+	background-color: rgb(111, 151, 211);
+	text-align: center;
+	color: #fff;
+	padding: 5rem 1rem;
+	font-weight: 200;
 }
 
 .item {
@@ -48,63 +37,26 @@ h1 {
 	border-left: 2px solid blue;
 	color: rgb(111, 151, 211);
 	font-weight: 200;
-	margin: 0.5rem;
+	margin: 0.5rem 0.5rem 0 0.5rem;
 	padding-left: 0.5rem;
 }
 
 .itemContent {
+	padding: .5rem 1rem;
 	display: flex;
 	flex-direction: column;
 }
 
-.row {
-	display: flex;
-	justify-content: space-evenly;
-}
-
-.column {
-	border: 1px solid green;
-	
-	padding: .5rem;
-	margin: .5rem;
-	text-align: center;
-	cursor: pointer;
-	color: black;
-}
-
-.containerTab {
-	padding: 20px;
-	color: black;
-}
-
-.row:after {
-	content: '';
-	display: table;
-	clear: both;
-}
-
-.closebtn {
-	float: right;
-	color: grey;
-	font-size: 35px;
-	cursor: pointer;
-}
-
-#requirements {
-	background-color: beige;
-	margin: 2rem auto;
-}
-
 .itemContent ul, p {
-	margin: auto 1rem;
-	padding: 1rem 1.5rem;
+	margin: .5rem 1rem;
+	padding: 0;
 }
 
-.linkContainer {
-	padding: .75rem 1.5rem;
+.item-link {
+	padding: 1rem 3rem;
 }
 
-.linkContainer a {
+.item-link a {
 	display: block;
 	color: #666;
 	border-radius: 5px;
@@ -115,6 +67,77 @@ h1 {
 	text-align: left;
 }
 
-@media screen and (min-width: 790px) {
+.item-link a:hover {
+	text-decoration: underline;
+}
 
+.row {
+	margin: 0 auto;
+	border-radius: 30px;
+}
+
+.row:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.column {
+	border: 1px solid #666;
+	border-radius: 30px;
+	padding: 1rem 2rem;
+	margin: 0;
+	text-align: center;
+	cursor: pointer;
+	color: black;
+}
+
+.containerTab {
+	padding: 20px;
+	color: black;
+}
+
+#requirements {
+	float:inline-start;
+}
+
+#requirements:hover {
+	background-color: #805257;
+	color: #fff;
+}
+
+#b1 {
+	border-left: 3px solid #805257;
+}
+
+#exemptions {
+	float: inline-end;
+}
+
+#exemptions:hover {
+	background-color: #D5B6AC;
+	color: #fff;
+}
+
+#b2 {
+	border-left: 3px solid #D5B6AC;
+}
+
+.closebtn {
+	float: right;
+	color: grey;
+	font-size: 35px;
+	cursor: pointer;
+}
+
+@media screen and (min-width: 790px) {
+	#rules-container {
+		/* display: grid; 
+		grid-template-columns: 1fr 1fr; 
+		grid-template-rows: 1fr 1fr; 
+		gap: 0px 0px; 
+		grid-template-areas: 
+		  ". ."
+		  ". .";  */
+	}
 }
