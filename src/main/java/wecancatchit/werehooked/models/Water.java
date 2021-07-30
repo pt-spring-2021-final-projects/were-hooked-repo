@@ -1,5 +1,6 @@
 package wecancatchit.werehooked.models;
 import javax.persistence.*;
+import java.util.Arrays;
 import java.util.Collection;
 
 @Entity
@@ -10,23 +11,23 @@ public class Water {
     private String name;
     @Lob
     private String description;
-    private String area;
-    private String depth;
+    private Double area;
+    private Double depth;
     private String coordinates;
     private String image;
     private String type;
-    private String isPublic;
+    private boolean isPublic;
 
     @ManyToMany
     private Collection<Fish> fish;
 
     @OneToMany
-    private Collection<TackleShop> tackleShop;
+    private TackleShop tackleShop;
 
     public Water(){}
 
-    public Water(String name, String description, String area, String depth, String coordinates, String image,
-            String type, String isPublic) {
+    public Water(String name, String description, Double area, Double depth, String coordinates, String image,
+                 String type, boolean isPublic, TackleShop tackleShop, Fish... fish) {
         this.name = name;
         this.description = description;
         this.area = area;
@@ -35,6 +36,8 @@ public class Water {
         this.image = image;
         this.type = type;
         this.isPublic = isPublic;
+        this.tackleShop = tackleShop;
+        this.fish = Arrays.asList(fish);
     }
 
     public String getName() {
@@ -43,10 +46,10 @@ public class Water {
     public String getDescription() {
         return description;
     }
-    public String getArea() {
+    public Double getArea() {
         return area;
     }
-    public String getDepth() {
+    public Double getDepth() {
         return depth;
     }
     public String getCoordinates() {
@@ -58,7 +61,7 @@ public class Water {
     public String getType() {
         return type;
     }
-    public String isPublic() {
+    public boolean isPublic() {
         return isPublic;
     }
 
@@ -66,7 +69,7 @@ public class Water {
         return fish;
     }
 
-    public Collection<TackleShop> getTackleShop(){
+    public TackleShop getTackleShop(){
         return tackleShop;
     }
 
