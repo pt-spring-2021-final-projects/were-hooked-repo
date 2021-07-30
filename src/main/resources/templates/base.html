@@ -1,46 +1,83 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
-	  xmlns:th="http://www.thymeleaf.org"	
-  	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-  	  xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
-	<head>
-    	
-		<title layout:title-pattern="$CONTENT_TITLE - $LAYOUT_TITLE">We're Hooked</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		
-        <link rel="stylesheet" type="text/css" 
-        	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-	</head>
- 
-   <body>
-	   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-			<a class="navbar-brand" href="#">We're Hooked</a>
-			<div class="collapse navbar-collapse" id="navbarColor01">
-			    <ul class="navbar-nav mr-auto">
-					<li class="nav-item active">
-						<a class="nav-link" th:href="@{/countries}">Countries</a>
-			      	</li>
-				</ul>
-			</div>
-		</nav>
-		<div class="container">
-			<div class="content">
-				<div layout:fragment="page_content">
-							  
-				</div>
-	
-			</div>
-		</div>
-		
-		<div class="modal" id="worldModal" >
-		</div>
-		<footer id="footer"></footer>
-		<!-- /.container -->
-		
-        <script type="text/javascript" th:src="@{/static/js/common.js}"></script>
-		<th:block layout:fragment="scripts">
-			<!--script_block-->
-		</th:block>
-	</body>
-	
+<html
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:th="http://www.thymeleaf.org"
+  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+  xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+>
+  <head>
+    <title layout:title-pattern="$CONTENT_TITLE - $LAYOUT_TITLE">
+      We're Hooked
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <link rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="style.css" />
+    <href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+
+    <nav class="header__nav">
+      <ul class="header__nav_list">
+        <li class="header__nav_listItem">
+          <a href=""><img src="buttons/logo/button1.png" /></a>
+          <p></p>
+        </li>
+        <li class="header__nav_listItem">
+          <a href=""><img src="buttons/Lakes/lakes.png" /></a>
+          <p></p>
+        </li>
+        <li class="header__nav_listItem">
+          <a href=""><img src="buttons/Bait/bait.png" /></a>
+          <p></p>
+        </li>
+        <li class="header__nav_listItem">
+          <a href=""><img src="buttons/Lodging/lodging.png" /></a>
+          <p></p>
+        </li>
+        <li class="header__nav_listItem">
+          <a href=""><img src="buttons/Logging Catch /logcatch.png" /></a>
+          <p></p>
+        </li>
+        <li class="header__nav_listItem">
+          <a href=""><img src="buttons/Regulations /rules.png" /></a>
+          <p></p>
+        </li>
+        <li class="header__nav_listItem">
+          <a href=""><img src="buttons/About/about.png" /></a>
+          <p></p>
+        </li>
+      </ul>
+    </nav>
+    <div class="container2">
+      <div class="content2">
+        <div layout:fragment="page_content2"></div>
+        <h1>OHIO'S ESSENTIAL FISHING APP</h1>
+      </div>
+    <div id="home" class="panel">
+      <div class="inner">
+          <div id="backgroundchange">
+              <div class="backgroundimg" id="back1"></div>
+              <div class="backgroundimg" id="back2"></div>
+              <div class="backgroundimg" id="back3"></div>
+              <div class="backgroundimg" id="back4"></div>
+              <div class="backgroundimg" id="back5"></div>
+          </div>
+      </div>
+  </div>
+    <div class="container">
+      <div class="content">
+        <div layout:fragment="page_content"></div>
+      </div>
+    </div>
+    </div>
+  
+  
+
+    <script type="text/javascript" th:src="@{/static/js/common.js}"></script>
+    <th:block layout:fragment="scripts"> </th:block>
+    
+  </body>
 </html>

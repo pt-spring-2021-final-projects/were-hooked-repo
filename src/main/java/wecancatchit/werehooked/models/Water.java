@@ -1,7 +1,12 @@
 package wecancatchit.werehooked.models;
-import javax.persistence.*;
-import java.util.Arrays;
+
 import java.util.Collection;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Lob;
+import javax.persistence.ManyToMany;
 
 @Entity
 public class Water {
@@ -21,13 +26,10 @@ public class Water {
     @ManyToMany
     private Collection<Fish> fish;
 
-    @OneToMany
-    private TackleShop tackleShop;
 
-    public Water(){}
+    public Water(String name, String description, double area, double depth, String coordinates, String image,
+            String type, boolean isPublic) {
 
-    public Water(String name, String description, Double area, Double depth, String coordinates, String image,
-                 String type, boolean isPublic, TackleShop tackleShop, Fish... fish) {
         this.name = name;
         this.description = description;
         this.area = area;
@@ -38,6 +40,10 @@ public class Water {
         this.isPublic = isPublic;
         this.tackleShop = tackleShop;
         this.fish = Arrays.asList(fish);
+    }
+
+
+    protected Water() {
     }
 
     public String getName() {
@@ -65,12 +71,31 @@ public class Water {
         return isPublic;
     }
 
-    public Collection<Fish> getFish(){
-        return fish;
+
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((id == null) ? 0 : id.hashCode());
+        return result;
     }
 
-    public TackleShop getTackleShop(){
-        return tackleShop;
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Water other = (Water) obj;
+        if (id == null) {
+            if (other.id != null)
+                return false;
+        } else if (!id.equals(other.id))
+            return false;
+        return true;
     }
 
+    
 }
