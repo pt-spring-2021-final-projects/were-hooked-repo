@@ -51,12 +51,83 @@
 									<h2>Fishing Regulations</h2>
 								</div>
 								<div class="itemContent">
-									<ul>
-										<h3>Statewide</h3>
-										<li>Rule 1</li>
-										<li>Rule 2</li>
-										<li>Rule 3</li>
-									</ul>
+									<div class="row">
+										<div
+											id="requirements"
+											class="column"
+											onclick="openTab('a1');"
+										>
+											Statewide
+										</div>
+										<div
+											id="exemptions"
+											class="column"
+											onclick="openTab('a2');"
+										>
+											Lake Erie
+										</div>
+									</div>
+									<div
+										id="a1"
+										class="containerTab"
+										style="display: none"
+									>
+										<span
+											onclick="this.parentElement.style.display='none'"
+											class="closebtn"
+											>x</span
+										>
+										<h3>Statewide Regulations</h3>
+										<p>
+											These regulations apply to
+											<b>all public waters in Ohio</b>
+											where site-specific regulations are
+											not implemented.
+										</p>
+										<div class="containerImage">
+											<img src="/css/images/state-dailyLimits.png" alt="">
+										</div>
+										<div class="containerImage">
+											<img src="/css/images/state-endangered.png" alt="">
+										</div>
+									</div>
+									<div
+										id="a2"
+										class="containerTab"
+										style="display: none"
+									>
+										<span
+											onclick="this.parentElement.style.display='none'"
+											class="closebtn"
+											>x</span
+										>
+										<h3>Lake Erie Regulations</h3>
+										<p>
+											These regulations apply to <b>Lake Erie
+											and areas immediately upstream in
+											creeks, rivers, and tributaries.</b></p>
+											<p>The following regulations for walleye, sauger, saugeye, yellow perch, black bass, and white bass apply to the waters of Lake Erie, its embayments including <b>Maumee Bay, Sandusky Bay, East Harbor, Middle Harbor, and West Harbor, and from where Lake Erie tributaries enter the lake upstream to the following end points:</b>
+											<ul>
+												<li>Arcola, Wheeler, Cowles, and Indian creeks: U.S. Route 20 bridges</li>
+												<li>Ashtabula River:  E. 24th Street bridge</li>
+												<li>Black River: State Route 611 bridge</li>
+												<li>Conneaut Creek: Main Street bridge 
+													(downtown to Conneaut)</li>
+												<li>Euclid Creek and Chagrin River: State 
+													Route 283 bridges</li>
+												<li>Rocky River:  Detroit Road bridge</li>
+												<li>Sandusky River: Waterworks dam in Tiffin</li>
+												<li>Maumee River: First dam upstream 
+													(Grand Rapids, Ohio)</li>
+												<li>Vermilion River: State Route 2 bridge</li>
+												<li>Grand River: State Route 535 bridge</li>
+												<li>Cuyahoga River: Harvard Road bridge</li>
+											</ul>
+										</p>
+										<div class="containerImage">
+											<img src="/css/images/lakeErie-dailyLimits.png" alt="">
+										</div>
+									</div>
 									<div class="item-link">
 										<a
 											href="https://ohiodnr.gov/static/documents/wildlife/laws-regs-licenses/Ohio+Fishing+Regulations+21-22+ENGLISH.pdf"

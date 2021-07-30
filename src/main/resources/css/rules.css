@@ -23,9 +23,10 @@ h1 {
 	margin: 0.4rem 1.3rem;
 	background-color: white;
 	padding: 1.25rem;
-	box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.36);
-	-webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.36);
-	-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.36);}
+	box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.36);
+	-webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.36);
+	-moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.36);
+}
 
 .itemTitle {
 	text-align: left;
@@ -42,13 +43,14 @@ h1 {
 }
 
 .itemContent {
-	padding: .5rem 1rem;
+	padding: 0.5rem 1rem;
 	display: flex;
 	flex-direction: column;
 }
 
-.itemContent ul, p {
-	margin: .5rem 1rem;
+.itemContent ul,
+p {
+	margin: 0.5rem 1rem;
 	padding: 0;
 }
 
@@ -97,8 +99,31 @@ h1 {
 	color: black;
 }
 
+.containerImage {
+	display: flex;
+	border: 1px solid blue;
+	min-height: 100px;
+}
+
+.containerImage img {
+	min-width: 100%;
+	margin: 0 auto;
+	background-size: contain;
+}
+
+#a2 ul {
+	padding: .5rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 0px 0px;
+	grid-template-areas:
+		'. .'
+		'. .';
+}
+
 #requirements {
-	float:inline-start;
+	float: inline-start;
 }
 
 #requirements:hover {
@@ -115,12 +140,12 @@ h1 {
 }
 
 #exemptions:hover {
-	background-color: #D5B6AC;
+	background-color: #d5b6ac;
 	color: #fff;
 }
 
 #b2 {
-	border-left: 3px solid #D5B6AC;
+	border-left: 3px solid #d5b6ac;
 }
 
 .closebtn {
