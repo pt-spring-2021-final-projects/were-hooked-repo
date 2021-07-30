@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+>
+	<head>
+		<title layout:title-pattern="$CONTENT_TITLE - $LAYOUT_TITLE">
+			We're Hooked
+		</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+		<div class="container">
+			<div class="content">
+				<div layout:fragment="page_content">
+					<div id="content-wrapper">
+						<h2>Okta Hosted Login + Spring Boot Example</h2>
+
+      <div th:unless="${#authorization.expression('isAuthenticated()')}">
+        <p>Hello!</p>
+        <p>If you're viewing this page then you have successfully configured and started this example server.</p>
+        <p>This example shows you how to use the <a href="https://github.com/okta/okta-spring-boot">Okta Spring Boot Starter</a> to add the <a href="https://developer.okta.com/authentication-guide/implementing-authentication/auth-code.html">Authorization Code Flow</a> to your application.</p>
+        <p>When you click the login button below, you will be redirected to the login page on your Okta org.  After you authenticate, you will be returned to this application.</p>
+      </div>
+
+      <div th:if="${#authorization.expression('isAuthenticated()')}" class="text container">
+        <p>Welcome home, <span th:text="${#authentication.principal.attributes['name']}">Joe Coder</span>!</p>
+        <p>You have successfully authenticated against your Okta org, and have been redirected back to this application.</p>
+        <p>Visit the <a th:href="@{/profile}">My Profile</a> page in this application to view the information retrieved with your OAuth Access Token.</p>
+      </div>
+
+        <form method="get" th:action="@{/oauth2/authorization/okta}" th:unless="${#authorization.expression('isAuthenticated()')}">
+          <button id="login-button" class="btn btn-primary" type="submit">Login</button>
+        </form></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script
+			type="text/javascript"
+			th:src="@{/static/js/common.js}"
+		></script>
+		<th:block layout:fragment="scripts">
+			<!--script_block-->
+		</th:block>
+	</body>
+</html>

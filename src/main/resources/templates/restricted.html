@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+>
+	<head>
+		<title layout:title-pattern="$CONTENT_TITLE - $LAYOUT_TITLE">
+			We're Hooked
+		</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+		<div class="container">
+			<div class="content">
+				<div layout:fragment="page_content">
+					<div id="content-wrapper">
+						<!--/* displayed if account IS NOT null, indicating that the user IS logged in */-->
+						<div th:if="${#authorization.expression('isAuthenticated()')}">
+							<h1 th:inline="text"><span th:text="${#authentication.name}"></span>, you are allowed here.</h1>
+						</div>
+			
+						<!--/* displayed if account IS null, indicating that the user IS NOT logged in */-->
+						<div th:unless="${#authorization.expression('isAuthenticated()')}">
+							<h1>How did you get here, anonymous?!</h1>
+						</div>
+			
+						<a href="/" class="btn btn-primary">Go Home</a>
+
+		<script
+			type="text/javascript"
+			th:src="@{/static/js/common.js}"
+		></script>
+		<th:block layout:fragment="scripts">
+			<!--script_block-->
+		</th:block>
+	</body>
+</html>

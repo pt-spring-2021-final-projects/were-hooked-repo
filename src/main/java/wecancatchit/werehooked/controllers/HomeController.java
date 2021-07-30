@@ -9,13 +9,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class HomeController {
-   @RequestMapping("/")
-    String landing() {
-        return "landing";
+    @RequestMapping("/")
+    String home() {
+        return "home";
     }
     
-//    @GetMapping("/hello")
-//     String helloUser(@AuthenticationPrincipal OidcUser user) {
-//         return "Hello " + user.getAttributes().get("email");
-//     }
+    @RequestMapping("/restricted")
+    String restricted() {
+        return "restricted";
+    }
 }
