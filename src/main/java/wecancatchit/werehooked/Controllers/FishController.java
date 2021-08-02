@@ -16,7 +16,7 @@ public class FishController {
     private FishRepository fishRepo;
 
     @GetMapping("/fish/{name}")
-    public String displaySingleTrek(@PathVariable String name, Model model) {
+    public String displaySingleFish(@PathVariable String name, Model model) {
         Fish retrievedFish = fishRepo.findFishByName(name);
         model.addAttribute("fish", retrievedFish);
         retrievedFish.getDescription();
