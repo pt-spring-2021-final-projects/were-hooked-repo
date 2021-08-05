@@ -5,9 +5,11 @@
     <title>Title</title>
 </head>
 <body>
-<div class="waters-content">
-    <h1>Waters</h1>
-    <h2 th:each="water:${waters}"><a th:href="@{'/waters/' + ${water.name}}" th:text="${water.name}">Name</a></h2>
-</div>
+    <h1>Lakes</h1>
+    <div th:each="water:${waters}">
+        <a th:href="@{'/waters/'+ ${water.name}}"
+           th:text="${water.name}"></a>
+
+    </div>
 </body>
 </html>

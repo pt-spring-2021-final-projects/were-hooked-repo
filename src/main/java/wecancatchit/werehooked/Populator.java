@@ -2,6 +2,10 @@ package wecancatchit.werehooked;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
+import wecancatchit.werehooked.Repositories.BaitRepository;
+import wecancatchit.werehooked.Repositories.FishRepository;
+import wecancatchit.werehooked.Repositories.TackleShopRepository;
+import wecancatchit.werehooked.Repositories.WaterRepository;
 import wecancatchit.werehooked.models.Bait;
 import wecancatchit.werehooked.models.Fish;
 import wecancatchit.werehooked.models.TackleShop;

@@ -1,12 +1,9 @@
 package wecancatchit.werehooked.models;
 
+import java.util.Arrays;
 import java.util.Collection;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Lob;
-import javax.persistence.ManyToMany;
+import javax.persistence.*;
 
 @Entity
 public class Water {
@@ -26,9 +23,12 @@ public class Water {
     @ManyToMany
     private Collection<Fish> fish;
 
+    @OneToOne
+    private TackleShop tackleShop;
+
 
     public Water(String name, String description, double area, double depth, String coordinates, String image,
-            String type, boolean isPublic) {
+            String type, boolean isPublic, TackleShop tackleShop, Fish... fish) {
 
         this.name = name;
         this.description = description;
