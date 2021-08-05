@@ -1,4 +1,5 @@
 package wecancatchit.werehooked.models;
+
 import java.util.Collection;
 
 import javax.persistence.Entity;
@@ -15,8 +16,8 @@ public class Water {
     private String name;
     @Lob
     private String description;
-    private double area;
-    private double depth;
+    private Double area;
+    private Double depth;
     private String coordinates;
     private String image;
     private String type;
@@ -25,8 +26,10 @@ public class Water {
     @ManyToMany
     private Collection<Fish> fish;
 
+
     public Water(String name, String description, double area, double depth, String coordinates, String image,
             String type, boolean isPublic) {
+
         this.name = name;
         this.description = description;
         this.area = area;
@@ -35,7 +38,10 @@ public class Water {
         this.image = image;
         this.type = type;
         this.isPublic = isPublic;
+        this.tackleShop = tackleShop;
+        this.fish = Arrays.asList(fish);
     }
+
 
     protected Water() {
     }
@@ -64,6 +70,7 @@ public class Water {
     public boolean isPublic() {
         return true;
     }
+
 
     @Override
     public int hashCode() {

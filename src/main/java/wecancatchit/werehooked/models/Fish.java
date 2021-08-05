@@ -1,4 +1,5 @@
 package wecancatchit.werehooked.models;
+
 import java.util.Collection;
 
 import javax.persistence.Entity;
@@ -7,14 +8,16 @@ import javax.persistence.Id;
 import javax.persistence.Lob;
 import javax.persistence.ManyToMany;
 
+
 @Entity
 public class Fish {
     @Id
     @GeneratedValue
-    @Lob
     private Long id;
     private String name;
+    @Lob
     private String description;
+    @Lob
     private String habitat;
     private String image;
     private String season;
@@ -22,12 +25,19 @@ public class Fish {
     private String bestTimeOfDay;
 
     @ManyToMany
+
     private Collection<Water> water;
     
     @ManyToMany
     private Collection<Bait> bait;
 
-    public Fish(String name, String description, String habitat, String image, String season, String currentRecord, String bestTimeOfDay) {
+
+    @ManyToMany
+    private Collection<Bait> bait;
+
+    public Fish(){}
+
+    public Fish(String name, String description, String habitat, String image, String season, String currentRecord, String bestTimeOfDay, Bait... bait) {
         this.name = name;
         this.description = description;
         this.habitat = habitat;
@@ -35,6 +45,7 @@ public class Fish {
         this.season = season;
         this.currentRecord = currentRecord;
         this.bestTimeOfDay = bestTimeOfDay;
+        this.bait = Arrays.asList(bait);
     }
 
     public Long getId() {
