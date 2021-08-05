@@ -253,8 +253,6 @@ from { opacity: 0; }
 to   { opacity: 1; }
 }
 
-}
-
 .detail {
   width: 200px;
   height: 200px;
