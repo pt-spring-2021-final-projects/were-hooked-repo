@@ -9,5 +9,6 @@ public interface WaterRepository extends CrudRepository<Water, Long> {
     @Override
     Optional<Water> findById(Long id);
 
-    Water findWaterByName(String name);
+
+    Optional<Water> findWaterByName(String name);
 }

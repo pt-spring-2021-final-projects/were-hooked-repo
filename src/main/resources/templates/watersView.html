@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Bodys of Water</title>
 </head>
 <body>
-    <h1>Lakes</h1>
-    <div th:each="water:${waters}">
+    <h1>Bodys of Water</h1>
+    <div th:each="water:${water}">
         <a th:href="@{'/waters/'+ ${water.name}}"
            th:text="${water.name}"></a>
-
+        <img th:src="${water.image}" alt="">
     </div>
 </body>
 </html>

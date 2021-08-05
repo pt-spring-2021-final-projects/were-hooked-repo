@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import wecancatchit.werehooked.Repositories.WaterRepository;
 import wecancatchit.werehooked.models.Water;
 import javax.annotation.Resource;
+import java.util.Optional;
 
 @Controller
 public class WaterController {
@@ -21,18 +22,26 @@ public class WaterController {
         return "watersView";
     }
 
-    @GetMapping("/waters/{name}")
+//    @GetMapping("/waters/{name}")
+//    public String displaySingleWater(@PathVariable String name, Model model) {
+//        Water retrievedWater = waterRepo.findWaterByName(name);
+//        model.addAttribute("water", retrievedWater);
+//        retrievedWater.getName();
+//        retrievedWater.getDescription();
+//        retrievedWater.getImage();
+//        retrievedWater.getCoordinates();
+//        retrievedWater.getArea();
+//        retrievedWater.getDepth();
+//        retrievedWater.getType();
+//        retrievedWater.isPublic();
+//        return "waterView";
+//    }
+
+    @RequestMapping("/waters/{name}")
     public String displaySingleWater(@PathVariable String name, Model model) {
-        Water retrievedWater = waterRepo.findWaterByName(name);
-        model.addAttribute("water", retrievedWater);
-        retrievedWater.getName();
-        retrievedWater.getDescription();
-        retrievedWater.getImage();
-        retrievedWater.getCoordinates();
-        retrievedWater.getArea();
-        retrievedWater.getDepth();
-        retrievedWater.getType();
-        retrievedWater.isPublic();
+        Optional<Water> retrievedWater = waterRepo.findWaterByName(name);
+        Water foundWater = retrievedWater.get();
+        model.addAttribute("water",foundWater);
         return "waterView";
     }
 }
