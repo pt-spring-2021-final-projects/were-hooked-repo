@@ -62,7 +62,7 @@ h1 {
   font-size: 32pt;
   border-bottom: solid 3px;
   padding-bottom: 4pt;
-  word-spacing: 155px;
+  word-spacing:75px;
 }
 
 .footer {
@@ -87,6 +87,8 @@ h1 {
   width: 100%;
   height: 30em;
 }
+
+
 
 html,
 body {
@@ -208,5 +210,74 @@ animation-duration: 20s;
 -webkit-animation-timing-function: ease-in-out;
 -webkit-animation-iteration-count: infinite;
 -webkit-animation-duration: 20s;
+}
+
+header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.container {
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+.words {
+  position: absolute;
+  z-index: 1000;
+  font-size: 60pt;
+  color: #fff700;
+  font-weight:bolder;
+  width: 500%;
+  margin-left: 2.5em;
+  margin-top: 2.5em;
+  -webkit-animation: fadein 10s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 10s; /* Firefox < 16 */
+   -ms-animation: fadein 10s; /* Internet Explorer */
+    -o-animation: fadein 10s; /* Opera < 12.1 */
+       animation: fadein 10s;
+}
+
+@keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 1; }
+}
 
 }
+
+.detail {
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+.words2 p {
+  position: absolute;
+  z-index: 1000;
+  font-size: 14pt;
+  font-weight: 900;
+  color: #fff700;
+  font-weight: 900;
+  font-family: 'Courier New', Courier, monospace;
+  width: 350%;
+  margin-left: 19.5em;
+  margin-top: 22em;
+  background-color: #000000;
+  border-color: #fff700;
+  border: solid;
+  opacity: 0.6;
+  border-radius: 10px;
+  letter-spacing: 5px;
+
+}
+
+
