@@ -1,6 +1,6 @@
 package wecancatchit.werehooked.models;
 
-import java.util.Collection;
+import java.util.*;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -25,17 +25,13 @@ public class Fish {
     private String bestTimeOfDay;
 
     @ManyToMany
-
     private Collection<Water> water;
-    
-    @ManyToMany
-    private Collection<Bait> bait;
-
 
     @ManyToMany
     private Collection<Bait> bait;
 
-    public Fish(){}
+    protected Fish() {
+    }
 
     public Fish(String name, String description, String habitat, String image, String season, String currentRecord, String bestTimeOfDay, Bait... bait) {
         this.name = name;
@@ -46,6 +42,10 @@ public class Fish {
         this.currentRecord = currentRecord;
         this.bestTimeOfDay = bestTimeOfDay;
         this.bait = Arrays.asList(bait);
+        // this.bait = bait; //Collection<Bait>; //Arrays.asList(bait);
+        // for (Bait b : bait) {
+        //     this.bait.add(b);
+        // }
     }
 
     public Long getId() {
@@ -80,9 +80,6 @@ public class Fish {
         return bestTimeOfDay;
     }
 
-    protected Fish() {
-    }
-
     @Override
     public int hashCode() {
         final int prime = 31;
@@ -107,6 +104,4 @@ public class Fish {
             return false;
         return true;
     }
-
-    
 }

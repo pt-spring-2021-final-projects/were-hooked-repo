@@ -6,7 +6,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import wecancatchit.werehooked.Repositories.TackleShopRepository;
 import wecancatchit.werehooked.models.TackleShop;
-;
 
 import javax.annotation.Resource;
 
@@ -16,15 +15,14 @@ public class TackleShopController {
     @Resource
     private TackleShopRepository tackleShopRepo;
 
-    @GetMapping("/bait/{name}")
+    @GetMapping("/tackleshop/{name}")
     public String displaySingleTackleShop(@PathVariable String name, Model model) {
-        TackleShop retrievedTackleShop = tackleShopRepo.findTackleShopByName(name);
+        TackleShop retrievedTackleShop = tackleShopRepo.findByName(name);
         model.addAttribute("tackle shop", retrievedTackleShop);
         retrievedTackleShop.getTackleShopHours();
-        retrievedTackleShop.getTackleShopImage();
-        retrievedTackleShop.getTackleShopName();
+        // retrievedTackleShop.getTackleShopImage();
+        retrievedTackleShop.getName();
         retrievedTackleShop.getTackleShopAddress();
-
         return "tackleShopView";
     }
 }
@@ -35,7 +33,3 @@ public class TackleShopController {
 
 
 
-
-        return "baitView";
-    }
-}

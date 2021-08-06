@@ -4,6 +4,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
+
 import java.util.Objects;
 
 @Entity
@@ -13,17 +15,18 @@ public class TackleShop {
     @GeneratedValue
     private Long id;
 
-    private String tackleShopName;
+    private String name;
     private String tackleShopAddress;
     private String tackleShopHours;
 
-    @ManyToOne
+    // @ManyToOne
+    @OneToOne
     private Water water;
 
     protected TackleShop(){}
 
-    public TackleShop(String tackleShopName, String tackleShopAddress, String tackleShopHours){
-        this.tackleShopName = tackleShopName;
+    public TackleShop(String name, String tackleShopAddress, String tackleShopHours){
+        this.name = name;
         this.tackleShopAddress = tackleShopAddress;
         this.tackleShopHours = tackleShopHours;
     }
@@ -32,8 +35,8 @@ public class TackleShop {
         return id;
     }
 
-    public String getTackleShopName(){
-        return tackleShopName;
+    public String getName(){
+        return name;
     }
 
     public String getTackleShopAddress(){
