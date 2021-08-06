@@ -117,7 +117,7 @@ body {
 
 
 #back1 {
-  background: url("backgrounds/background.jpeg") no-repeat center fixed;
+  background: url("backgrounds/background7.jpeg") no-repeat center fixed;
   z-index: 5;
 }
 
@@ -129,7 +129,6 @@ body {
 #back3 {
   background: url("backgrounds/background8.jpeg") no-repeat center fixed;
   z-index: 5;
-
 }
 
 #back4 {
@@ -137,10 +136,6 @@ body {
   z-index: 5;
 }
 
-#back5 {
-  background: url("backgrounds/background7.jpeg") no-repeat center fixed;
-  z-index: 5;
-}
 
 @keyframes backgroundchangeFadeInOut {
   0% {
@@ -179,26 +174,23 @@ body {
 
 }
 #backgroundchange div:nth-of-type(1) {
-  animation-delay: 20s;
-  -webkit-animation-delay: 20s;
-}
-#backgroundchange div:nth-of-type(2) {
   animation-delay: 15s;
   -webkit-animation-delay: 15s;
 }
-#backgroundchange div:nth-of-type(3) {
+#backgroundchange div:nth-of-type(2) {
   animation-delay: 10s;
   -webkit-animation-delay: 10s;
 }
-#backgroundchange div:nth-of-type(4) {
+#backgroundchange div:nth-of-type(3) {
   animation-delay: 5s;
   -webkit-animation-delay: 5s;
 }
 
-#backgroundchange div:nth-of-type(5) {
+#backgroundchange div:nth-of-type(4) {
   animation-delay: 0s;
   -webkit-animation-delay: 0s;
 }
+
 
 #backgroundchange div {
 animation-name: backgroundchangeFadeInOut;
@@ -235,10 +227,10 @@ header {
   width: 500%;
   margin-left: 2.5em;
   margin-top: 2.5em;
-  -webkit-animation: fadein 10s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 10s; /* Firefox < 16 */
-   -ms-animation: fadein 10s; /* Internet Explorer */
-    -o-animation: fadein 10s; /* Opera < 12.1 */
+  -webkit-animation: fadein 10s; 
+  -moz-animation: fadein 10s; 
+   -ms-animation: fadein 10s; 
+    -o-animation: fadein 10s; 
        animation: fadein 10s;
 }
 
@@ -247,7 +239,7 @@ from { opacity: 0; }
 to   { opacity: 1; }
 }
 
-/* Firefox < 16 */
+
 @-moz-keyframes fadein {
 from { opacity: 0; }
 to   { opacity: 1; }
@@ -275,7 +267,6 @@ to   { opacity: 1; }
   opacity: 0.6;
   border-radius: 10px;
   letter-spacing: 5px;
-
 }
 
 

@@ -42,8 +42,9 @@ body {
   margin-top: 50px;
   display: flex;
   flex-flow: row;
-  width: 4.5%;
+  width: 3.5%;
   padding-bottom: 15px;
+  height: 50px;
 }
 
 .button:hover {
@@ -71,14 +72,6 @@ body {
   60% {
     transform: translate3d(4px, 0, 0);
   }
-}
-
-.companyInfo {
-  background: black;
-  position: absolute;
-  margin-top: 8em;
-  width: 100;
-
 }
 
 .footer {
