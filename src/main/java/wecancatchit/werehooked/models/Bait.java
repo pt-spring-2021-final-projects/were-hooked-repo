@@ -14,7 +14,7 @@ public class Bait {
     @GeneratedValue
     private Long id;
 
-    private String baitName;
+    private String name;
     private String image;
 
     @ManyToMany
@@ -22,8 +22,8 @@ public class Bait {
 
     protected Bait(){}
 
-    public Bait(String baitName, String image){
-        this.baitName = baitName;
+    public Bait(String name, String image){
+        this.name = name;
         this.image = image;
     }
 
@@ -31,8 +31,8 @@ public class Bait {
         return id;
     }
 
-    public String getBaitName(){
-        return baitName;
+    public String getName(){
+        return name;
     }
 
     public String getImage(){

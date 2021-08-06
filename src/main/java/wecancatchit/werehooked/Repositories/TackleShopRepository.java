@@ -10,7 +10,7 @@ public interface TackleShopRepository extends CrudRepository<TackleShop, Long> {
     @Override
     Optional<TackleShop> findById(Long id);
 
-    TackleShop findTackleShopByName(String name);
+    TackleShop findByName(String name);
 
 
 }

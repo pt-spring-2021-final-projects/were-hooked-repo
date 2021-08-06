@@ -17,9 +17,9 @@ public class BaitController {
 
     @GetMapping("/bait/{name}")
     public String displaySingleBait(@PathVariable String name, Model model) {
-        Bait retrievedBait = baitRepo.findBaitByName(name);
+        Bait retrievedBait = baitRepo.findByName(name);
         model.addAttribute("bait", retrievedBait);
-        retrievedBait.getBaitName();
+        // retrievedBait.getName();   whats this doing?
 
 
         return "baitView";
