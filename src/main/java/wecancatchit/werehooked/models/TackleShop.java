@@ -15,7 +15,6 @@ public class TackleShop {
 
     private String tackleShopName;
     private String tackleShopAddress;
-    private String tackleShopImage;
     private String tackleShopHours;
 
     @ManyToOne
@@ -23,10 +22,9 @@ public class TackleShop {
 
     protected TackleShop(){}
 
-    public TackleShop(String tackleShopName, String tackleShopAddress, String tackleShopImage, String tackleShopHours){
+    public TackleShop(String tackleShopName, String tackleShopAddress, String tackleShopHours){
         this.tackleShopName = tackleShopName;
         this.tackleShopAddress = tackleShopAddress;
-        this.tackleShopImage = tackleShopImage;
         this.tackleShopHours = tackleShopHours;
     }
 
@@ -40,10 +38,6 @@ public class TackleShop {
 
     public String getTackleShopAddress(){
         return tackleShopAddress;
-    }
-
-    public String getTackleShopImage(){
-        return tackleShopImage;
     }
 
     public String getTackleShopHours(){

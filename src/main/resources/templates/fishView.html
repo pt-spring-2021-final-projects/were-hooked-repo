@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="fish-content">
+    <h1>Fish</h1>
+    <h2 th:each="fish:${fish}"><a th:href="@{'/fish/' + ${fish.name}}" th:text="${fish.name}">Name</a></h2>
+</body>
+</html>
