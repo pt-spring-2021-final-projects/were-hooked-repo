@@ -45,7 +45,7 @@ public class Populator implements CommandLineRunner {
         Bait bread = new Bait("bread","/images/bread.jpg");
         Bait minnows = new Bait("Minnows", "/images/minnow.jpg");
         Bait blueGillBait = new Bait("BlueGill","/images/bluegillbait.jpg");
-        Bait texasRig = new Bait("Texas Rig","/images/bluegill.jpg");
+        Bait texasRig = new Bait("Texas Rig","/images/texasrig.jpg");
         Bait nedRig = new Bait("Ned Rig", "/images/nedrig.jpg");
         Bait inlineSpinner = new Bait("Inline Spinner", "/images/inlinespinner.jpg");
         Bait spinnerBait = new Bait("Spinner Bait", "/images/spinnerbait.jpg");

@@ -82,6 +82,10 @@ public class Fish {
         return bestTimeOfDay;
     }
 
+    public Collection<Bait> getBait() {
+        return bait;
+    }
+
     @Override
     public int hashCode() {
         final int prime = 31;

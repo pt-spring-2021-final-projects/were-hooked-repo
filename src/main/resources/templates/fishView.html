@@ -7,6 +7,12 @@
 <body>
 <header>
     <h1 th:text="${fish.name}" ></h1>
+
 </header>
+<img th:src="${fish.image}" alt="">
+<div class="bait" th:each="bait:${fish.bait}" >
+    <a th:href="@{'/bait/'+ ${bait.name}}"
+       th:text="${bait.name}" ></a>
+</div>
 </body>
 </html>
