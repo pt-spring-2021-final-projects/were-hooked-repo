@@ -51,7 +51,6 @@ public class Water {
         this.fish = Arrays.asList(fish);
     }
 
-
     protected Water() {
     }
 

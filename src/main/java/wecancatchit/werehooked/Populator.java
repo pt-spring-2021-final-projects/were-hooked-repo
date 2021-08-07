@@ -85,7 +85,6 @@ public class Populator implements CommandLineRunner {
         fishRepo.save(muskie);
         fishRepo.save(saugeye);
 
-
         Water lakeErie = new Water("Lake Erie", "Lake Erie is the fourth-largest lake (by surface area) of the five Great Lakes in North America and the eleventh-largest globally.", 9910.00, 62.00,"42.0669° N, 81.3399° W", "/images/lakeerie.jpg","Great Lake",true,erieOutfitters,blueGill,largeMouthBass,smallMouthBass,walleye,perch,pike,muskie,saugeye);
         Water caesarsCreek = new Water("Caesars Creek","Caesar Creek State Park is a public recreation area located in southwestern Ohio, five miles east of Waynesville, in Warren, Clinton, and Greene counties.",4.42,25.00,"39°29′07″N 84°03′55″W","/images/caesarcreek.jpg","Reservoir",true,spillWayPartySupply,blueGill,largeMouthBass,smallMouthBass,walleye,perch,pike,muskie,saugeye);
         Water alumCreek = new Water("Alum Creek","Alum Creek Lake is a man-made reservoir located in Delaware County, Ohio, United States.",5.00,25.00,"40.185718°N 82.966636°W","/images/alumcreek.jpg","Impound",true,oldDutchmanBaitAndTackle,blueGill,largeMouthBass,smallMouthBass,perch,pike,muskie,saugeye);
@@ -96,6 +95,5 @@ public class Populator implements CommandLineRunner {
         waterRepo.save(indianLake);
 
     }
-
 
 }
