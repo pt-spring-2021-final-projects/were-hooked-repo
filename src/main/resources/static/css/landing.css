@@ -8,7 +8,7 @@ body {
   background-size: cover;
 }
 
-.container {
+.landing-container {
   position: absolute;
   left: 50%;
   margin-left: -700px;
