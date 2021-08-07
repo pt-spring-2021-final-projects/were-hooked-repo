@@ -13,6 +13,7 @@ public class SpringSecurityWebAppConfig extends WebSecurityConfigurerAdapter {
   protected void configure(HttpSecurity http) throws Exception {  
         http.authorizeRequests()  
             .antMatchers("/**").permitAll()
+            .antMatchers("/resources/**").permitAll()
             .antMatchers("/home").permitAll() 
             .antMatchers("/rules").permitAll()
             .antMatchers("/static/**").permitAll()  
