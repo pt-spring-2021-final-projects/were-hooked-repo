@@ -1,13 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <link rel="stylesheet" href="waters.css">
+    <title>Bodys of Water</title>
 </head>
 <body>
-<div class="waters-content">
-    <h1>Waters</h1>
-    <h2 th:each="water:${waters}"><a th:href="@{'/waters/' + ${water.name}}" th:text="${water.name}">Name</a></h2>
-</div>
+    <h1>Bodys of Water</h1>
+    <div class="water">
+        <div th:each="water:${water}">
+            <a th:href="@{'/waters/'+ ${water.name}}"
+               th:text="${water.name}"></a>
+            <img th:src="${water.image}" alt="">
+        </div>
+    </div>
 </body>
 </html>

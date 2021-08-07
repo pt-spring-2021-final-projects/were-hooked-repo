@@ -1,6 +1,11 @@
 package wecancatchit.werehooked.models;
 
+
+import java.util.Arrays;
+import java.util.Collection;
+
 import java.util.*;
+
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -42,11 +47,8 @@ public class Fish {
         this.currentRecord = currentRecord;
         this.bestTimeOfDay = bestTimeOfDay;
         this.bait = Arrays.asList(bait);
-        // this.bait = bait; //Collection<Bait>; //Arrays.asList(bait);
-        // for (Bait b : bait) {
-        //     this.bait.add(b);
-        // }
     }
+
 
     public Long getId() {
         return id;
