@@ -36,9 +36,6 @@ public class Water {
     @ManyToMany
     private Collection<Fish> fish;
 
-    @OneToOne
-    private TackleShop tackleShop;
-
 
     public Water(String name, String description, double area, double depth, String coordinates, String image,
             String type, boolean isPublic, TackleShop tackleShop, Fish... fish) {
