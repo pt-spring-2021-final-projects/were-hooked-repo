@@ -36,7 +36,6 @@ public class Water {
     @ManyToMany
     private Collection<Fish> fish;
 
-
     public Water(String name, String description, double area, double depth, String coordinates, String image,
             String type, boolean isPublic, TackleShop tackleShop, Fish... fish) {
 
@@ -51,7 +50,6 @@ public class Water {
         this.tackleShop = tackleShop;
         this.fish = Arrays.asList(fish);
     }
-
 
     protected Water() {
     }

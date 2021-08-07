@@ -4,9 +4,6 @@ package wecancatchit.werehooked.models;
 import java.util.Arrays;
 import java.util.Collection;
 
-import java.util.*;
-
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -80,6 +77,10 @@ public class Fish {
 
     public String getBestTimeOfDay() {
         return bestTimeOfDay;
+    }
+
+    public Collection<Bait> getBait() {
+        return bait;
     }
 
     @Override

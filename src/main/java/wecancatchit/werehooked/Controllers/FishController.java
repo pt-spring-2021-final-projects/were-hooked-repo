@@ -5,6 +5,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import wecancatchit.werehooked.Repositories.BaitRepository;
 import wecancatchit.werehooked.Repositories.FishRepository;
 import wecancatchit.werehooked.models.Fish;
 
@@ -16,6 +17,9 @@ import java.util.Optional;
 public class FishController {
     @Resource
     private FishRepository fishRepo;
+
+    @Resource
+    private BaitRepository baitRepo;
 
     @RequestMapping("/fish/{name}")
     public String displaySingleFish(@PathVariable String name, Model model) {
