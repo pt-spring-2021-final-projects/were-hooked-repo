@@ -10,5 +10,5 @@ public interface WaterRepository extends CrudRepository<Water, Long> {
     Optional<Water> findById(Long id);
 
 
-    Optional<Water> findWaterByName(String name);
+    Optional<Water> findByName(String name);
 }

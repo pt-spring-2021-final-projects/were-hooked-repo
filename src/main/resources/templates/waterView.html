@@ -8,6 +8,18 @@
 <header>
     <h1 th:text="${water.name}" ></h1>
 </header>
+<div class="info">
 <img th:src="${water.image}" alt="">
-</body>
+<p th:text="${water.description}" ></p>
+<div class="tackleshop" th:each="tackleShop: ${water.tackleShop}" >
+    <a th:href="@{'/tackleshop/'+ ${tackleShop.name}}"
+       th:text="${tackleShop.name}" ></a>
+</div>
+<div class="fish" th:each="fish:${water.fish}" >
+    <a th:href="@{'/fish/'+ ${fish.name}}">
+    <img th:src="${fish.image}" alt=""></a>
+    <p th:text="${fish.name}" ></p>
+</div>
+</div>
+</body> 
 </html>

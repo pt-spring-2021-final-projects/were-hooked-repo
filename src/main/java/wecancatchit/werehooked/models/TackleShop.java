@@ -13,7 +13,7 @@ public class TackleShop {
     @GeneratedValue
     private Long id;
 
-    private String tackleShopName;
+    private String name;
     private String tackleShopAddress;
     private String tackleShopHours;
 
@@ -22,8 +22,8 @@ public class TackleShop {
 
     protected TackleShop(){}
 
-    public TackleShop(String tackleShopName, String tackleShopAddress, String tackleShopHours){
-        this.tackleShopName = tackleShopName;
+    public TackleShop(String name, String tackleShopAddress, String tackleShopHours){
+        this.name = name;
         this.tackleShopAddress = tackleShopAddress;
         this.tackleShopHours = tackleShopHours;
     }
@@ -32,8 +32,8 @@ public class TackleShop {
         return id;
     }
 
-    public String getTackleShopName(){
-        return tackleShopName;
+    public String getName(){
+        return name;
     }
 
     public String getTackleShopAddress(){

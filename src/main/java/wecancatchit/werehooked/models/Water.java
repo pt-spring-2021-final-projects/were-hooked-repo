@@ -71,6 +71,13 @@ public class Water {
         return true;
     }
 
+    public TackleShop getTackleShop() {
+        return tackleShop;
+    }
+
+    public Collection<Fish> getFish() {
+        return fish;
+    }
 
     @Override
     public int hashCode() {
