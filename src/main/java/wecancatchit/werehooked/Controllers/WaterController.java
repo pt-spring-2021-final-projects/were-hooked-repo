@@ -28,21 +28,6 @@ public class WaterController {
         return "watersView";
     }
 
-//    @GetMapping("/waters/{name}")
-//    public String displaySingleWater(@PathVariable String name, Model model) {
-//        Water retrievedWater = waterRepo.findWaterByName(name);
-//        model.addAttribute("water", retrievedWater);
-//        retrievedWater.getName();
-//        retrievedWater.getDescription();
-//        retrievedWater.getImage();
-//        retrievedWater.getCoordinates();
-//        retrievedWater.getArea();
-//        retrievedWater.getDepth();
-//        retrievedWater.getType();
-//        retrievedWater.isPublic();
-//        return "waterView";
-//    }
-
     @RequestMapping("/waters/{name}")
     public String displaySingleWater(@PathVariable String name, Model model) {
         Optional<Water> retrievedWater = waterRepo.findByName(name);

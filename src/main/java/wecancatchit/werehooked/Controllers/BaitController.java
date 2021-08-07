@@ -17,16 +17,6 @@ public class BaitController {
     @Resource
     private BaitRepository baitRepo;
 
-//    @GetMapping("/bait/{name}")
-//    public String displaySingleBait(@PathVariable String name, Model model) {
-//        Bait retrievedBait = baitRepo.findByName(name);
-//        model.addAttribute("bait", retrievedBait);
-//        // retrievedBait.getName();   whats this doing?
-//
-//
-//        return "baitView";
-//    }
-
     @RequestMapping("/bait/{name}")
     public String displaySingleBait(@PathVariable String name, Model model) {
         Optional<Bait> retrievedBait = baitRepo.findByName(name);
