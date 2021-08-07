@@ -5,6 +5,16 @@ import java.util.Collection;
 
 import javax.persistence.*;
 
+import java.util.*;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Lob;
+import javax.persistence.ManyToMany;
+import javax.persistence.OneToOne;
+
+
 @Entity
 public class Water {
     @Id
@@ -19,6 +29,9 @@ public class Water {
     private String image;
     private String type;
     private boolean isPublic;
+    
+    @OneToOne
+    private TackleShop tackleShop;
 
     @ManyToMany
     private Collection<Fish> fish;

@@ -2,6 +2,7 @@ package wecancatchit.werehooked;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
+
 import wecancatchit.werehooked.Repositories.BaitRepository;
 import wecancatchit.werehooked.Repositories.FishRepository;
 import wecancatchit.werehooked.Repositories.TackleShopRepository;
@@ -83,6 +84,7 @@ public class Populator implements CommandLineRunner {
         fishRepo.save(pike);
         fishRepo.save(muskie);
         fishRepo.save(saugeye);
+
 
         Water lakeErie = new Water("Lake Erie", "Lake Erie is the fourth-largest lake (by surface area) of the five Great Lakes in North America and the eleventh-largest globally.", 9910.00, 62.00,"42.0669° N, 81.3399° W", "/images/lakeerie.jpg","Great Lake",true,erieOutfitters,blueGill,largeMouthBass,smallMouthBass,walleye,perch,pike,muskie,saugeye);
         Water caesarsCreek = new Water("Caesars Creek","Caesar Creek State Park is a public recreation area located in southwestern Ohio, five miles east of Waynesville, in Warren, Clinton, and Greene counties.",4.42,25.00,"39°29′07″N 84°03′55″W","/images/caesarcreek.jpg","Reservoir",true,spillWayPartySupply,blueGill,largeMouthBass,smallMouthBass,walleye,perch,pike,muskie,saugeye);

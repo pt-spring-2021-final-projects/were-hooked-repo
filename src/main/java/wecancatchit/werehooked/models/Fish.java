@@ -1,7 +1,11 @@
 package wecancatchit.werehooked.models;
 
+
 import java.util.Arrays;
 import java.util.Collection;
+
+import java.util.*;
+
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -31,6 +35,8 @@ public class Fish {
     @ManyToMany
     private Collection<Bait> bait;
 
+    protected Fish() {
+    }
 
     public Fish(String name, String description, String habitat, String image, String season, String currentRecord, String bestTimeOfDay, Bait... bait) {
         this.name = name;
@@ -76,9 +82,6 @@ public class Fish {
         return bestTimeOfDay;
     }
 
-    protected Fish() {
-    }
-
     @Override
     public int hashCode() {
         final int prime = 31;
@@ -103,6 +106,4 @@ public class Fish {
             return false;
         return true;
     }
-
-    
 }

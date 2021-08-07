@@ -4,6 +4,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
+
 import java.util.Objects;
 
 @Entity
@@ -17,7 +19,8 @@ public class TackleShop {
     private String tackleShopAddress;
     private String tackleShopHours;
 
-    @ManyToOne
+    // @ManyToOne
+    @OneToOne
     private Water water;
 
     protected TackleShop(){}
