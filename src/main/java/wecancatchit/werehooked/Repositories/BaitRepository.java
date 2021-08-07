@@ -9,8 +9,8 @@ public interface BaitRepository extends CrudRepository<Bait, Long> {
     @Override
     Optional<Bait> findById(Long aLong);
 
-    Bait findByName(String name);
-    // Bait findBaitByFish(String Fish);
-    // Bait findBaitByWater(String Water);
+    Optional<Bait> findByName(String name);
+  
 
 }
+

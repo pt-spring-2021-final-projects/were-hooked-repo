@@ -3,7 +3,6 @@ package wecancatchit.werehooked.models;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 
 import java.util.Objects;
@@ -19,7 +18,6 @@ public class TackleShop {
     private String tackleShopAddress;
     private String tackleShopHours;
 
-    // @ManyToOne
     @OneToOne
     private Water water;
 

@@ -1,12 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title th:text="${fish.name}" ></title>
 </head>
 <body>
-<div class="fish-content">
-    <h1>Fish</h1>
-    <h2 th:each="fish:${fish}"><a th:href="@{'/fish/' + ${fish.name}}" th:text="${fish.name}">Name</a></h2>
+<header>
+    <h1 th:text="${fish.name}" ></h1>
+
+</header>
+<img th:src="${fish.image}" alt="">
+<div class="bait" th:each="bait:${fish.bait}" >
+    <a th:href="@{'/bait/'+ ${bait.name}}"
+       th:text="${bait.name}" ></a>
+</div>
 </body>
 </html>

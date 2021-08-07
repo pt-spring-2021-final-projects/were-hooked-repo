@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:th="http://www.thymeleaf.org"
+  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+  xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+>
+  <head>
+    <title layout:title-pattern="$CONTENT_TITLE - $LAYOUT_TITLE">
+      We're Hooked
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <link rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="about-container2">
+      <div class="content">
+        <div layout:fragment="page_content2"></div>
+       <p>code goes here</p> 
+      </div>
+    </div>
+  </div>
+    </div>
+    </div>
+
+    
+  
+
+    <script type="text/javascript" th:src="@{/static/js/common.js}"></script>
+    <th:block layout:fragment="scripts"> </th:block>
+  </body>
+</html>

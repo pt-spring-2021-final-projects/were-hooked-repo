@@ -7,24 +7,26 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/landing.css" />
+  <link rel="stylesheet" href="../css/style.css" />
   <title>Document</title>
 </head>
 
-
 <body>
-  <div layout:fragment="page_content">
-    <figure id="logo">
-      <img src="../images/backgrounds/logo.png" alt="" class="logo__image" />
-    </figure>
-    <div class="landing-container"><canvas width="1400" height="600" id="fishtank">
+<div layout:fragment="page_content">
+  <h1>OHIO'S ESSENTIAL FISHING APP</h1>
+  <div class="container">
+    <div class="title">WELCOME TO WE'RE HOOKED!</div>
+    <div class="detail">
+      <div class="words2">
+        <p>Developed by WE_CAN_CATCH_IT, the 'We're Hooked' app provides key information regarding fishing in the State
+          of Ohio. Click on an icon above to get started. </p>
+      </div>
     </div>
-    <a th:href="@{'/home'}"><img src="../images/buttons/Fishermen/fisherman.png" alt="cute fisherman"></a>
   </div>
-  </div>
+</div>
 </body>
+
 <div layout:fragment="scripts">
-  <script src="../js/landing.js" type="module"></script>
 </div>
 
 </html>

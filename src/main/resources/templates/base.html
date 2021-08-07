@@ -1,87 +1,82 @@
 <!DOCTYPE html>
-<html
-  xmlns="http://www.w3.org/1999/xhtml"
-  xmlns:th="http://www.thymeleaf.org"
-  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-  xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
->
-  <head>
-    <title layout:title-pattern="$CONTENT_TITLE - $LAYOUT_TITLE">
-      We're Hooked
-    </title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 
-    <link rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="style.css" />
-    <href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-  </head>
+<head>
+  <title layout:title-pattern="$CONTENT_TITLE - $LAYOUT_TITLE">
+    We're Hooked
+  </title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-  <body>
+  <link rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+  <div id="wrapper">
 
     <nav class="header__nav">
       <ul class="header__nav_list">
         <li class="header__nav_listItem">
-          <a href=""><img src="buttons/logo/button1.png" /></a>
+          <a href=""><img src="../images/buttons/logo/button1.png" /></a>
           <p></p>
         </li>
         <li class="header__nav_listItem">
-          <a href=""><img src="buttons/Lakes/lakes.png" /></a>
+          <a href=""></a>
+          <a th:href="@{'/waters'}"><img src="../images/buttons/Lakes/lakes.png" alt="cute lake"></a>
           <p></p>
         </li>
         <li class="header__nav_listItem">
-          <a href=""><img src="buttons/Bait/bait.png" /></a>
+          <a href=""><img src="../images/buttons/Bait/bait.png" /></a>
           <p></p>
         </li>
         <li class="header__nav_listItem">
-          <a href=""><img src="buttons/Lodging/lodging.png" /></a>
+          <a href=""><img src="../images/buttons/Lodging/lodging.png" /></a>
           <p></p>
         </li>
         <li class="header__nav_listItem">
-          <a href=""><img src="buttons/Logging Catch /logcatch.png" /></a>
+          <a href=""><img src="../images/buttons/LoggingCatch/logcatch.png" /></a>
           <p></p>
         </li>
         <li class="header__nav_listItem">
-          <a href="/static/rules.html"><img src="buttons/Regulations /rules.png" /></a>
-          <p></p>
+          <a href="/rules"><img src="../images/buttons/Regulations/rules.png" />
+            <p>Rules</p>
+          </a>
+
         </li>
         <li class="header__nav_listItem">
-          <a href=""><img src="buttons/About/about.png" /></a>
+          <a href=""><img src="../images/buttons/About/about.png" /></a>
           <p></p>
         </li>
       </ul>
     </nav>
-    <div class="container2">
-      <div class="content2">
-        <div layout:fragment="page_content2"></div>
-        <h1>OHIO'S ESSENTIAL FISHING APP</h1>
+
+    <div class="base-container">
+      <div class="base-content">
+        <div layout:fragment="page_content"></div>
       </div>
-      <div class="container">
-        <div class="words">WELCOME TO WE'RE HOOKED!</div>  
-        <div class="detail">
-          <div class="words2">
-            <p>Developed by WE_CAN_CATCH_IT, the 'We're Hooked' app provides key information regarding fishing in the State of Ohio. Click on an icon above to get started.</p>
-          </div>  
- </div>
-    <div id="home" class="panel">
-      <div class="inner">
-          <div id="backgroundchange">
+      <div id="home" class="panel">
+        <div class="inner">
+          <!-- <div id="backgroundchange">
               <div class="backgroundimg" id="back1"></div>
               <div class="backgroundimg" id="back2"></div>
               <div class="backgroundimg" id="back3"></div>
               <div class="backgroundimg" id="back4"></div>
               <div class="backgroundimg" id="back5"></div>
-          </div>
+          </div> -->
+        </div>
       </div>
+    <footer class="footer">
+      <strong class="footer__copyright">COPYRIGHT &copy;2021 WE_CAN_CATCH_IT!</strong>
+    </footer>
+    </div>
   </div>
-    </div>
-    </div>
 
-    
-  
 
-    <script type="text/javascript" th:src="@{/static/js/common.js}"></script>
-    <th:block layout:fragment="scripts"> </th:block>
-    
-  </body>
+
+  <script type="text/javascript" th:src="@{/js/common.js}"></script>
+  <th:block layout:fragment="scripts"> </th:block>
+</body>
+
 </html>
