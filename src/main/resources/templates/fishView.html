@@ -19,8 +19,18 @@
         <h1 th:text="${fish.name}"></h1>
       </header>
       <img th:src="${fish.image}" alt="" />
-      <div class="bait" th:each="bait:${fish.bait}">
-        <a th:href="@{'/bait/'+ ${bait.name}}" th:text="${bait.name}"></a>
+      <article class="fishInfo">
+        <p th:text=" 'Description: ' + ${fish.description}" ></p>
+        <p th:text=" 'Habitat: ' + ${fish.habitat} " ></p>
+        <p th:text=" 'Best season: ' + ${fish.season}" ></p>
+        <p th:text=" 'Best time of day: ' + ${fish.bestTimeOfDay}" ></p>
+        <p th:text=" 'Current state record: ' + ${fish.currentRecord}" ></p>
+      </article>
+      <div class="baitRecommendations">
+          <h2>Bait and Lures we recommend:</h2>
+        <div class="bait" th:each="bait:${fish.bait}">
+            <a th:href="@{'/bait/'+ ${bait.name}}" th:text="${bait.name}"></a>
+          </div>
       </div>
     </div>
   </body>
