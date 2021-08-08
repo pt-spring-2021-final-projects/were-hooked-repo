@@ -1,30 +1,45 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
-  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
-  layout:decorator="~{base}">
+<html
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+	layout:decorator="~{base}"
+>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../css/landing.css" />
+		<title>Document</title>
+	</head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/landing.css" />
-  <title>Document</title>
-</head>
+	<body>
+		<div layout:fragment="page_content">
+			<div id="landing-wrapper">
+				<!-- <figure id="logo">
+        <img src="../images/backgrounds/logo.png" alt="" class="logo__image" />
+      </figure> -->
+				<a th:href="@{'/home'}" id="fish-container">
+					<canvas width="1920" height="1080" id="fishtank"></canvas>
+				</a>
 
+				<a th:href="@{'/home'}" id="logo">
+					<img
+						src="../images/backgrounds/logo.png"
+						alt="cute fisherman"
+				/></a>
 
-<body>
-  <div layout:fragment="page_content">
-    <figure id="logo">
-      <img src="../images/backgrounds/logo.png" alt="" class="logo__image" />
-    </figure>
-    <div class="landing-container"><canvas width="1400" height="600" id="fishtank">
-    </div>
-    <a th:href="@{'/home'}"><img src="../images/buttons/Fishermen/fisherman.png" alt="cute fisherman"></a>
-  </div>
-  </div>
-</body>
-<div layout:fragment="scripts">
-  <script src="../js/landing.js" type="module"></script>
-</div>
-
+				<a th:href="@{'/home'}" id="fishingIcon">
+					<img
+						src="../images/buttons/Fishermen/fisherman.png"
+						alt="cute fisherman"
+					/>
+				</a>
+			</div>
+		</div>
+	</body>
+	<div layout:fragment="scripts">
+		<script src="../js/landing.js" type="module"></script>
+	</div>
 </html>
