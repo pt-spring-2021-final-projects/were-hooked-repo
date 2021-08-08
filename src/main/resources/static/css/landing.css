@@ -5,6 +5,9 @@
 	flex-direction: column;
 	margin: 0 auto;
 	overflow: hidden;
+	background-color: #5ea7d3;
+	text-align: center;
+
 	/* position: relative; */
 }
 

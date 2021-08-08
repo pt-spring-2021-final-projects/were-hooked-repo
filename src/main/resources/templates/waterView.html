@@ -1,25 +1,40 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-    <title th:text="${water.name}" ></title>
-</head>
-<body>
-<header>
-    <h1 th:text="${water.name}" ></h1>
-</header>
-<div class="info">
-<img th:src="${water.image}" alt="">
-<p th:text="${water.description}" ></p>
-<div class="tackleshop" th:each="tackleShop: ${water.tackleShop}" >
-    <a th:href="@{'/tackleshop/'+ ${tackleShop.name}}"
-       th:text="${tackleShop.name}" ></a>
-</div>
-<div class="fish" th:each="fish:${water.fish}" >
-    <a th:href="@{'/fish/'+ ${fish.name}}">
-    <img th:src="${fish.image}" alt=""></a>
-    <p th:text="${fish.name}" ></p>
-</div>
-</div>
-</body> 
+<html
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+	layout:decorator="~{base}"
+>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../css/landing.css" />
+		<title>Document</title>
+	</head>
+
+	<body>
+		<div layout:fragment="page_content">
+            <header>
+                <h1 th:text="${water.name}" ></h1>
+             </header>
+             <div class="info">
+             <img th:src="${water.image}" alt="">
+             <p th:text="${water.description}" ></p>
+             <div class="tackleshop" th:each="tackleShop: ${water.tackleShop}" >
+                <a th:href="@{'/tackleshop/'+ ${tackleShop.name}}"
+                   th:text="${tackleShop.name}" ></a>
+             </div>
+             <div class="fish" th:each="fish:${water.fish}" >
+                <a th:href="@{'/fish/'+ ${fish.name}}">
+                <img th:src="${fish.image}" alt=""></a>
+                <p th:text="${fish.name}" ></p>
+             </div>
+             </div>
+		</div>
+	</body>
+	<div layout:fragment="scripts">
+		<script src="../js/landing.js" type="module"></script>
+	</div>
 </html>

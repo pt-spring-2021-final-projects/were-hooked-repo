@@ -1,82 +1,113 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
-  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<html
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-<head>
-  <title layout:title-pattern="$CONTENT_TITLE - $LAYOUT_TITLE">
-    We're Hooked
-  </title>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" type="text/css" href="../css/style.css" />
+		<!-- <href
+			="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		/> -->
+		<title layout:title-pattern="$CONTENT_TITLE - $LAYOUT_TITLE">
+			We're Hooked
+		</title>
+	</head>
 
-  <link rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="../css/style.css" />
-  <href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-</head>
+	<body>
+		<div id="wrapper">
+			<nav>
+				<ul class="nav_list">
+					<li class="nav_listItem">
+						<a href="/home"
+							><img src="../images/buttons/logo/button1.png" />
+							<p>Home</p></a
+						>
+					</li>
+					<li class="nav_listItem">
+						<a href=""></a>
+						<a th:href="@{'/waters'}"
+							><img
+								src="../images/buttons/Lakes/lakes.png"
+								alt="cute lake"
+						/></a>
+						<p></p>
+					</li>
+					<li class="nav_listItem">
+						<a href=""
+							><img src="../images/buttons/Bait/bait.png"
+						/></a>
+						<p></p>
+					</li>
+					<li class="nav_listItem">
+						<a href=""
+							><img src="../images/buttons/Lodging/lodging.png"
+						/></a>
+						<p></p>
+					</li>
+					<li class="nav_listItem">
+						<a href=""
+							><img
+								src="../images/buttons/LoggingCatch/logcatch.png"
+						/></a>
+						<p></p>
+					</li>
+					<li class="nav_listItem">
+						<a href="/rules"
+							><img
+								src="../images/buttons/Regulations/rules.png"
+							/>
+							<p>Rules</p>
+						</a>
+					</li>
+					<li class="nav_listItem">
+						<a href=""
+							><img src="../images/buttons/About/about.png"
+						/></a>
+						<p></p>
+					</li>
+				</ul>
+			</nav>
 
-<body>
-  <div id="wrapper">
-
-    <nav class="header__nav">
-      <ul class="header__nav_list">
-        <li class="header__nav_listItem">
-          <a href=""><img src="../images/buttons/logo/button1.png" /></a>
-          <p></p>
-        </li>
-        <li class="header__nav_listItem">
-          <a href=""></a>
-          <a th:href="@{'/waters'}"><img src="../images/buttons/Lakes/lakes.png" alt="cute lake"></a>
-          <p></p>
-        </li>
-        <li class="header__nav_listItem">
-          <a href=""><img src="../images/buttons/Bait/bait.png" /></a>
-          <p></p>
-        </li>
-        <li class="header__nav_listItem">
-          <a href=""><img src="../images/buttons/Lodging/lodging.png" /></a>
-          <p></p>
-        </li>
-        <li class="header__nav_listItem">
-          <a href=""><img src="../images/buttons/LoggingCatch/logcatch.png" /></a>
-          <p></p>
-        </li>
-        <li class="header__nav_listItem">
-          <a href="/rules"><img src="../images/buttons/Regulations/rules.png" />
-            <p>Rules</p>
-          </a>
-
-        </li>
-        <li class="header__nav_listItem">
-          <a href=""><img src="../images/buttons/About/about.png" /></a>
-          <p></p>
-        </li>
-      </ul>
-    </nav>
-
-    <div class="base-container">
-      <div class="base-content">
-        <div layout:fragment="page_content"></div>
-      </div>
-      <div id="home" class="panel">
+			<div class="base-container">
+				<div class="base-content">
+					<div layout:fragment="page_content">
+						<h1>test</h1>
+						<p>
+							Lorem ipsum dolor, sit amet consectetur adipisicing
+							elit. Magnam quia suscipit harum, repudiandae id
+							nemo sunt eos voluptas laboriosam eligendi explicabo
+							ullam amet, repellat similique esse, quis atque quae
+							soluta.
+						</p>
+					</div>
+				</div>
+				<!-- <div id="home" class="panel">
         <div class="inner">
-          <!-- <div id="backgroundchange">
+          <div id="backgroundchange">
               <div class="backgroundimg" id="back1"></div>
               <div class="backgroundimg" id="back2"></div>
               <div class="backgroundimg" id="back3"></div>
               <div class="backgroundimg" id="back4"></div>
               <div class="backgroundimg" id="back5"></div>
-          </div> -->
+          </div>
         </div>
-      </div>
-    <footer class="footer">
-      <strong class="footer__copyright">COPYRIGHT &copy;2021 WE_CAN_CATCH_IT!</strong>
-    </footer>
-    </div>
-  </div>
+      </div> -->
+				<footer class="footer">
+					<strong class="footer__copyright"
+						>COPYRIGHT &copy;2021 WE_CAN_CATCH_IT!</strong
+					>
+				</footer>
+			</div>
+		</div>
 
-
-
-  <script type="text/javascript" th:src="@{/js/common.js}"></script>
-  <th:block layout:fragment="scripts"> </th:block>
-</body>
-
+		<script type="text/javascript" th:src="@{/js/common.js}"></script>
+		<th:block layout:fragment="scripts"> </th:block>
+	</body>
 </html>
