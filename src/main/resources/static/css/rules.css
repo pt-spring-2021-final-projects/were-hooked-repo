@@ -15,15 +15,15 @@
 	max-width: 785px;
 }
 
-h1 {
+/* h1 {
 	background-color: rgb(111, 151, 211);
 	text-align: center;
 	color: #fff;
 	padding: 5rem 1rem;
 	font-weight: 200;
-}
+} */
 
-.item {
+.containerItem {
 	margin: 0.4rem 1.3rem;
 	background-color: white;
 	padding: 1.25rem;
@@ -40,7 +40,7 @@ h1 {
 
 .itemTitle h2 {
 	border-left: 2px solid blue;
-	color: rgb(111, 151, 211);
+	/* color: rgb(111, 151, 211); */
 	font-weight: 200;
 	margin: 0.5rem 0.5rem 0 0.5rem;
 	padding-left: 0.5rem;
