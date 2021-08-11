@@ -16,16 +16,8 @@ body {
 }
 
 .base-container {
-	/* font-size: 1.4em; */
+	background-color: #1c4a67;
 	text-align: center;
-	/* background-image: radial-gradient(
-		circle at 4% -4%,
-		#04045c 0,
-		#04045c 50%,
-		#04045c 100%
-	); */
-	background-color: #1C4A67;
-	/* background-color: #133245; */
 }
 
 .base-content {
@@ -34,32 +26,28 @@ body {
 }
 
 .nav_list {
-	margin: 0;
-	padding: 0;
-	display: flex;
-	justify-content: space-around;
 	border-top: solid 3px #eaff07;
 	border-bottom: solid 3px #eaff07;
+	display: flex;
+	justify-content: space-around;
+	margin: 0;
+	padding: 0;
 }
 
-.nav_list li {
-	/* border: 2px solid red;
-	border-radius: 5px; */
-	align-self: center;
+.nav_listItem {
 	display: flex;
 	margin: 1.5rem auto;
 }
 
-.nav_list img {
-	width: 100%;
+.nav_listItem img {
 	max-height: 4.5rem;
+	width: 100%;
 }
 
 .nav_listItem p {
-	text-align: center;
-	font-size: 1.5em;
 	color: #fff;
 	font-family: 'Bahianita', cursive;
+	font-size: 1.5em;
 	letter-spacing: 0.15rem;
 }
 
@@ -73,27 +61,22 @@ body {
 }
 
 h1 {
-	/* border: 1px solid yellow; */
-	background-color: #5ea7d3;
-	color: #F4F9FC;
+	color: #f4f9fc;
 	font-family: 'Just Another Hand';
 	letter-spacing: 0.15;
 	text-transform: uppercase;
-	font-size: 2.5em;
+	font-size: 3em;
 	margin: 0 auto;
 	padding: 3rem;
 	text-shadow: 4px 6px 8px rgba(42, 77, 65, 0.589);
 	word-spacing: 0.175rem;
-
 }
 
 h2 {
-	/* border: 2px solid green; */
 	font-family: 'Bahianita', cursive;
 }
 
 .footer {
-	/* border: 2px solid red; */
 	color: #fff;
 	display: flex;
 	flex-direction: column;
@@ -104,9 +87,8 @@ h2 {
 }
 
 #footer-lg {
-	/* border: 3px solid yellow; */
 	display: flex;
-  flex-direction: row;
+	flex-direction: row;
 	padding: 2rem;
 	flex: 3;
 }
@@ -117,7 +99,6 @@ h2 {
 
 #footer-sm {
 	padding: 2rem;
-	/* border: 3px solid green; */
 	flex: 2;
 }
 
