@@ -1,0 +1,14 @@
+.waterinfo{
+    width: 80%;
+    margin-left: 10%;
+}
+
+.fishinfo img{
+    width: 300px;
+    height: auto;
+}
+
+.fishlist{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
