@@ -21,7 +21,7 @@
                 <h1 th:text="${water.name}" ></h1>
              </header>
              <div class="info">
-             <img th:src="${water.image}" alt="">
+             <img class="waterImage" th:src="${water.image}" alt="">
              <article class="waterinfo">
 				<p th:text=" 'Description: ' + ${water.description}"></p>
 				<p th:text=" 'Type of Water: ' + ${water.type}" ></p>
