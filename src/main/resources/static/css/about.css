@@ -269,4 +269,20 @@ to   { opacity: 1; }
   letter-spacing: 5px;
 }
 
+#img.developers__column{
+  max-width: 100%;
+}
 
+.developers__column_image {
+  text-align: center;
+  height: auto;
+  max-width: 100%;
+}
+
+.developers__column_image{
+width: 33px;
+}
+
+.figure.developers__column_image{
+  width: 22px;
+}
