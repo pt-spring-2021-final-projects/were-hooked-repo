@@ -1,0 +1,22 @@
+img {
+    width: 800px;
+    height: auto;
+}
+
+.fishInfo{
+    width: 80%;
+    margin-left: 10%;
+    padding-bottom: 15px;
+    font-size: 30px;
+}
+.fishInfo p{
+    padding: 2px;
+}
+
+.baitRecommendations h2{
+    padding-bottom: 8px;
+}
+
+.bait {
+    padding-bottom: 3px;
+}
