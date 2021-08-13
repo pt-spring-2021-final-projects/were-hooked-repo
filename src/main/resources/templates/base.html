@@ -17,6 +17,7 @@
 		<style>
 			@import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap');
 		</style>
+		<script src="https://kit.fontawesome.com/e0b3fedd11.js" crossorigin="anonymous"></script>
 		<!-- <href
 			="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
 		/> -->
@@ -32,7 +33,6 @@
 						<li class="nav_listItem">
 							<a href="/home">
 								<img src="../images/buttons/logo/button1.png" />
-
 								<p>Home</p></a
 							>
 						</li>
@@ -46,7 +46,7 @@
 							>
 						</li>
 						<li class="nav_listItem">
-							<a href=""
+							<a th:href="@{'/bait'}"
 								><img src="../images/buttons/Bait/bait.png" />
 								<p>Bait</p>
 							</a>
@@ -76,7 +76,7 @@
 							</a>
 						</li>
 						<li class="nav_listItem">
-							<a href=""
+							<a th:href="@{'/about'}"
 								><img src="../images/buttons/About/about.png" />
 								<p>About Us</p>
 							</a>
@@ -87,8 +87,10 @@
 							/>
 								<p>[temp var?]</p>
 							</a>
-							
 						</li>
+						<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+							<i class="fas fa-bars"></i>
+						  </a>
 					</ul>
 				</nav>
 				<div class="base-content">
@@ -116,10 +118,10 @@
       </div> -->
 				<div class="footer">
 					<div id="footer-lg">
-						<span>
+						<div>
 							<img src="../images/backgrounds/logo.png" alt="" />
 							<p>We're Hooked</p>
-						</span>
+						</div>
 						<p>
 							Designed and built with all the love in the world by
 							the We-Can-Catch-It team.

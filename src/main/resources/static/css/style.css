@@ -89,8 +89,14 @@ h2 {
 #footer-lg {
 	display: flex;
 	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
 	padding: 2rem;
 	flex: 3;
+}
+
+#footer-lg p {
+	max-width: 300px;
 }
 
 #footer-lg img {
