@@ -11,6 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/landing.css" />
+    <link rel="stylesheet" href="../css/bait.css">
     <title th:text="${bait.name}"></title>
   </head>
   <body>
@@ -20,6 +21,11 @@
       </header>
       <div class="image">
         <img th:src="${bait.image}" alt="" />
+      </div>
+      <div>
+        <a th:href="${bait.shopLink}">
+          <p>Check them out here!</p>
+        </a>
       </div>
     </div>
   </body>
