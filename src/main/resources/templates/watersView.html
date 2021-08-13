@@ -11,15 +11,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/landing.css" />
+	<link rel="stylesheet" href="../css/waters.css">
     <title>Bodies of Water</title>
   </head>
   <body>
     <div layout:fragment="page_content">
       <h1>Bodies of Water</h1>
       <div class="water">
-        <div th:each="water:${water}">
-          <a th:href="@{'/waters/'+ ${water.name}}" th:text="${water.name}"></a>
-          <img th:src="${water.image}" alt="" />
+        <div class="waterLink" th:each="water:${water}">
+			<img th:src="${water.image}" alt="" />
+			<a class="waterName" th:href="@{'/waters/'+ ${water.name}}" th:text="${water.name}"></a>
         </div>
       </div>
     </div>
