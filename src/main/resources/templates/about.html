@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html
-  xmlns="http://www.w3.org/1999/xhtml"
-  xmlns:th="http://www.thymeleaf.org"
-  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-  xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+	layout:decorator="~{base}"
 >
   <head>
     <title layout:title-pattern="$CONTENT_TITLE - $LAYOUT_TITLE">
@@ -11,23 +12,104 @@
     </title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-    <link rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="../static/css/style.css" />
+    <link rel="stylesheet" href="../static/css/about.css" />
     <href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
   </head>
 
   <body>
-    <div class="about-container2">
-      <div class="content">
-        <div layout:fragment="page_content2"></div>
-       <p>code goes here</p> 
+        <div layout:fragment="page_content">
+          <div class="about-container1">
+      </section>
+      <h2 id="developers__logo">DEVELOPERS</h2>
+      <section class="developers">
+  
+        <article class="developers__column">
+          <h3 class="developers__column">TONY BLANKENSHIP</h3>
+          <figure class="developers__column_figure">
+            <img src="../images/developers/tony.jpeg" alt="" class="developers__column"/>
+            <input
+              type="button"
+              class="developers__column_button"
+              value="Click For Information"
+            />
+          </figure>
+          <p></p>
+        </article>
+        <article class="developers__column">
+          <h3 class="developers__column">ZAC CASSINI</h3>
+          <figure class="developers__column_figure">
+            <img
+              src=""
+              alt=""
+              class="developers__column"
+            />
+            <input
+              type="button"
+              class="developers__column_button"
+              value="Click For Information"
+            />
+          </figure>
+          <p>
+            
+          </p>
+        </article>
+        <article class="developers__column">
+          <h3 class="developers__column">LAWRENCE JONES</h3>
+          <figure class="developers__column_figure">
+            <img
+              src=""
+              alt=""
+              class="developers__column"
+            />
+            <input
+              type="button"
+              class="developers__column_button"
+              value="Click For Information"
+            />
+          </figure>
+          <p> </p>
+        </article>
+        <article class="developers__column">
+          <h3 class="developers__column">TYLER KOENIG</h3>
+          <figure class="developers__column_figure">
+            <img
+              src=""
+              alt=""
+              class="developers__column"
+            />
+            <input
+              type="button"
+              class="developers__column_button"
+              value="Click For Information"
+            />
+          </figure>
+          <p> </p>
+        </article>
+        <article class="developers__column">
+          <h3 class="developers__column">AMBER LINDLEY</h3>
+          <figure class="developers__column_figure">
+            <img
+              src=""
+              alt=""
+              class="developers__column"
+            />
+            <input
+              type="button"
+              class="developers__column_button"
+              value="Click For Information"
+            />
+          </figure>
+          <p> </p>
+        </article>
+    </div>
+  </div>
       </div>
     </div>
   </div>
     </div>
     </div>
-
+  </div>
     
   
 

@@ -1,14 +1,29 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="bait.css">
-    <title th:text="${bait.name}" ></title>
-</head>
-<body>
-<header>
-    <h1 th:text="${bait.name}" ></h1>
-</header>
-<img th:src="${bait.image}" alt="">
-</body>
+<html
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:th="http://www.thymeleaf.org"
+  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+  xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+  layout:decorator="~{base}"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/landing.css" />
+    <title th:text="${bait.name}"></title>
+  </head>
+  <body>
+    <div layout:fragment="page_content">
+      <header>
+        <h1 th:text="${bait.name}"></h1>
+      </header>
+      <div class="image">
+        <img th:src="${bait.image}" alt="" />
+      </div>
+    </div>
+  </body>
+  <div layout:fragment="scripts">
+    <script src="../js/landing.js" type="module"></script>
+  </div>
 </html>
