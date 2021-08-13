@@ -8,10 +8,15 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<link rel="stylesheet" type="text/css" href="../css/style.css" />
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Bahianita&display=swap');
+		</style>
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap');
+		</style>
 		<!-- <href
 			="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
 		/> -->
@@ -19,69 +24,73 @@
 			We're Hooked
 		</title>
 	</head>
-
 	<body>
-		<div id="wrapper">
-			<nav>
-				<ul class="nav_list">
-					<li class="nav_listItem">
-						<a th:href="@{'/home'}"
-							><img src="../images/buttons/logo/button1.png" />
-							<p>Home</p></a
-						>
-					</li>
-					<li class="nav_listItem">
-						<a href=""></a>
-						<a th:href="@{'/waters'}"
-							><img
-								src="../images/buttons/Lakes/lakes.png"
-								alt="cute lake"
-						/></a>
-						<p></p>
-					</li>
-					<li class="nav_listItem">
-						<a th:href="@{'/bait'}"
-							><img src="../images/buttons/Bait/bait.png"
-						/></a>
-						<p></p>
-					</li>
-					<li class="nav_listItem">
-						<a href=""
-							><img src="../images/buttons/Lodging/lodging.png"
-						/></a>
-						<p></p>
-					</li>
-					<li class="nav_listItem">
-						<a href=""
-							><img
-								src="../images/buttons/LoggingCatch/logcatch.png"
-						/></a>
-						<p></p>
-					</li>
-					<li class="nav_listItem">
-						<a th:href="@{'/rules'}"
-							><img
-								src="../images/buttons/Regulations/rules.png"
-							/>
-							<p>Rules</p>
-						</a>
-					</li>
-					<li class="nav_listItem">
-						<a th:href="@{'/about'}"
-							><img src="../images/buttons/About/about.png"
-						/></a>
-						<p></p>
-					</li>
-					<li class="nav_listItem">
-						<a th:href="@{'/weather'}"
-							><img src="../images/buttons/Weather/weather.png"
-						/></a>
-						<p></p>
-					</li>
-				</ul>
-			</nav>
-
+		<div id="base-wrapper">
 			<div class="base-container">
+				<nav>
+					<ul class="nav_list">
+						<li class="nav_listItem">
+							<a href="/home">
+								<img src="../images/buttons/logo/button1.png" />
+
+								<p>Home</p></a
+							>
+						</li>
+						<li class="nav_listItem">
+							<a th:href="@{'/waters'}"
+								><img
+									src="../images/buttons/Lakes/lakes.png"
+									alt="cute lake"
+								/>
+								<p>Waters</p></a
+							>
+						</li>
+						<li class="nav_listItem">
+							<a href=""
+								><img src="../images/buttons/Bait/bait.png" />
+								<p>Bait</p>
+							</a>
+						</li>
+						<!-- <li class="nav_listItem">
+							<a href=""
+								><img
+									src="../images/buttons/Lodging/lodging.png"
+								/>
+								<p>Lodging</p>
+							</a>
+						</li> -->
+						<li class="nav_listItem">
+							<a href=""
+								><img
+									src="../images/buttons/LoggingCatch/logcatch.png"
+								/>
+								<p>Share</p>
+							</a>
+						</li>
+						<li class="nav_listItem">
+							<a href="/rules"
+								><img
+									src="../images/buttons/Regulations/rules.png"
+								/>
+								<p>Rules</p>
+							</a>
+						</li>
+						<li class="nav_listItem">
+							<a href=""
+								><img src="../images/buttons/About/about.png" />
+								<p>About Us</p>
+							</a>
+						</li>
+						<li class="nav_listItem">
+							<a th:href="@{'/weather'}"
+								><img src="../images/buttons/Weather/weather.png"
+							/>
+								<p>[temp var?]</p>
+							</a>
+							
+						</li>
+					</ul>
+				</nav>
 				<div class="base-content">
 					<div layout:fragment="page_content">
 						<h1>test</h1>
@@ -105,14 +114,23 @@
           </div>
         </div>
       </div> -->
-				<footer class="footer">
-					<strong class="footer__copyright"
-						>COPYRIGHT &copy;2021 WE_CAN_CATCH_IT!</strong
-					>
-				</footer>
+				<div class="footer">
+					<div id="footer-lg">
+						<span>
+							<img src="../images/backgrounds/logo.png" alt="" />
+							<p>We're Hooked</p>
+						</span>
+						<p>
+							Designed and built with all the love in the world by
+							the We-Can-Catch-It team.
+						</p>
+					</div>
+					<div id="footer-sm">
+						COPYRIGHT &copy;2021 WE_CAN_CATCH_IT!
+					</div>
+				</div>
 			</div>
 		</div>
-
 		<script type="text/javascript" th:src="@{/js/common.js}"></script>
 		<th:block layout:fragment="scripts"> </th:block>
 	</body>
