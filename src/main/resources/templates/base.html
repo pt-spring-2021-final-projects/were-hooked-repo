@@ -17,6 +17,7 @@
 		<style>
 			@import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap');
 		</style>
+		<script src="https://kit.fontawesome.com/e0b3fedd11.js" crossorigin="anonymous"></script>
 		<!-- <href
 			="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
 		/> -->
@@ -28,9 +29,9 @@
 		<div id="base-wrapper">
 			<div class="base-container">
 				<nav>
-					<ul class="nav_list">
+					<ul class="nav_list" id="myTopnav">
 						<li class="nav_listItem">
-							<a href="/home">
+							<a href="/home" class="active">
 								<img src="../images/buttons/logo/button1.png" />
 
 								<p>Home</p></a
@@ -60,7 +61,7 @@
 							</a>
 						</li> -->
 						<li class="nav_listItem">
-							<a href=""
+							<a th:href="@{'/feed'}"
 								><img
 									src="../images/buttons/LoggingCatch/logcatch.png"
 								/>
@@ -88,6 +89,11 @@
 								<p>[temp var?]</p>
 							</a>
 							
+						</li>
+						<li class="nav_listItem">
+							<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+								<i class="fas fa-bars"></i>
+							  </a>
 						</li>
 					</ul>
 				</nav>
