@@ -3,7 +3,8 @@ package wecancatchit.werehooked.Controllers;
 import java.io.IOException;
 import java.util.stream.Collectors;
 
-import org.codehaus.groovy.runtime.powerassert.SourceText;
+import org.springframework.http.MediaType;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
 import org.springframework.http.HttpHeaders;
@@ -44,7 +45,7 @@ public class FileUploadController {
 		return "uploadForm";
 	}
 
-	@GetMapping("/files/{filename:.+}")
+	@GetMapping(value="/files/{filename:.+}", produces = MediaType.APPLICATION_JSON_VALUE)
 	@ResponseBody
 	public ResponseEntity<Resource> serveFile(@PathVariable String filename) {
 
