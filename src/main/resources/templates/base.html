@@ -11,13 +11,17 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<link rel="stylesheet" type="text/css" href="../css/style.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<style>
 			@import url('https://fonts.googleapis.com/css2?family=Bahianita&display=swap');
 		</style>
 		<style>
 			@import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap');
 		</style>
-		<script src="https://kit.fontawesome.com/e0b3fedd11.js" crossorigin="anonymous"></script>
+		<script
+			src="https://kit.fontawesome.com/e0b3fedd11.js"
+			crossorigin="anonymous"
+		></script>
 		<!-- <href
 			="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
 		/> -->
@@ -28,75 +32,23 @@
 	<body>
 		<div id="base-wrapper">
 			<div class="base-container">
-				<nav>
-					<ul class="nav_list" id="myTopnav">
-						<li class="nav_listItem">
-							<a href="/home" class="active">
-								<img src="../images/buttons/logo/button1.png" />
+				<div class="topnav" id="myTopnav">
+					<a href="/home" id="home">Home</a>
+					<a href="/waters">Waters</a>
+					<a href="#">Bait</a>
+					<a href="/feed">Share</a>
+					<a href="/rules">Rules</a>
+					<a href="/about">About</a>
+					<a href="#">[Temp]</a>
+					<a
+						href="javascript:void(0);"
+						class="icon"
+						onclick="myFunction()"
+					>
+						<i class="fas fa-bars"></i>
+					</a>
+				</div>
 
-								<p>Home</p></a
-							>
-						</li>
-						<li class="nav_listItem">
-							<a th:href="@{'/waters'}"
-								><img
-									src="../images/buttons/Lakes/lakes.png"
-									alt="cute lake"
-								/>
-								<p>Waters</p></a
-							>
-						</li>
-						<li class="nav_listItem">
-							<a href=""
-								><img src="../images/buttons/Bait/bait.png" />
-								<p>Bait</p>
-							</a>
-						</li>
-						<!-- <li class="nav_listItem">
-							<a href=""
-								><img
-									src="../images/buttons/Lodging/lodging.png"
-								/>
-								<p>Lodging</p>
-							</a>
-						</li> -->
-						<li class="nav_listItem">
-							<a th:href="@{'/feed'}"
-								><img
-									src="../images/buttons/LoggingCatch/logcatch.png"
-								/>
-								<p>Share</p>
-							</a>
-						</li>
-						<li class="nav_listItem">
-							<a href="/rules"
-								><img
-									src="../images/buttons/Regulations/rules.png"
-								/>
-								<p>Rules</p>
-							</a>
-						</li>
-						<li class="nav_listItem">
-							<a href=""
-								><img src="../images/buttons/About/about.png" />
-								<p>About Us</p>
-							</a>
-						</li>
-						<li class="nav_listItem">
-							<a th:href="@{'/weather'}"
-								><img src="../images/buttons/Weather/weather.png"
-							/>
-								<p>[temp var?]</p>
-							</a>
-							
-						</li>
-						<li class="nav_listItem">
-							<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-								<i class="fas fa-bars"></i>
-							  </a>
-						</li>
-					</ul>
-				</nav>
 				<div class="base-content">
 					<div layout:fragment="page_content">
 						<h1>test</h1>

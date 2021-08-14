@@ -36,55 +36,32 @@
 					<h2 th:text="${message}" />
 				</div>
 
-				<div>
+				<div id="uploadForm">
 					<form
 						method="POST"
 						enctype="multipart/form-data"
 						action="/feed"
 					>
-						<div id="uploadForm">
-							<div>
-								<span>File to upload:</span>
-								<span><input type="file" name="file" /></span>
-							</div>
-							<div>
-								<input type="submit" value="Upload" />
-							</div>
+						<div>
+							<span>File to upload:</span>
+							<input type="file" name="file" />
+							<input class="btn" type="submit" value="Upload" />
 						</div>
 					</form>
 				</div>
 
-				<!-- <div class="gallery" th:each="file : ${files}">
-					<a th:href="${file}" th:src="${file}"
-						><img th:src="${file}" alt="" class="galleryImg"
-					/></a>
-				</div> -->
-
 				<div
 					id="nanogallery2"
 					data-nanogallery2='{
-						"thumbnailWidth":           200,
+						"thumbnailWidth":           250,
 						"thumbnailHeight":          "auto",
 						"thumbnailBaseGridHeight" : 100
 					}'
 				>
-					<!-- gallery content -->
-					<!-- <a href = "berlin1.jpg"   data-ngThumb = "berlin1_t.jpg" > Berlin 1 </a>
-				<a href = "berlin2.jpg"   data-ngThumb = "berlin2_t.jpg" > Berlin 2 </a>
-				<a href = "berlin3.jpg"   data-ngThumb = "berlin2_t.jpg" > Berlin 3 </a> -->
-
 					<div class="gallery" th:each="file : ${files}">
 						<a th:href="${file}"></a>
 					</div>
 				</div>
-
-				<!-- <div>
-                <ul>
-                    <li th:each="file : ${files}">
-                        <a th:href="${file}" th:src="${file}"><img th:src="${file}" alt=""></a>
-                    </li>
-                </ul>
-            </div> -->
 			</div>
 		</div>
 	</body>
