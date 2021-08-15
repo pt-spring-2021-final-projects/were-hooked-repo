@@ -32,28 +32,28 @@ public class Populator implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 
-        TackleShop erieOutfitters = new TackleShop("Erie Outfitters", "5404 Lake rd, Sheffield Lake, OH 44054", "M - 7AM - 6PM T - Closed W-Sat 7AM - 6PM Sun 7AM - 1PM");
-        TackleShop spillWayPartySupply = new TackleShop("Spillway Party Supply", "7646 Oregina RD, Waynesville, OH 45068", "M - Sun 6AM - 9PM");
-        TackleShop oldDutchmanBaitAndTackle = new TackleShop("Old DutchMan Bait & Tackle", "904 S Sunbury RD, Westerville, OH 43081","M - Sun 7AM - 7PM");
-        TackleShop indianLakeOutfitters = new TackleShop("Indian Lake Outfitters", "115 E Lake St, Lakeview, OH 43331", "T - Sat 10AM - 6PM Sun & M Closed");
+        TackleShop erieOutfitters = new TackleShop("Erie Outfitters", "5404 Lake rd, Sheffield Lake, OH 44054", "M - 7AM - 6PM T - Closed W-Sat 7AM - 6PM Sun 7AM - 1PM","(440)949-8934");
+        TackleShop spillWayPartySupply = new TackleShop("Spillway Party Supply", "7646 Oregina RD, Waynesville, OH 45068", "M - Sun 6AM - 9PM","(513)897-9334");
+        TackleShop oldDutchmanBaitAndTackle = new TackleShop("Old DutchMan Bait & Tackle", "904 S Sunbury RD, Westerville, OH 43081","M - Sun 7AM - 7PM","(614)891-2653");
+        TackleShop indianLakeOutfitters = new TackleShop("Indian Lake Outfitters", "115 E Lake St, Lakeview, OH 43331", "T - Sat 10AM - 6PM Sun & M Closed","(937)842-1934");
         tackleShopRepo.save(erieOutfitters);
         tackleShopRepo.save(spillWayPartySupply);
         tackleShopRepo.save(oldDutchmanBaitAndTackle);
         tackleShopRepo.save(indianLakeOutfitters);
 
-        Bait worm = new Bait("Worm", "/images/worm.jpg","https://www.google.com/search?q=nightcrawlers+near+me");
-        Bait bread = new Bait("bread","/images/bread.jpg","");
-        Bait minnows = new Bait("Minnows", "/images/minnow.jpg","https://www.google.com/search?q=minnows+near+me");
-        Bait blueGillBait = new Bait("BlueGill","/images/bluegillbait.jpg","");
-        Bait texasRig = new Bait("Texas Rig","/images/texasrig.jpg","https://shopkarls.com/tackle/soft-baits/worms-stick-baits");
-        Bait nedRig = new Bait("Ned Rig", "/images/nedrig.jpg","https://shopkarls.com/catalogsearch/result/?q=ned+rig");
-        Bait inlineSpinner = new Bait("Inline Spinner", "/images/inlinespinner.jpg","https://shopkarls.com/tackle/spinnerbaits/inline-spinners");
-        Bait spinnerBait = new Bait("Spinner Bait", "/images/spinnerbait.jpg","https://shopkarls.com/tackle/spinnerbaits/spinners");
-        Bait crankBait = new Bait("Crank Bait", "/images/crankbait.jpg","https://shopkarls.com/catalogsearch/result/?q=crank+baits");
-        Bait rattleTrap = new Bait("Rattle Trap", "/images/rattletrap.jpg","https://shopkarls.com/bill-lewis-rat-l-trap");
-        Bait popper = new Bait("Popper", "/images/popper.jpg","https://shopkarls.com/catalogsearch/result/?q=popper");
-        Bait jig = new Bait("Jig", "/images/jig.jpg","https://shopkarls.com/vmc-bucktail-jig");
-        Bait waxWorm = new Bait("Wax Worm", "/images/waxworm.jpg","https://www.google.com/search?q=wax+worms+near+me");
+        Bait worm = new Bait("Worm", "/images/worm.jpg","https://www.google.com/search?q=nightcrawlers+near+me","https://www.youtube.com/watch?v=JPfgNno_1nM");
+        Bait bread = new Bait("bread","/images/bread.jpg","","");
+        Bait minnows = new Bait("Minnows", "/images/minnow.jpg","https://www.google.com/search?q=minnows+near+me","https://www.youtube.com/watch?v=mCH0OCm4sfI");
+        Bait blueGillBait = new Bait("BlueGill","/images/bluegillbait.jpg","","");
+        Bait texasRig = new Bait("Texas Rig","/images/texasrig.jpg","https://shopkarls.com/tackle/soft-baits/worms-stick-baits","https://www.youtube.com/watch?v=5uUhUwWgiyM");
+        Bait nedRig = new Bait("Ned Rig", "/images/nedrig.jpg","https://shopkarls.com/catalogsearch/result/?q=ned+rig","https://www.youtube.com/watch?v=de0nhDPTy60");
+        Bait inlineSpinner = new Bait("Inline Spinner", "/images/inlinespinner.jpg","https://shopkarls.com/tackle/spinnerbaits/inline-spinners","https://www.youtube.com/watch?v=dRviBc0TrMM");
+        Bait spinnerBait = new Bait("Spinner Bait", "/images/spinnerbait.jpg","https://shopkarls.com/tackle/spinnerbaits/spinners","https://www.youtube.com/watch?v=UNMxA0sm6PE");
+        Bait crankBait = new Bait("Crank Bait", "/images/crankbait.jpg","https://shopkarls.com/catalogsearch/result/?q=crank+baits","https://www.youtube.com/watch?v=c1f0oFqmVwo");
+        Bait rattleTrap = new Bait("Rattle Trap", "/images/rattletrap.jpg","https://shopkarls.com/bill-lewis-rat-l-trap","https://www.youtube.com/watch?v=zsQCtNNLXkM");
+        Bait popper = new Bait("Popper", "/images/popper.jpg","https://shopkarls.com/catalogsearch/result/?q=popper","https://www.youtube.com/watch?v=gqqTeGVYoAY");
+        Bait jig = new Bait("Jig", "/images/jig.jpg","https://shopkarls.com/vmc-bucktail-jig","https://www.youtube.com/watch?v=tyiyIQDLY8Y");
+        Bait waxWorm = new Bait("Wax Worm", "/images/waxworm.jpg","https://www.google.com/search?q=wax+worms+near+me","https://www.youtube.com/watch?v=_K9BU1GL-10");
         baitRepo.save(worm);
         baitRepo.save(bread);
         baitRepo.save(minnows);

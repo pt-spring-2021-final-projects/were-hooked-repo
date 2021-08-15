@@ -22,9 +22,14 @@
       <div class="image">
         <img th:src="${bait.image}" alt="" />
       </div>
-      <div>
-        <a th:href="${bait.shopLink}">
-          <p>Check them out here!</p>
+      <div class="link" >
+        <a th:href="${bait.shopLink}" target="_blank" >
+          <p>Click to check some out!</p>
+        </a>
+      </div>
+      <div class="video" >
+        <a th:href="${bait.howToUse}" target="_blank" >
+          <p>Learn how to use it!</p>
         </a>
       </div>
     </div>
