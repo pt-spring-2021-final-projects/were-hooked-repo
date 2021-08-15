@@ -5,5 +5,15 @@ h1{
 img{
     width: 700px;
     height: auto;
-    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.link{
+    padding: 3px;
+    font-size: 22px;
+}
+
+.video{
+    padding: 3px;
+    font-size: 22px;
 }

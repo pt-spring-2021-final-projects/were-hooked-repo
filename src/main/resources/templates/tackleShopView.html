@@ -11,6 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/landing.css" />
+    <link rel="stylesheet" href="../css/tackleshop.css">
     <title>Title</title>
   </head>
   <body>
@@ -19,8 +20,9 @@
         <h1 th:text="${tackleShop.name}"></h1>
       </header>
       <div class="info">
-        <p th:text="${tackleShop.tackleShopAddress}"></p>
-        <p th:text="${tackleShop.tackleShopHours}"></p>
+        <p th:text=" 'Address: ' + ${tackleShop.tackleShopAddress}"></p>
+        <p th:text=" 'Hours: ' + ${tackleShop.tackleShopHours}"></p>
+        <p th:text=" 'Phone Number: ' + ${tackleShop.phoneNumber}" ></p>
       </div>
     </div>
   </body>
