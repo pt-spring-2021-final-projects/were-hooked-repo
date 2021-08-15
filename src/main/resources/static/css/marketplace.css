@@ -268,24 +268,3 @@ to   { opacity: 1; }
   border-radius: 10px;
   letter-spacing: 5px;
 }
-
-#developers {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: auto;
-  margin-bottom: 5em;
-}
-
-#developers article img {
-  width: 14vw;
-  border: solid;
-object-fit: scale-down;
-justify-content: center;
-}
-
-
-#music img {
-  border:none;
-  width: 3em;
-  padding-bottom: 2em;
-}
