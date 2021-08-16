@@ -10,23 +10,115 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" type="text/css" href="../static/css/home2.css" />
+		<link rel="stylesheet" type="text/css" href="../css/home2.css" />
 		<title>Document</title>
 	</head>
 
 	<body>
 		<div layout:fragment="page_content">
-			<div class="home-wrapper">
-				<h1>OHIO'S ESSENTIAL FISHING APP</h1>
-				<div class="container">
-					<div class="title">WELCOME TO WE'RE HOOKED!</div>
-					<div class="detail">
-						<div class="words2">
+			<div id="home-wrapper">
+				<div class="home-content">
+					<div class="slideshow-container">
+						<div id="overlay-h1">
+							<h1>Welcome to We're Hooked!</h1>
+						</div>
+						<div id="overlay-h2">
+							<h2>Ohio's Essential Fishing App</h2>
+						</div>
+						<div class="mySlides fade">
+							<!-- <div class="numbertext">1 / 4</div> -->
+							<img
+								src="../images/backgrounds/background8.jpeg"
+								style="width: 100%"
+							/>
+							<!-- <div class="text">Caption One</div> -->
+						</div>
+
+						<div class="mySlides fade">
+							<!-- <div class="numbertext">2 / 4</div> -->
+							<img
+								src="../images/backgrounds/background7.jpeg"
+								style="width: 100%"
+							/>
+							<!-- <div class="text">Caption Two</div> -->
+						</div>
+
+						<div class="mySlides fade">
+							<!-- <div class="numbertext">3 / 4</div> -->
+							<img
+								src="../images/backgrounds/background10.jpeg"
+								style="width: 100%"
+							/>
+							<!-- <div class="text">Caption Three</div> -->
+						</div>
+						<div class="mySlides fade">
+							<!-- <div class="numbertext">4 / 4</div> -->
+							<img
+								src="../images/backgrounds/background2.jpeg"
+								style="width: 100%"
+							/>
+							<!-- <div class="text">Caption Three</div> -->
+						</div>
+					</div>
+					<br />
+
+					<div style="text-align: center">
+						<span class="dot"></span>
+						<span class="dot"></span>
+						<span class="dot"></span>
+						<span class="dot"></span>
+					</div>
+					<div class="item">
+						<div class="itemTitle">
+							<h2>status: [Looking Good to Fish Today]</h2>
+						</div>
+						<div class="itemContent-flex">
+							<div class="content-flex">
+								<p>condition:</p>
+								<p>[overcast]</p>
+							</div>
+							<div class="content-flex">
+								<p>temperature:</p>
+								<p>[78 degrees F]</p>
+							</div>
+							<div class="content-flex">
+								<p>tide:</p>
+								<p>[just right]</p>
+							</div>
+							<div class="content-flex">
+								<p>water level:</p>
+								<p>[+3'']</p>
+							</div>
+							<div class="content-flex">
+								<p>water temp:</p>
+								<p>[62 degrees F]</p>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="itemTitle">
+							<h2>Ohio's Essential Fishing App</h2>
+						</div>
+						<div class="itemContent">
 							<p>
 								Developed by WE_CAN_CATCH_IT, the 'We're Hooked'
 								app provides key information regarding fishing
 								in the State of Ohio. Click on an icon above to
 								get started.
+							</p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="itemTitle">
+							<h2>Fake Fishing Event Ending Soon!</h2>
+						</div>
+						<div class="itemContent">
+							<p>
+								Lorem ipsum dolor sit amet consectetur
+								adipisicing elit. Modi placeat obcaecati
+								voluptatem, ullam facilis, assumenda quia ab sit
+								ea perspiciatis earum soluta odit iure nihil
+								nulla numquam. Quas, totam modi.
 							</p>
 						</div>
 					</div>
@@ -36,5 +128,6 @@
 	</body>
 
 	<div layout:fragment="scripts">
-  </div>
+		<script type="text/javascript" src="../js/home.js"></script>
+	</div>
 </html>
