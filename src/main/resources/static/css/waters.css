@@ -1,12 +1,23 @@
-.mt {
-  font-family: 'Lato', sans-serif;
-  font-weight:300;
-  height:3em;
-  background-color:#0066ff;
-  line-height:3em;
-  padding-left:2em;
+img{
+    width: 55%;
+    height: auto;
 }
-#map {
-	width: 800px;
-	height: 800px;
+
+.water {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 18px;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+}
+
+.waterLink{
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+}
+
+.waterName{
+    display: block;
 }

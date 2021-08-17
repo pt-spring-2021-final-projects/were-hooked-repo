@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+	layout:decorator="~{base}"
+>
+  <head>
+    <title layout:title-pattern="$CONTENT_TITLE - $LAYOUT_TITLE">
+      We're Hooked
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <link rel="stylesheet" href="../css/marketplace.css"/>
+    <href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+        <div layout:fragment="page_content">
+    <section id="goods">
+        <h1>THE WE_CAN_CATCH_IT! MARKETPLACE</h1>
+        <h2>From bait, to rods and tackle boxes, we've got you covered! Take a look at our Top 5 recommendations...</h2>
+    </section>
+    
+    
+    
+    
+        </div>
+     
+
+    <script type="text/javascript" th:src="@{/static/js/common.js}"></script>
+    <th:block layout:fragment="scripts"> </th:block>
+  </body>
+</html>

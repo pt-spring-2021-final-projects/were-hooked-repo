@@ -16,15 +16,19 @@ public class Bait {
 
     private String name;
     private String image;
+    private String shopLink;
+    private String howToUse;
 
     @ManyToMany
     private Collection<Fish> fish;
 
     protected Bait(){}
 
-    public Bait(String name, String image){
+    public Bait(String name, String image, String shopLink, String howToUse){
         this.name = name;
         this.image = image;
+        this.shopLink = shopLink;
+        this.howToUse = howToUse;
     }
 
     public Long getId(){
@@ -37,6 +41,14 @@ public class Bait {
 
     public String getImage(){
         return image;
+    }
+
+    public String getShopLink(){
+        return shopLink;
+    }
+
+    public String getHowToUse(){
+        return howToUse;
     }
 
     public Collection<Fish> getFish(){

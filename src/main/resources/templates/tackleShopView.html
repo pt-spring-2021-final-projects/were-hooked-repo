@@ -1,12 +1,32 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
+<html
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:th="http://www.thymeleaf.org"
+  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+  xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+  layout:decorator="~{base}"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/landing.css" />
+    <link rel="stylesheet" href="../css/tackleshop.css">
     <title>Title</title>
-</head>
-<body>
-<header>
-    <h1 th:text="${tackleShop.name}" ></h1>
-</header>
-</body>
+  </head>
+  <body>
+    <div layout:fragment="page_content">
+      <header>
+        <h1 th:text="${tackleShop.name}"></h1>
+      </header>
+      <div class="info">
+        <p th:text=" 'Address: ' + ${tackleShop.tackleShopAddress}"></p>
+        <p th:text=" 'Hours: ' + ${tackleShop.tackleShopHours}"></p>
+        <p th:text=" 'Phone Number: ' + ${tackleShop.phoneNumber}" ></p>
+      </div>
+    </div>
+  </body>
+  <div layout:fragment="scripts">
+    <script src="../js/landing.js" type="module"></script>
+  </div>
 </html>

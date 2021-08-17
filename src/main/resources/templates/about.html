@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html
-  xmlns="http://www.w3.org/1999/xhtml"
-  xmlns:th="http://www.thymeleaf.org"
-  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-  xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+	layout:decorator="~{base}"
 >
   <head>
     <title layout:title-pattern="$CONTENT_TITLE - $LAYOUT_TITLE">
@@ -11,25 +12,47 @@
     </title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-    <link rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="../static/css/style.css" />
+    <link rel="stylesheet" href="../css/about.css" />
     <href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
   </head>
 
   <body>
-    <div class="about-container2">
-      <div class="content">
-        <div layout:fragment="page_content2"></div>
-       <p>code goes here</p> 
-      </div>
-    </div>
-  </div>
-    </div>
-    </div>
-
-    
-  
+        <div layout:fragment="page_content">
+       <section id="ourDevelopers">
+         <h2>OUR DEVELOPERS</h2>
+         <h4>CLICK A PICTURE TO LEARN MORE!</h4>
+         <div id="developers">
+          <article>
+            <h3>TONY BLANKENSHIP</h3>
+            <a href="https://github.com/tonyblankenship96"><img src="./images/developers/tony.jpeg"></a>
+            <p></p>
+          </article>
+          <article>
+            <h3>ZAC CASSINI</h3>
+            <a href="https://github.com/zcassini"><img src="./images/developers/zac.png"></a>
+            <p></p>
+          </article>
+          <article>
+            <h3>LAWRENCE JONES</h3>
+            <a href="https://github.com/LJ3K"><img src="./images/Developers/lawrence3.JPG"></a>
+          </article>
+          <article>
+            <h3>TYLER KOENIG</h3>
+            <a href="https://github.com/lerko96"><img src="./images/developers/r_tyler.png"></a>
+            <p></p>
+          </article>
+          <article>
+            <h3>AMBER LINDLEY</h3>
+            <a href="https://github.com/alindley0729"><img src="./images/Developers/amber.jpg"></a>
+            <p></p>
+          </article>
+        </div>
+      </section>
+      <div>
+        <div>
+          
+     
 
     <script type="text/javascript" th:src="@{/static/js/common.js}"></script>
     <th:block layout:fragment="scripts"> </th:block>
