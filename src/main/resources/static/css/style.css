@@ -1,6 +1,6 @@
 body {
 	background-color: #5ea7d3;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Nunito', sans-serif;
 	font-size: 16px;
 	margin: 0;
 }
@@ -86,13 +86,16 @@ h2 {
 	text-align: center;
 	align-items: center;
 	margin: 3rem 4rem 2rem;
-	padding: 0 0;
+	padding: 2rem 0;
 }
 
 #footer-lg {
 	display: flex;
 	flex-direction: row;
-	padding: 2rem;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	padding: .5rem;
 	flex: 3;
 }
 
@@ -101,7 +104,7 @@ h2 {
 }
 
 #footer-sm {
-	padding: 2rem;
+	padding: .5rem;
 	flex: 2;
 }
 
