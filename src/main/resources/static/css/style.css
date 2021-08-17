@@ -143,8 +143,28 @@ h2 {
 	.footer {
 		flex-direction: column;
 	}
-
-	#fas fa-4x fa-broadcast-tower broadcast-tower-on {
-		color: #eaff07;
-	}
 }
+.broadcast-tower-off {
+	clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
+  
+  .broadcast-tower-on {
+	animation: broadcast-tower-pulse 1.5s infinite;
+  }
+  
+  @keyframes broadcast-tower-pulse {
+  
+	32% {
+	  clip-path: polygon(50% 0, 50% 0, 100% 100%, 0 100%)
+	}
+	33% {
+	  clip-path: polygon(15% 0, 85% 0, 80% 100%, 20% 100%)
+	}
+	66% {
+	  clip-path: polygon(15% 0, 85% 0, 80% 100%, 20% 100%)
+	}
+	67% {
+	  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%)
+	}
+  
+  }
