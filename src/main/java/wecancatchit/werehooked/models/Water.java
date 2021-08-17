@@ -70,8 +70,11 @@ public class Water {
     public Double getDepth() {
         return depth;
     }
-    public String getCoordinates() {
-        return coordinates;
+    public String getLatitude() {
+        return latitude;
+    }
+    public String getLongitude() {
+        return longitude;
     }
     public String getImage() {
         return image;
