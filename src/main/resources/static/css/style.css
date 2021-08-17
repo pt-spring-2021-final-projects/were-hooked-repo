@@ -143,4 +143,8 @@ h2 {
 	.footer {
 		flex-direction: column;
 	}
+
+	#fas fa-4x fa-broadcast-tower broadcast-tower-on {
+		color: #eaff07;
+	}
 }
