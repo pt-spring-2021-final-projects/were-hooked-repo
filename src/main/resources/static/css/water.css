@@ -1,0 +1,44 @@
+.waterImage{
+    margin-bottom: 4px;
+}
+
+.waterinfo{
+    width: 80%;
+    margin-left: 10%;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    font-size: 30px;
+}
+
+.tackleshop{
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+.tackleshop h2{
+    font-size: 38px;
+    padding-bottom: 4px;
+}
+
+.fishInLake h2{
+    font-size: 38px;
+}
+
+.fishinfo{
+    margin-bottom: 3px;
+}
+
+.fishinfo img{
+    width: 300px;
+    height: auto;
+}
+
+.fishlist{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.waterImage{
+    margin-top: 10px;
+}
+

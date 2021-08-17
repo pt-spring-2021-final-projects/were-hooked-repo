@@ -16,16 +16,14 @@
 
 	<body>
 		<div layout:fragment="page_content">
-			<div id="content-wrapper">
-				<div id="title">
-					<h1>Ohio's Fishing Laws and Regulations</h1>
-				</div>
-				<div id="rules-container">
-					<div class="item">
-						<div class="itemTitle">
-							<h2>Fishing Regulations</h2>
-						</div>
-						<div class="itemContent">
+			<h1>Ohio's Fishing Laws and Regulations</h1>
+			<div id="rules-container">
+				<div class="item">
+					<div class="itemTitle">
+						<h2>Fishing Regulations</h2>
+					</div>
+					<div class="itemContent">
+						<div id="regulation-buttons">
 							<div class="row">
 								<div
 									id="requirements"
@@ -33,13 +31,6 @@
 									onclick="openTab('a1');"
 								>
 									Statewide
-								</div>
-								<div
-									id="exemptions"
-									class="column"
-									onclick="openTab('a2');"
-								>
-									Lake Erie
 								</div>
 							</div>
 							<div
@@ -56,14 +47,29 @@
 								<p>
 									These regulations apply to
 									<b>all public waters in Ohio</b>
-									where site-specific regulations are
-									not implemented.
+									where site-specific regulations are not
+									implemented.
 								</p>
 								<div class="containerImage">
-									<img src="/css/images/state-dailyLimits.png" alt="">
+									<img
+										src="../images/rules/state-dailyLimits.png"
+										alt=""
+									/>
 								</div>
 								<div class="containerImage">
-									<img src="/css/images/state-endangered.png" alt="">
+									<img
+										src="../images/rules/state-endangered.png"
+										alt=""
+									/>
+								</div>
+							</div>
+							<div class="row">
+								<div
+									id="exemptions"
+									class="column"
+									onclick="openTab('a2');"
+								>
+									Lake Erie
 								</div>
 							</div>
 							<div
@@ -78,68 +84,72 @@
 								>
 								<h3>Lake Erie Regulations</h3>
 								<p>
-									These regulations apply to <b>Lake Erie
-									and areas immediately upstream in
-									creeks, rivers, and tributaries.</b></p>
-									<p>The following regulations for walleye, sauger, saugeye, yellow perch, black bass, and white bass apply to the waters of Lake Erie, its embayments including <b>Maumee Bay, Sandusky Bay, East Harbor, Middle Harbor, and West Harbor, and from where Lake Erie tributaries enter the lake upstream to the following end points:</b>
-									<ul>
-										<li>Arcola, Wheeler, Cowles, and Indian creeks: U.S. Route 20 bridges</li>
-										<li>Ashtabula River:  E. 24th Street bridge</li>
-										<li>Black River: State Route 611 bridge</li>
-										<li>Conneaut Creek: Main Street bridge 
-											(downtown to Conneaut)</li>
-										<li>Euclid Creek and Chagrin River: State 
-											Route 283 bridges</li>
-										<li>Rocky River:  Detroit Road bridge</li>
-										<li>Sandusky River: Waterworks dam in Tiffin</li>
-										<li>Maumee River: First dam upstream 
-											(Grand Rapids, Ohio)</li>
-										<li>Vermilion River: State Route 2 bridge</li>
-										<li>Grand River: State Route 535 bridge</li>
-										<li>Cuyahoga River: Harvard Road bridge</li>
-									</ul>
+									These regulations apply to
+									<b
+										>Lake Erie and areas immediately
+										upstream in creeks, rivers, and
+										tributaries.</b
+									>
 								</p>
+								The following regulations for walleye, sauger,
+								saugeye, yellow perch, black bass, and white
+								bass apply to the waters of Lake Erie, its
+								embayments including
+								<b
+									>Maumee Bay, Sandusky Bay, East Harbor,
+									Middle Harbor, and West Harbor, and from
+									where Lake Erie tributaries enter the lake
+									upstream to the following end points:</b
+								>
+								<ul>
+									<li>
+										Arcola, Wheeler, Cowles, and Indian
+										creeks: U.S. Route 20 bridges
+									</li>
+									<li>
+										Ashtabula River: E. 24th Street bridge
+									</li>
+									<li>Black River: State Route 611 bridge</li>
+									<li>
+										Conneaut Creek: Main Street bridge
+										(downtown to Conneaut)
+									</li>
+									<li>
+										Euclid Creek and Chagrin River: State
+										Route 283 bridges
+									</li>
+									<li>Rocky River: Detroit Road bridge</li>
+									<li>
+										Sandusky River: Waterworks dam in Tiffin
+									</li>
+									<li>
+										Maumee River: First dam upstream (Grand
+										Rapids, Ohio)
+									</li>
+									<li>
+										Vermilion River: State Route 2 bridge
+									</li>
+									<li>Grand River: State Route 535 bridge</li>
+									<li>Cuyahoga River: Harvard Road bridge</li>
+								</ul>
 								<div class="containerImage">
-									<img src="/css/images/lakeErie-dailyLimits.png" alt="">
+									<img
+										src="../images/rules/lakeErie-dailyLimits.png"
+										alt=""
+									/>
 								</div>
 							</div>
-							<div class="item-link">
-								<a
-									href="https://ohiodnr.gov/static/documents/wildlife/laws-regs-licenses/Ohio+Fishing+Regulations+21-22+ENGLISH.pdf"
-									target="_blank"
-								>
-									<i
-										class="fas fa-external-link-alt"
-									></i>
-
-									2021-22' Ohio Fishing Regulations</a
-								>
-							</div>
-						</div>
-					</div>
-					<div class="item">
-						<div class="itemTitle">
-							<h2>Fishing Licenses</h2>
-						</div>
-						<div class="itemContent">
 							<div class="row">
-								<div
-									id="requirements"
-									class="column"
-									onclick="openTab('b1');"
-								>
-									Requirements
-								</div>
 								<div
 									id="exemptions"
 									class="column"
-									onclick="openTab('b2');"
+									onclick="openTab('a3');"
 								>
-									Exemptions
+									Ohio Rivers
 								</div>
 							</div>
 							<div
-								id="b1"
+								id="a3"
 								class="containerTab"
 								style="display: none"
 							>
@@ -148,177 +158,211 @@
 									class="closebtn"
 									>x</span
 								>
+								<h3>Ohio River Regulations</h3>
+
+								<p>
+									The following Ohio River fishing regulations
+									are the result of agreements between the
+									fish and wildlife agencies of Ohio,
+									Kentucky, and West Virginia. Some
+									Regulations differ between the Ohio-Kentucky
+									border (Western Unit) and the Ohio-West
+									Virginia border (Eastern Unit). Anglers must
+									abide by each state's specified regulations
+									for information not specified below.
+								</p>
 								<ul>
 									<li>
-										A fishing license is required to
-										take fish from Ohio waters.
+										It is illegal to snag fish in the Ohio
+										waters of the Ohio RIver for any species
+										during any time of the year.
 									</li>
 									<li>
-										A fishing license is required to
-										take frogs or turtles on public
-										and private property.
-									</li>
-									<li>
-										Persons fishing in privately
-										owned ponds, lakes, or
-										reservoirs that are open to
-										public fishing through an
-										agreement or lease with the ODNR
-										Division of Wildlife are
-										required to have a fishing
-										license.
-									</li>
-									<li>
-										Persons fishing must have their
-										license in their possession
-										while fishing and must show the
-										license to anyone on request.
-										Licenses can be displayed using
-										a mobile device.
-									</li>
-									<li>
-										Members of the U.S. Armed Forces
-										on active duty stationed in
-										Ohio, but not on leave or
-										furlough are required to
-										purchase a resident license.
+										A maximum of three lines are perfmitted
+										in the counties that comprise the Ohio
+										River fishing units.
 									</li>
 								</ul>
+							</div>
+						</div>
+						<div class="item-link">
+							<a
+								href="https://ohiodnr.gov/static/documents/wildlife/laws-regs-licenses/Ohio+Fishing+Regulations+21-22+ENGLISH.pdf"
+								target="_blank"
+							>
+								<i class="fas fa-external-link-alt"></i>
+
+								2021-22' Ohio Fishing Regulations</a
+							>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="itemTitle">
+						<h2>Fishing Licenses</h2>
+					</div>
+					<div class="itemContent">
+						<div class="row">
+							<div
+								id="requirements"
+								class="column"
+								onclick="openTab('b1');"
+							>
+								Requirements
 							</div>
 							<div
-								id="b2"
-								class="containerTab"
-								style="display: none"
+								id="exemptions"
+								class="column"
+								onclick="openTab('b2');"
 							>
-								<span
-									onclick="this.parentElement.style.display='none'"
-									class="closebtn"
-									>x</span
-								>
-								<ul>
-									<li>
-										Less than 16 years of age. This
-										includes frogs and turtles
-									</li>
-									<li>
-										Persons fishing in privately
-										owned ponds, lakes, or
-										reservoirs to and from which
-										fish do not migrate are not
-										required to have a license to
-										take fish
-									</li>
-									<li>
-										Giving assistance to an angler
-										who has been issued the free
-										mobility impaired or blind
-										fishing license, provided the
-										two persons together are using
-										only one line
-									</li>
-									<li>
-										Fishing, or taking frogs and
-										turtles, on land and water which
-										they or their parents own,
-										except where the land is in or
-										borders on state parks or
-										state-owned lakes
-									</li>
-									<li>
-										Fishing, or taking frogs and
-										turtles, on land and water where
-										they or their parents are
-										tenants on which they reside,
-										and from which they derive the
-										majority of their income from
-										agricultural production on that
-										land (except state-owned lakes)
-									</li>
-									<li>
-										Members of the U.S. Armed Forces
-										on active duty while on leave or
-										furlough
-									</li>
-									<li>
-										All Ohio residents may fish
-										without a license on Free
-										Fishing Days (consult the
-										fishing regulations for dates)
-									</li>
-								</ul>
+								Exemptions
 							</div>
-							<div class="item-link">
-								<a
-									href="https://oh-web.s3licensing.com/"
-									target="blank"
-								>
-									<i
-										class="fas fa-external-link-alt"
-									></i>
-									Purchase Your Fishing License
-									Online</a
-								>
-							</div>
-							<div class="item-link">
-								<a
-									href="https://my.visme.co/view/x4epn4yw-fishing-license-finder"
-									target="_blank"
-								>
-									<i
-										class="fas fa-external-link-alt"
-									></i>
-									Flow Chart</a
-								>
-							</div>
+						</div>
+						<div id="b1" class="containerTab" style="display: none">
+							<span
+								onclick="this.parentElement.style.display='none'"
+								class="closebtn"
+								>x</span
+							>
+							<ul>
+								<li>
+									A fishing license is required to take fish
+									from Ohio waters.
+								</li>
+								<li>
+									A fishing license is required to take frogs
+									or turtles on public and private property.
+								</li>
+								<li>
+									Persons fishing in privately owned ponds,
+									lakes, or reservoirs that are open to public
+									fishing through an agreement or lease with
+									the ODNR Division of Wildlife are required
+									to have a fishing license.
+								</li>
+								<li>
+									Persons fishing must have their license in
+									their possession while fishing and must show
+									the license to anyone on request. Licenses
+									can be displayed using a mobile device.
+								</li>
+								<li>
+									Members of the U.S. Armed Forces on active
+									duty stationed in Ohio, but not on leave or
+									furlough are required to purchase a resident
+									license.
+								</li>
+							</ul>
+						</div>
+						<div id="b2" class="containerTab" style="display: none">
+							<span
+								onclick="this.parentElement.style.display='none'"
+								class="closebtn"
+								>x</span
+							>
+							<ul>
+								<li>
+									Less than 16 years of age. This includes
+									frogs and turtles
+								</li>
+								<li>
+									Persons fishing in privately owned ponds,
+									lakes, or reservoirs to and from which fish
+									do not migrate are not required to have a
+									license to take fish
+								</li>
+								<li>
+									Giving assistance to an angler who has been
+									issued the free mobility impaired or blind
+									fishing license, provided the two persons
+									together are using only one line
+								</li>
+								<li>
+									Fishing, or taking frogs and turtles, on
+									land and water which they or their parents
+									own, except where the land is in or borders
+									on state parks or state-owned lakes
+								</li>
+								<li>
+									Fishing, or taking frogs and turtles, on
+									land and water where they or their parents
+									are tenants on which they reside, and from
+									which they derive the majority of their
+									income from agricultural production on that
+									land (except state-owned lakes)
+								</li>
+								<li>
+									Members of the U.S. Armed Forces on active
+									duty while on leave or furlough
+								</li>
+								<li>
+									All Ohio residents may fish without a
+									license on Free Fishing Days (consult the
+									fishing regulations for dates)
+								</li>
+							</ul>
+						</div>
+						<div class="item-link">
+							<a
+								href="https://oh-web.s3licensing.com/"
+								target="blank"
+							>
+								<i class="fas fa-external-link-alt"></i>
+								Purchase Your Fishing License Online</a
+							>
+						</div>
+						<div class="item-link">
+							<a
+								href="https://my.visme.co/view/x4epn4yw-fishing-license-finder"
+								target="_blank"
+							>
+								<i class="fas fa-external-link-alt"></i>
+								Flow Chart</a
+							>
 						</div>
 					</div>
-					<div class="item">
-						<div class="itemTitle">
-							<h2>Report a Tagged Fish</h2>
-						</div>
-						<div class="itemContent">
-							<p>
-								To study the behavior of fish, the
-								Division of Wildlife releases thousands
-								of tagged fish each year. This is to get
-								better understanding of their survival
-								and harvest patterns in public waters of
-								Ohio.
-							</p>
-							<div class="item-link">
-								<a
-									href="https://ohiodnr.gov/wps/portal/gov/odnr/buy-and-apply/hunting-fishing-boating/fishing-resources/report-tagged-fish"
-									target="_blank"
-								>
-									<i
-										class="fas fa-external-link-alt"
-									></i>
-									Report a Tagged Fish</a
-								>
-							</div>
+				</div>
+				<div class="item">
+					<div class="itemTitle">
+						<h2>Report a Tagged Fish</h2>
+					</div>
+					<div class="itemContent">
+						<p>
+							To study the behavior of fish, the Division of
+							Wildlife releases thousands of tagged fish each
+							year. This is to get better understanding of their
+							survival and harvest patterns in public waters of
+							Ohio.
+						</p>
+						<div class="item-link">
+							<a
+								href="https://ohiodnr.gov/wps/portal/gov/odnr/buy-and-apply/hunting-fishing-boating/fishing-resources/report-tagged-fish"
+								target="_blank"
+							>
+								<i class="fas fa-external-link-alt"></i>
+								Report a Tagged Fish</a
+							>
 						</div>
 					</div>
-					<div class="item">
-						<div class="itemTitle">
-							<h2>Sport Fishing Rules</h2>
-						</div>
-						<div class="itemContent">
-							<div class="item-link">
-								<a
-									href="https://codes.ohio.gov/ohio-administrative-code/rule-1501:31-13-01"
-									target="_blank"
-								>
-									<i
-										class="fas fa-external-link-alt"
-									></i>
-									PDF File</a
-								>
-							</div>
+				</div>
+				<div class="item">
+					<div class="itemTitle">
+						<h2>Sport Fishing Rules</h2>
+					</div>
+					<div class="itemContent">
+						<div class="item-link">
+							<a
+								href="https://codes.ohio.gov/ohio-administrative-code/rule-1501:31-13-01"
+								target="_blank"
+							>
+								<i class="fas fa-external-link-alt"></i>
+								PDF File</a
+							>
 						</div>
 					</div>
 				</div>
 			</div>
-</div>
+		</div>
 	</body>
 	<div layout:fragment="scripts">
 		<script type="text/javascript" src="/js/rules.js"></script>

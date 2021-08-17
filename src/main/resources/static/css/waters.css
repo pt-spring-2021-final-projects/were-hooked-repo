@@ -1,0 +1,23 @@
+img{
+    width: 55%;
+    height: auto;
+}
+
+.water {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 18px;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+}
+
+.waterLink{
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+}
+
+.waterName{
+    display: block;
+}
