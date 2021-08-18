@@ -220,12 +220,14 @@ h2 {
 }
 .broadcast-tower-off {
 	clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-	color:#eaff07;
+	color:#e9d81cf5;
+	;
   }
   
   .broadcast-tower-on {
 	animation: broadcast-tower-pulse 1.5s infinite;
-	color:#eaff07;
+	color:#e9d81cf5;
+
   }
   
   @keyframes broadcast-tower-pulse {
