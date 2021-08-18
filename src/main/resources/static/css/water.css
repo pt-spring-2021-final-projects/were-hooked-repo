@@ -1,4 +1,11 @@
+header{
+    text-align: center;
+}
+
 .waterImage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 4px;
 }
 
@@ -8,16 +15,22 @@
     padding-top: 5px;
     padding-bottom: 15px;
     font-size: 30px;
+    text-align: center;
 }
 
 .tackleshop{
     padding-bottom: 20px;
     font-size: 20px;
+    text-align: center;
 }
 
 .tackleshop h2{
     font-size: 38px;
     padding-bottom: 4px;
+}
+
+.fishInLake{
+    text-align: center;
 }
 
 .fishInLake h2{
@@ -42,3 +55,43 @@
     margin-top: 10px;
 }
 
+@media only screen and (max-width: 1000px) {
+
+    .waterImage{
+        width: 60%;
+        height: auto;
+    }
+
+    .waterinfo{
+        font-size: 14px;
+    }
+
+    .tackleshop h2{
+        font-size: 22px;
+    }
+
+    .tackleshop{
+        font-size: 14px;
+    }
+
+    .fishInLake h2{
+        font-size: 22px;
+    }
+
+    .fishinfo p{
+        font-size: 12px;
+    }
+
+    
+    }
+
+ @media only screen and (max-width: 1200px) {
+        .fishinfo img{
+            max-width: 200px;
+        }
+    
+        .fishlist{
+            display: flex;
+            flex-direction: column;
+        }
+    }

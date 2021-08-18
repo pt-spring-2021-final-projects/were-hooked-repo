@@ -1,6 +1,13 @@
+h1{
+    text-align: center;
+}
+
 img {
+    display: block;
     width: 800px;
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .fishInfo{
@@ -11,15 +18,38 @@ img {
 }
 .fishInfo p{
     padding: 2px;
+    text-align: center;
 }
 
 .baitRecommendations h2{
     padding-bottom: 8px;
     font-size: 38px;
+    text-align: center;
 }
 
 .bait {
     font-size: 20px;
     padding-bottom: 3px;
+    text-align: center;
 }
 
+@media only screen and (max-width: 800px) {
+
+    img{
+        width: 60%;
+        height: auto;
+    }
+
+    .fishInfo p{
+        font-size: 14px;
+    }
+
+    .bait{
+        font-size: 14px;
+    }
+
+    .baitRecommendations h2{
+        font-size: 22px;
+    }
+    
+    }
