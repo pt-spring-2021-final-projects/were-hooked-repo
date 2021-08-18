@@ -1,6 +1,6 @@
 body {
 	background-color: #5ea7d3;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Nunito', sans-serif;
 	font-size: 16px;
 	margin: 0;
 }
@@ -72,8 +72,67 @@ h1 {
 }
 
 h2 {
-	font-family: 'Bahianita', cursive;
+	font-family: 'Just Another Hand';
+	text-transform: uppercase;
 	font-size: 2em;
+	letter-spacing: 0.15;
+	margin: 0 auto;
+}
+
+.item {
+	border-radius: 20px;
+	margin: 2rem 4rem;
+	background-color: #f4f9fc;
+	color: #091922;
+	padding: 1.25rem;
+	box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.36);
+	-webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.36);
+	-moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.36);
+}
+
+.itemTitle {
+	text-align: left;
+	padding-left: 0.5rem;
+	margin: 2rem auto;
+}
+
+.itemTitle h2 {
+	border-left: 2px solid blue;
+	font-weight: 200;
+	margin: 0.5rem 0.5rem 0 0.5rem;
+	padding-left: 0.5rem;
+}
+
+.itemContent {
+	padding: 0.5rem 1rem;
+    text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.itemContent ul,
+.itemContent p {
+	margin: 0.5rem 1rem;
+	padding: 0;
+}
+
+.item-link {
+	padding: 1rem 3rem;
+}
+
+.item-link a {
+	display: block;
+	color: #666;
+	border-radius: 5px;
+	font-size: large;
+	padding: auto 1rem;
+	margin: 0.25rem auto;
+	text-decoration: none;
+	text-align: left;
+}
+
+.item-link a:hover {
+	text-decoration: underline;
 }
 
 .footer {
@@ -83,13 +142,16 @@ h2 {
 	text-align: center;
 	align-items: center;
 	margin: 3rem 4rem 2rem;
-	padding: 0 0;
+	padding: 2rem 0;
 }
 
 #footer-lg {
 	display: flex;
 	flex-direction: row;
-	padding: 2rem;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	padding: .5rem;
 	flex: 3;
 }
 
@@ -98,7 +160,7 @@ h2 {
 }
 
 #footer-sm {
-	padding: 2rem;
+	padding: .5rem;
 	flex: 2;
 }
 
