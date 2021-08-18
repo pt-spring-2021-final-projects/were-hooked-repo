@@ -1,87 +1,89 @@
 <!DOCTYPE html>
-<html
-  xmlns="http://www.w3.org/1999/xhtml"
-  xmlns:th="http://www.thymeleaf.org"
-  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-  xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
->
-  <head>
-    <title layout:title-pattern="$CONTENT_TITLE - $LAYOUT_TITLE">
-      We're Hooked
-    </title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 
-    <link rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="style.css" />
-    <href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-  </head>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<link rel="stylesheet" type="text/css" href='https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css' />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<style>
+		@import url("https://fonts.googleapis.com/css2?family=Bahianita&display=swap");
+	</style>
+	<style>
+		@import url("https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap");
+	</style>
+	<style>
+		@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;800&display=swap");
+	</style>
+	<script src="https://kit.fontawesome.com/e0b3fedd11.js" crossorigin="anonymous"></script>
+	<!-- <href
+			="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		/> -->
+	<title layout:title-pattern="$CONTENT_TITLE - $LAYOUT_TITLE">
+		We're Hooked
+	</title>
+</head>
 
-  <body>
+<body>
+	<div id="base-wrapper">
+		<div class="base-container">
+			<div class="topnav" id="myTopnav">
+				<a href="/home" id="home"><img src="../images/buttons/logo/button1.png" alt="" />Home</a>
+				<a href="/waters"><img src="../images/buttons/Lakes/lakes.png" alt="" />Waters</a>
+				<a href="#"><img src="../images/buttons/Shop/shopping.png" alt="" />Shop</a>
+				<a href="/feed"><img src="../images/buttons/LoggingCatch/logcatch.png" alt="" />Share</a>
+				<a href="/rules"><img src="../images/buttons/Regulations/rules.png" alt="" />Rules</a>
+				<a href="/about"><img src="../images/buttons/About/about.png" alt="" />Aboooooout</a>
+					<div class='weather-summary'>
+						<div><span id='temp'></span><span class='wi wi-fahrenheit'></span></div>
+						<i id='weather-icon'></i>
+						<span id='summary'></span>
+					</div>
+				<a href="https://open.spotify.com/playlist/0X7lT9dEqEiwgoLbYecuZA" target="_blank"><i
+						class="fas fa-4x fa-broadcast-tower broadcast-tower-on"></i>Radio</a>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<i class="fas fa-bars"></i>
+				</a>
+			</div>
 
-    <nav class="header__nav">
-      <ul class="header__nav_list">
-        <li class="header__nav_listItem">
-          <a href=""><img src="buttons/logo/button1.png" /></a>
-          <p></p>
-        </li>
-        <li class="header__nav_listItem">
-          <a href=""><img src="buttons/Lakes/lakes.png" /></a>
-          <p></p>
-        </li>
-        <li class="header__nav_listItem">
-          <a href=""><img src="buttons/Bait/bait.png" /></a>
-          <p></p>
-        </li>
-        <li class="header__nav_listItem">
-          <a href=""><img src="buttons/Lodging/lodging.png" /></a>
-          <p></p>
-        </li>
-        <li class="header__nav_listItem">
-          <a href=""><img src="buttons/Logging Catch /logcatch.png" /></a>
-          <p></p>
-        </li>
-        <li class="header__nav_listItem">
-          <a href="/static/rules.html"><img src="buttons/Regulations /rules.png" /></a>
-          <p></p>
-        </li>
-        <li class="header__nav_listItem">
-          <a href=""><img src="buttons/About/about.png" /></a>
-          <p></p>
-        </li>
-      </ul>
-    </nav>
-    <div class="container2">
-      <div class="content2">
-        <div layout:fragment="page_content2"></div>
-        <h1>OHIO'S ESSENTIAL FISHING APP</h1>
-      </div>
-      <div class="container">
-        <div class="words">WELCOME TO WE'RE HOOKED!</div>  
-        <div class="detail">
-          <div class="words2">
-            <p>Developed by WE_CAN_CATCH_IT, the 'We're Hooked' app provides key information regarding fishing in the State of Ohio. Click on an icon above to get started.</p>
-          </div>  
- </div>
-    <div id="home" class="panel">
-      <div class="inner">
-          <div id="backgroundchange">
-              <div class="backgroundimg" id="back1"></div>
-              <div class="backgroundimg" id="back2"></div>
-              <div class="backgroundimg" id="back3"></div>
-              <div class="backgroundimg" id="back4"></div>
-              <div class="backgroundimg" id="back5"></div>
-          </div>
-      </div>
-  </div>
-    </div>
-    </div>
+			<div class="base-content">
+				<div layout:fragment="page_content">
+					<h1>test</h1>
+					<p>
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam
+						quia suscipit harum, repudiandae id nemo sunt eos voluptas
+						laboriosam eligendi explicabo ullam amet, repellat similique esse,
+						quis atque quae soluta.
+					</p>
+				</div>
+			</div>
 
-    
-  
+				<div class="footer">
+					<div id="footer-lg">
+						<a href="/">
+							<img src="../images/backgrounds/logo.png" alt="" id="foot-img"/>
+							We're Hooked
+						</a>
+						<p>
+							Designed and built with all the love in the world by
+							the We-Can-Catch-It team.
+						</p>
+					</div>
+					<div id="footer-sm">
+						COPYRIGHT &copy;2021 WE_CAN_CATCH_IT!
+					</div>
+				</div>
+				<div id="footer-sm">COPYRIGHT &copy;2021 WE_CAN_CATCH_IT!</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" th:src="@{/js/common.js}"></script>
+	<th:block layout:fragment="scripts"> </th:block>
+</body>
 
-    <script type="text/javascript" th:src="@{/static/js/common.js}"></script>
-    <th:block layout:fragment="scripts"> </th:block>
-    
-  </body>
 </html>

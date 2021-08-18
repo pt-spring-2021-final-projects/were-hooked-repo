@@ -9,19 +9,14 @@ public class HomeController {
     String landingPage() {
         return "landing";
     }
-    
-    @RequestMapping("/rules")
-    String rules() {
-        return "rules";
-    }
 
     @RequestMapping("/home")
     String home() {
         return "home";
     }
     
-    @RequestMapping("/restricted")
-    String restricted() {
-        return "restricted";
-    }
+    // @RequestMapping("/restricted")
+    // String restricted() {
+    //     return "restricted";
+    // }
 }

@@ -7,10 +7,8 @@ import wecancatchit.werehooked.models.TackleShop;
 import java.util.Optional;
 
 public interface TackleShopRepository extends CrudRepository<TackleShop, Long> {
-    @Override
-    Optional<TackleShop> findById(Long id);
 
-    TackleShop findByName(String name);
-
+    Optional<TackleShop> findByName(String name);
 
 }
+

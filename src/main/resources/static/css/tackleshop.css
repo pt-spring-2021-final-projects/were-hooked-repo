@@ -1,0 +1,19 @@
+h1{
+    text-align: center;
+}
+
+.info{
+    font-size: 23px;
+    text-align: center;
+}
+
+.info p{
+    padding: 2px;
+}
+
+@media only screen and (max-width: 800px) {
+    .info{
+        font-size: 14px;
+        text-align: center;
+    }
+}
