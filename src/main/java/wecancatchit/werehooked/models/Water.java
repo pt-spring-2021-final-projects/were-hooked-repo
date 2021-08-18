@@ -25,7 +25,9 @@ public class Water {
     private String description;
     private Double area;
     private Double depth;
-    private String coordinates;
+    // private String coordinates;
+    private String latitude;
+    private String longitude;
     private String image;
     private String type;
     private boolean isPublic;
@@ -36,14 +38,16 @@ public class Water {
     @ManyToMany
     private Collection<Fish> fish;
 
-    public Water(String name, String description, double area, double depth, String coordinates, String image,
+    public Water(String name, String description, double area, double depth, String latitude, String longitude, String image,
             String type, boolean isPublic, TackleShop tackleShop, Fish... fish) {
 
         this.name = name;
         this.description = description;
         this.area = area;
         this.depth = depth;
-        this.coordinates = coordinates;
+        // this.coordinates = coordinates;
+        this.latitude = latitude;
+        this.longitude = longitude;
         this.image = image;
         this.type = type;
         this.isPublic = isPublic;
@@ -66,8 +70,11 @@ public class Water {
     public Double getDepth() {
         return depth;
     }
-    public String getCoordinates() {
-        return coordinates;
+    public String getLatitude() {
+        return latitude;
+    }
+    public String getLongitude() {
+        return longitude;
     }
     public String getImage() {
         return image;
