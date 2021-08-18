@@ -162,6 +162,10 @@ h2 {
 	text-decoration: none;
 }
 
+#foot-img {
+	max-width: 200px;
+}
+
 #footer-lg a:hover {
 	text-decoration: underline;
 }
