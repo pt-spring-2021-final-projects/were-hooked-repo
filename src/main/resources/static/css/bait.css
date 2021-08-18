@@ -3,17 +3,35 @@ h1{
 }
 
 img{
+    display: block;
     width: 700px;
     height: auto;
     margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .link{
     padding: 3px;
     font-size: 22px;
+    text-align: center;
 }
 
 .video{
     padding: 3px;
     font-size: 22px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 750px) {
+
+img{
+    width: 55%;
+    height: auto;
+}
+
+p{
+    font-size: 16px;
+}
+
 }
