@@ -36,3 +36,22 @@ $(document).ready(function () {
         }, 750);
     });
 });
+
+    // const rightArrow = document.getElementsByClassName("arrow-right")[0]
+	// const vidListContainer = document.getElementsByClassName("vid-list-container")[0]
+	// const leftArrow = document.getElementsByClassName("arrow-left")[0]
+
+	// console.log (rightArrow)
+	// rightArrow.addEventListener("click", function (event) {
+    //     event.preventDefault();
+    //     vidListContainer.stop().animate({
+    //         scrollLeft: "+=336"
+    //     }, 750)
+    // })
+
+    // document.querySelector(".arrow-left").bind("click", function (event) {
+    //     event.preventDefault();
+    //     document.querySelector(".vid-list-container").stop().animate({
+    //         scrollLeft: "-=336"
+    //     }, 750);
+    // });

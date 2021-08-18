@@ -20,6 +20,11 @@ function success(position) {
         // console.log()
       console.log(data)
       console.log(`The temperature is currently: ${data.currently.temperature}`)
+      
+      document.getElementById("temp").innerHTML = data.currently.temperature
+      document.getElementById("weather-icon").innerHTML = `<i id='weather-icon' class='wi wi-forecast-io-${data.currently.icon}'></i>`
+      document.getElementById("summary").innerHTML = data.currently.summary
+
     })
 }
 
