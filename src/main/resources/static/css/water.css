@@ -55,10 +55,10 @@ header{
     margin-top: 10px;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1450px) {
 
     .waterImage{
-        width: 60%;
+        width: 70%;
         height: auto;
     }
 
