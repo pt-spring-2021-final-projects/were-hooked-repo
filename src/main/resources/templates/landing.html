@@ -4,7 +4,6 @@
 	xmlns:th="http://www.thymeleaf.org"
 	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
 	xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
-	layout:decorator="~{base}"
 >
 	<head>
 		<meta charset="UTF-8" />
@@ -17,19 +16,14 @@
 	<body>
 		<div layout:fragment="page_content">
 			<div id="landing-wrapper">
-				<!-- <figure id="logo">
-        <img src="../images/backgrounds/logo.png" alt="" class="logo__image" />
-      </figure> -->
 				<a th:href="@{'/home'}" id="fish-container">
 					<canvas width="1920" height="1080" id="fishtank"></canvas>
 				</a>
-
 				<a th:href="@{'/home'}" id="logo">
 					<img
 						src="../images/backgrounds/logo.png"
 						alt="cute fisherman"
 				/></a>
-
 				<a th:href="@{'/home'}" id="fishingIcon">
 					<img
 						src="../images/buttons/Fishermen/fisherman.png"
@@ -43,3 +37,4 @@
 		<script src="../js/landing.js" type="module"></script>
 	</div>
 </html>
+<!-- layout:decorator="~{base}" -->
