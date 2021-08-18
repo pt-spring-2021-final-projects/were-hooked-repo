@@ -7,8 +7,6 @@
 	overflow: hidden;
 	background-color: #5ea7d3;
 	text-align: center;
-
-	/* position: relative; */
 }
 
 #fish-container {
@@ -29,9 +27,12 @@
 #logo img {
 	margin: 0;
 	max-width: 100%;
-	max-height: 680px;
+	/* max-height: 680px; */
 }
 
+#fishingIcon {
+	height:500px;
+}
 
 /* what do these things below do?  */
 * {

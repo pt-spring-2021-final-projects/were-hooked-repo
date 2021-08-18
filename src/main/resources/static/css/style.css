@@ -155,9 +155,21 @@ h2 {
 	flex: 3;
 }
 
-#footer-lg img {
-	max-width: 100px;
+#footer-lg a {
+	max-width: 200px;
+	display: flex;
+	flex-direction: column;
+	text-decoration: none;
 }
+
+#footer-lg a:hover {
+	text-decoration: underline;
+}
+
+#footer-lg a:visited {
+	color: #fff;
+}
+
 
 #footer-sm {
 	padding: .5rem;
