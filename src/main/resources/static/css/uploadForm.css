@@ -1,16 +1,49 @@
-#gallery-wrapper {
-    display: flex;
-    flex-direction: column;
-    /* margin: 0 auto; */
-    /* max-width: 800px; */
-}
-
 #uploadForm {
-    margin: 0 auto 2rem;
-    padding: 2rem;
-    justify-content: center;
+	margin: 0 auto 2rem;
+	padding: 2rem;
+	justify-content: center;
 }
 
-.galleryImg {
-    max-width: 500px;
+label.label input[type='file'] {
+	position: absolute;
+	top: -1000px;
+}
+.label {
+	cursor: pointer;
+	border: 1px solid #cccccc;
+	border-radius: 5px;
+	padding: 5px 15px;
+	margin: 5px;
+	background: #dddddd;
+	display: inline-block;
+}
+.label:hover {
+	background: #1c4a67;
+    color: #fff;
+}
+.label:active {
+	background: #9fa1a0;
+}
+.label:invalid + span {
+	color: #000000;
+}
+.label:valid + span {
+	color: #ffffff;
+}
+
+#uploadForm input {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1em;
+    cursor: pointer;
+    border: 1px solid #cccccc;
+	border-radius: 5px;
+	padding: 5px 15px;
+	margin: 5px;
+	background: #dddddd;
+	display: inline-block;
+}
+
+#uploadForm input:hover {
+    background: #1c4a67;
+    color: #fff;
 }
