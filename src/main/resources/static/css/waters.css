@@ -21,3 +21,8 @@ img{
 .waterName{
     display: block;
 }
+
+#mapid {
+     height: 480px;
+        width: 100%;
+     }

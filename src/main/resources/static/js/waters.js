@@ -63,27 +63,42 @@ async function mapWaters(map) {
 
 // Init Open Street Maps
 function initmap() {
+    console.log("draw map")
     const centerOfOhio = [40.367474, -82.996216]
-    // var corner1 = L.latLng(42, -80),
-    //     corner2 = L.latLng(38, -85),
-    //     // bounds = L.latLngBounds(corner1, corner2);
+    var corner1 = L.latLng(42, -80),
+        corner2 = L.latLng(38, -85),
+        bounds = L.latLngBounds(corner1, corner2);
 
     // set up the map
-    const map = new L.Map('map').setView(centerOfOhio, 23);
+    // const map = new L.Map('map').setView(centerOfOhio, 23);
+    //    L.TileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+    //     // boundary: ohio.geometry,
+    //     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    //     maxZoom: 18,
+    //     id: 'mapbox/outdoors-v11',
+    //     tileSize: 512,
+    //     zoomOffset: -1,
+    //     accessToken: 'pk.eyJ1IjoiemNhc3NpbmkiLCJhIjoiY2tzM2t0ZWd3MG9oZTJvbXR4bWc0eXpseCJ9.nY0uXdRiSG1TYWWP0Qj24Q'
+    // }).addTo(map)
+
+    // var osm =  L.TileLayer.boundaryCanvas('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+    //     boundary: ohio.geometry,
+    //     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    //     maxZoom: 18,
+    //     id: 'mapbox/outdoors-v11',
+    //     tileSize: 512,
+    //     zoomOffset: -1,
+    //     accessToken: 'pk.eyJ1IjoiemNhc3NpbmkiLCJhIjoiY2tzM2t0ZWd3MG9oZTJvbXR4bWc0eXpseCJ9.nY0uXdRiSG1TYWWP0Qj24Q'
+    // }).addTo(map)
 
 
-    var osm =  L.TileLayer.boundaryCanvas('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-        boundary: ohio.geometry,
-        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-        maxZoom: 18,
-        id: 'mapbox/outdoors-v11',
-        // tileSize: 512,
-        // zoomOffset: -1,
-        accessToken: 'pk.eyJ1IjoiemNhc3NpbmkiLCJhIjoiY2tzM2t0ZWd3MG9oZTJvbXR4bWc0eXpseCJ9.nY0uXdRiSG1TYWWP0Qj24Q'
-    }).addTo(map)
     map.setMaxBounds(bounds)
 
     mapWaters(map)
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
 }
 
 initmap()
