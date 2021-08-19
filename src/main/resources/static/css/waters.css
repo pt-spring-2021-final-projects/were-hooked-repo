@@ -22,7 +22,11 @@ img{
     display: block;
 }
 
-#mapid {
-     height: 480px;
-        width: 100%;
+.map {
+     height: 600px;
+     width: 600px;
      }
+
+     body {
+        background-color: lightblue;
+      }
