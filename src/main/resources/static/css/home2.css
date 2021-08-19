@@ -38,6 +38,21 @@
     font-size: 1.25em;
 }
 
+h4{
+	text-align: center;
+	font-size: larger;
+	animation: blinker 2s linear infinite;
+	color: darkgreen;
+	text-decoration: double;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+}
+
 * {
 	box-sizing: border-box;
 }
