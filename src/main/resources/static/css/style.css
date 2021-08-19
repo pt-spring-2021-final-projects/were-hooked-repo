@@ -159,7 +159,7 @@ h2 {
 	max-width: 200px;
 	display: flex;
 	flex-direction: column;
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 #foot-img {
