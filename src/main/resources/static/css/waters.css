@@ -21,3 +21,12 @@ img{
 .waterName{
     display: block;
 }
+
+.map {
+     height: 600px;
+     width: 600px;
+     }
+
+     body {
+        background-color: lightblue;
+      }
