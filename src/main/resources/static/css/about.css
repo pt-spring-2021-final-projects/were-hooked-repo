@@ -10,6 +10,7 @@ h1 {
 
 h3 {
   color:yellow;
+  font-size: 17pt;
 }
 
 h4{
@@ -40,7 +41,7 @@ color: aquamarine;
 object-fit: contain;
 justify-content: center;
 border-radius: 10%;
-margin-top: 1em;
+margin-top: 3em;
 animation: fadeIn 5s;
 -webkit-animation: fadeIn 5s;
 -moz-animation: fadeIn 5s;
