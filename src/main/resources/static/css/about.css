@@ -1,10 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap");
 
+
 h1 {
   font-size: 33pt;
   border-bottom: none;
   padding-bottom: .25em;
   word-spacing: 15px;
+}
+
+h3 {
+  color:yellow;
+}
+
+h4{
+color: aquamarine;
 }
 
 .footer {
@@ -64,4 +73,126 @@ animation: fadeIn 5s;
 }
 
 
+svg#fish {
+  top: 12em;
+}
 
+svg.fish{
+  overflow:visible;
+}
+
+@-webkit-keyframes swim
+{
+	0% {margin-left: -835px}
+	90% {margin-left: 100%;}
+	100% {margin-left: 100%;}
+  
+}
+
+@keyframes swim
+{
+	0% {margin-left: -835px}
+	70% {margin-left: 100%;}
+	100% {margin-left: 100%;}
+}
+
+.fish{
+	width: 235px;
+	height: 104px;
+	margin-left: -235px;
+	position: absolute;	
+	animation: swim 60s;
+	-webkit-animation: swim 60s;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	-webkit-animation-timing-function: linear;
+  color: rgb(0, 0, 0);
+}
+
+svg #fish1,
+svg #fish2,
+svg #fish3,
+svg #fish4,
+svg #fish5,
+svg #fish6 {
+fill:#528484;
+    -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+svg #fish2{
+	animation-delay: 0.5s;
+	-webkit-animation-delay: 0.5s;
+}
+
+svg #fish3{
+	animation-delay: 0.2s;
+	-webkit-animation-delay: 0.2s;
+}
+
+svg #fish4{
+	animation-delay: 0.4s;
+	-webkit-animation-delay: 0.4s;
+}
+
+svg #fish5{
+	animation-delay: 0.1s;
+	-webkit-animation-delay: 0.1s;
+}
+
+svg #fish6{
+	animation-delay: 0.3s;
+	-webkit-animation-delay: 0.3s;
+}
+
+
+@-moz-keyframes bounce {
+  0%, 50%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  25% {
+    -moz-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+  75% {
+    -moz-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 50%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  25% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+  75% {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+}
+@keyframes bounce {
+  0%, 50%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  25% {
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+  75% {
+    -moz-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+}
