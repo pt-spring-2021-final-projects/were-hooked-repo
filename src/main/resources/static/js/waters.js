@@ -23,7 +23,7 @@ async function mapWaters(map) {
     const waters = await fetchWaters()
     for (let water of waters) {
         const marker = L.marker([water.latitude, water.longitude]).addTo(map)
-         marker.bindPopup(`<b>${water.name}</b>
+         marker.bindPopup(`<a href="/waters/${water.name}"> ${water.name}</a>
          <br>
          <ul>Fish:
             ${fishListToHTMLList(water.fish)}
