@@ -252,6 +252,11 @@ h2 {
 	align-items: center;
 }
 
+.weather-summary p {
+	margin: 0;
+	padding: 0;
+}
+
 #weather-icon {
 	background: rgb(255, 147, 15);
 	background: linear-gradient(
@@ -267,9 +272,19 @@ h2 {
 	font-size: 1.5em;
 }
 
-.weather-summary p {
-	margin: 0;
-	padding: 0;
+/* gradient to radio icon */
+#radio-icon {
+	background: rgb(255, 147, 15);
+	background: linear-gradient(
+		48deg,
+		rgba(255, 147, 15, 1) 0%,
+		rgba(255, 249, 91, 1) 100%
+	);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
+	-webkit-text-fill-color: transparent;
 }
 
 /* To turn the href off */
