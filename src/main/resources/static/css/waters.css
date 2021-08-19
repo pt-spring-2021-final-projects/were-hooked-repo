@@ -1,32 +1,54 @@
-img{
-    width: 55%;
-    height: auto;
-}
-
-.water {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 18px;
-    justify-content: center;
-    align-items: center;
-    font-size: 32px;
-}
-
-.waterLink{
-    vertical-align: top;
-    display: inline-block;
-    text-align: center;
-}
-
-.waterName{
-    display: block;
-}
-
 .map {
-     height: 600px;
-     width: 600px;
-     }
+  height: 900px;
+  width: 1000px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-     body {
-        background-color: lightblue;
-      }
+body {
+  background-color: lightblue;
+}
+
+@media only screen and (max-width: 1050px) {
+  .map {
+    height: 700px;
+    width: 800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .map {
+    height: 500px;
+    width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+@media only screen and (max-width: 650px) {
+  .map {
+    height: 300px;
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+
+    .map{
+        height: 200px;
+        width: 300px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    }
