@@ -250,3 +250,10 @@ h2 {
 	}
   
   }
+
+  .weather-summary {
+	  display: flex;
+	  flex-direction: column;
+	  /* justify-content: space-between; */
+	  align-items: center;
+  }
