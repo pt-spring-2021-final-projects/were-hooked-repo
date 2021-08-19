@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap");
 
 body {
-  max-width: 100%;
+  width: 100%;
   max-height: 100%;
   overflow: scroll;
 }
@@ -61,15 +61,17 @@ a {
 
 h1 {
   font-size: 32pt;
-  border-bottom: solid 3px;
-  padding-bottom: 4pt;
-  word-spacing:75px;
+  border-bottom: none;
+  padding-bottom: .25em;
+  word-spacing: 15px;
 }
 
 .footer {
-  color: black;
+  color: #996a6a;
   text-align: center;
   margin-bottom: 5em;
+  background-color: #1c4a67;
+  width: 100%;
 }
 
 .container2 {
