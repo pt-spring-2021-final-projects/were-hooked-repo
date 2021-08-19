@@ -8,6 +8,7 @@ h1 {
 h3 {
   color:yellow;
   font-size: 17pt;
+  word-spacing: 5px;
 }
 
 h4{
@@ -21,8 +22,12 @@ letter-spacing: 5px;
   text-align: center;
   margin: 3rem 0rem 3rem;
   background-color: #1c4a67;
-  padding: 2rem 0;
+  
   width: 100%;
+}
+
+.base-content{
+  padding-bottom: 0rem;
 }
 
 #developers {
