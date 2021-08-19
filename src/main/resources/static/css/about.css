@@ -2,9 +2,6 @@
 
 
 h1 {
-  font-size: 33pt;
-  border-bottom: none;
-  padding-bottom: .25em;
   word-spacing: 15px;
 }
 
@@ -14,7 +11,8 @@ h3 {
 }
 
 h4{
-color: aquamarine;
+color: yellow;
+letter-spacing: 5px;
 }
 
 .footer {
@@ -37,6 +35,7 @@ color: aquamarine;
 #developers article img {
   width: 14vw;
   border: solid;
+  border-width: 5px;
   border-color: rgb(247, 239, 18);
 object-fit: contain;
 justify-content: center;
