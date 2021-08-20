@@ -5,8 +5,8 @@
 
 #overlay-h1 {
 	position: absolute;
-	left: 15%;
-	right: 15%;
+	left: 5%;
+	right: 5%;
 	z-index: 1;
 	top: 20px;
 }
@@ -14,8 +14,8 @@
 #overlay-h2 {
 	color: #fff;
 	position: absolute;
-	left: 15%;
-	right: 15%;
+	left: 5%;
+	right: 5%;
 	z-index: 1;
 	bottom: 40px;
 	font-size: 1.25em;
@@ -212,6 +212,15 @@ img {
 }
 
 @media screen and (max-width: 600px) {
+	#overlay-h1 {
+		font-size: 0.66rem;
+		top: 5px;
+	}
+
+	#overlay-h2 {
+		font-size: 0.66rem;
+	}
+
 	.item {
 		margin: 2rem 0;
 	}
