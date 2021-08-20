@@ -1,6 +1,9 @@
 #rules-container {
 	margin: 0 auto;
 	max-width: 900px;
+	font-size: 1rem;
+	line-height: 1.5;
+	font-family: 'Mukta', sans-serif;
 }
 
 #regulation-buttons {
@@ -19,15 +22,38 @@
 }
 
 .column {
+	border-radius: 50px;
+	background-color: #215778;
+	border-bottom: solid 4px #627295;
+	color: #fff;
 	display: flex;
-	padding: 1rem 8rem;
-	margin: 0;
+	padding: 0;
+	width: 16rem;
+	height: 3rem;
+	margin: 1rem auto;
 	cursor: pointer;
-	color: black;
+	text-transform: uppercase;
+	justify-content: center;
+	align-items: center;
+	font-weight: 700;
+}
+
+.column:hover {
+	background-color: #1c4a67;
+	color: #fff;
+}
+
+.column:active {
+	/*on Click*/
+	-ms-transform: translateY(4px);
+	-webkit-transform: translateY(4px);
+	transform: translateY(4px); /*Move down*/
+	border-bottom: none; /*disappears*/
+	background-color: #133245;
 }
 
 .containerTab {
-	padding: 20px;
+	padding: 0;
 	color: black;
 }
 
@@ -53,27 +79,10 @@
 		'. .';
 }
 
-#requirements {
-	float: inline-start;
-}
-
-#requirements:hover {
-	background-color: #805257;
-	color: #fff;
-}
-
 #b1 {
 	border-left: 3px solid #805257;
 }
 
-#exemptions {
-	float: inline-end;
-}
-
-#exemptions:hover {
-	background-color: #d5b6ac;
-	color: #fff;
-}
 
 #b2 {
 	border-left: 3px solid #d5b6ac;
@@ -81,7 +90,7 @@
 
 .closebtn {
 	float: right;
-	color: grey;
+	color: #282936;
 	font-size: 35px;
 	cursor: pointer;
 }
