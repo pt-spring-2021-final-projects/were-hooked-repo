@@ -1,19 +1,12 @@
 package wecancatchit.werehooked.Controllers;
 
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
 import wecancatchit.werehooked.Repositories.FishRepository;
 import wecancatchit.werehooked.Repositories.WaterRepository;
-import wecancatchit.werehooked.models.Fish;
 import wecancatchit.werehooked.models.Water;
 import javax.annotation.Resource;
 import java.util.Collection;
-import java.util.Optional;
 
 @RestController
 public class WaterApiController {

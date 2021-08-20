@@ -1,4 +1,3 @@
-
 package wecancatchit.werehooked.Controllers;
 
 import java.io.BufferedReader;
@@ -15,7 +14,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class WeatherController {
     @GetMapping("/weather{latitude}{longitude}")
     public String getWeather(String latitude, String longitude) throws IOException {
-        System.out.println("Getting weather for " + latitude + "," + longitude);
         String units = "us";
         String urlString = "https://api.forecast.io/forecast/d8f4a1ce8e7d5acad8d319e14d7c2a20/" + latitude + "," + longitude + "?exclude=minutely,hourly,daily,alerts,flags&units=" + units;
         URL url = new URL(urlString);
