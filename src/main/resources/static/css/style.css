@@ -59,6 +59,53 @@ body {
 	display: none;
 }
 
+.weather-summary {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.weather-summary p {
+	margin: 0;
+	padding: 0;
+}
+
+#weather-icon {
+	background: rgb(255, 147, 15);
+	background: linear-gradient(
+		48deg,
+		rgba(255, 147, 15, 1) 0%,
+		rgba(255, 249, 91, 1) 100%
+	);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
+	-webkit-text-fill-color: transparent;
+	font-size: 1.5em;
+}
+
+/* To turn the href off */
+/* #weather-module:hover {
+	background-color: #1c4a67;
+	color: #f2f2f2;
+	cursor: auto;
+} */
+
+#radio-icon {
+	background: rgb(255, 147, 15);
+	background: linear-gradient(
+		48deg,
+		rgba(255, 147, 15, 1) 0%,
+		rgba(255, 249, 91, 1) 100%
+	);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
+	-webkit-text-fill-color: transparent;
+}
+
 h1 {
 	color: #f4f9fc;
 	font-family: 'Just Another Hand';
@@ -217,10 +264,15 @@ h2 {
 		max-width: 50px;
 	}
 
+	#weather-module {
+		display: none;
+	}
+
 	.footer {
 		flex-direction: column;
 	}
 }
+
 .broadcast-tower-off {
 	clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 	color: #e9d81cf5;
@@ -245,51 +297,3 @@ h2 {
 		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 	}
 }
-
-.weather-summary {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.weather-summary p {
-	margin: 0;
-	padding: 0;
-}
-
-#weather-icon {
-	background: rgb(255, 147, 15);
-	background: linear-gradient(
-		48deg,
-		rgba(255, 147, 15, 1) 0%,
-		rgba(255, 249, 91, 1) 100%
-	);
-	background-clip: text;
-	-webkit-background-clip: text;
-	-moz-background-clip: text;
-	-moz-text-fill-color: transparent;
-	-webkit-text-fill-color: transparent;
-	font-size: 1.5em;
-}
-
-/* gradient to radio icon */
-#radio-icon {
-	background: rgb(255, 147, 15);
-	background: linear-gradient(
-		48deg,
-		rgba(255, 147, 15, 1) 0%,
-		rgba(255, 249, 91, 1) 100%
-	);
-	background-clip: text;
-	-webkit-background-clip: text;
-	-moz-background-clip: text;
-	-moz-text-fill-color: transparent;
-	-webkit-text-fill-color: transparent;
-}
-
-/* To turn the href off */
-/* #weather-module:hover {
-	background-color: #1c4a67;
-	color: #f2f2f2;
-	cursor: auto;
-} */
