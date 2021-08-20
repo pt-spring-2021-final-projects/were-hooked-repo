@@ -1,40 +1,37 @@
-@import url("https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap");
-
-
 h1 {
   word-spacing: 15px;
   letter-spacing: 3px;
 }
 
-h2{
-color:#ffffff;
-letter-spacing: 3px;
+h2 {
+  color: #ffffff;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px #1c4a67;
 }
 
 h3 {
-  color:#e9d81cf5;
+  color: #e9d81cf5;
   font-size: 17pt;
   word-spacing: 5px;
   text-shadow: 2px 2px #1c4a67;
 }
 
-h4{
-color: #e9d81cf5;
-letter-spacing: 5px;
-text-shadow: 2px 2px #1c4a67;
+h4 {
+  color: #e9d81cf5;
+  letter-spacing: 5px;
+  text-shadow: 2px 2px #1c4a67;
 }
 
 .footer {
   color: #fff;
-  display:flex;
+  display: flex;
   text-align: center;
   margin: 3rem 0rem 3rem;
   background-color: #1c4a67;
-  
   width: 100%;
 }
 
-.base-content{
+.base-content {
   padding-bottom: 0rem;
 }
 
@@ -50,55 +47,75 @@ text-shadow: 2px 2px #1c4a67;
   border: solid;
   border-width: 5px;
   border-color: rgb(247, 239, 18);
-object-fit: contain;
-justify-content: center;
-border-radius: 10%;
-margin-top: 3em;
-animation: fadeIn 7s;
--webkit-animation: fadeIn 7s;
--moz-animation: fadeIn 7s;
--o-animation: fadeIn 7s;
--ms-animation: fadeIn 7s;
+  object-fit: contain;
+  justify-content: center;
+  border-radius: 10%;
+  margin-top: 3em;
+  animation: fadeIn 7s;
+  -webkit-animation: fadeIn 7s;
+  -moz-animation: fadeIn 7s;
+  -o-animation: fadeIn 7s;
+  -ms-animation: fadeIn 7s;
 }
 @keyframes fadeIn {
-0% {opacity:0;}
-100% {opacity:1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-moz-keyframes fadeIn {
-0% {opacity:0;}
-100% {opacity:1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes fadeIn {
-0% {opacity:0;}
-100% {opacity:1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-o-keyframes fadeIn {
-0% {opacity:0;}
-100% {opacity:1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-ms-keyframes fadeIn {
-0% {opacity:0;}
-100% {opacity:1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-
-input[type=text], select, textarea {
-  width: 100%; 
-  padding: 12px; 
-  border: 1px solid #ccc; 
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
   border-radius: 4px;
-  box-sizing: border-box; 
-  margin-top: 6px; 
-  margin-bottom: 16px; 
-  resize: vertical 
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
 
-
-input[type=submit] {
+input[type="submit"] {
   background-color: #5ea7d3;
   color: yellow;
   padding: 12px 20px;
@@ -109,11 +126,9 @@ input[type=submit] {
   text-align: center;
 }
 
-
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: #e9d81cf5;
 }
-
 
 .container {
   width: 20%;
@@ -125,41 +140,49 @@ input[type=submit]:hover {
   color: #e9d81cf5;
 }
 
-
 svg#fish {
   top: 12em;
 }
 
-svg.fish{
-  overflow:visible;
+svg.fish {
+  overflow: visible;
 }
 
-@-webkit-keyframes swim
-{
-	0% {margin-left: -835px}
-	90% {margin-left: 100%;}
-	100% {margin-left: 100%;}
-  
+@-webkit-keyframes swim {
+  0% {
+    margin-left: -835px;
+  }
+  90% {
+    margin-left: 100%;
+  }
+  100% {
+    margin-left: 100%;
+  }
 }
 
-@keyframes swim
-{
-	0% {margin-left: -835px}
-	70% {margin-left: 100%;}
-	100% {margin-left: 100%;}
+@keyframes swim {
+  0% {
+    margin-left: -835px;
+  }
+  70% {
+    margin-left: 100%;
+  }
+  100% {
+    margin-left: 100%;
+  }
 }
 
-.fish{
-	width: 235px;
-	height: 104px;
-	margin-left: -235px;
-	position: absolute;	
-	animation: swim 60s;
-	-webkit-animation: swim 60s;
-	animation-iteration-count: infinite;
-	-webkit-animation-iteration-count: infinite;
-	animation-timing-function: linear;
-	-webkit-animation-timing-function: linear;
+.fish {
+  width: 235px;
+  height: 104px;
+  margin-left: -235px;
+  position: absolute;
+  animation: swim 60s;
+  -webkit-animation: swim 60s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  -webkit-animation-timing-function: linear;
   color: rgb(0, 0, 0);
 }
 
@@ -169,40 +192,41 @@ svg #fish3,
 svg #fish4,
 svg #fish5,
 svg #fish6 {
-fill:#528484;
-    -moz-animation: bounce 2s infinite;
+  fill: #528484;
+  -moz-animation: bounce 2s infinite;
   -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
 }
 
-svg #fish2{
-	animation-delay: 0.5s;
-	-webkit-animation-delay: 0.5s;
+svg #fish2 {
+  animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
 }
 
-svg #fish3{
-	animation-delay: 0.2s;
-	-webkit-animation-delay: 0.2s;
+svg #fish3 {
+  animation-delay: 0.2s;
+  -webkit-animation-delay: 0.2s;
 }
 
-svg #fish4{
-	animation-delay: 0.4s;
-	-webkit-animation-delay: 0.4s;
+svg #fish4 {
+  animation-delay: 0.4s;
+  -webkit-animation-delay: 0.4s;
 }
 
-svg #fish5{
-	animation-delay: 0.1s;
-	-webkit-animation-delay: 0.1s;
+svg #fish5 {
+  animation-delay: 0.1s;
+  -webkit-animation-delay: 0.1s;
 }
 
-svg #fish6{
-	animation-delay: 0.3s;
-	-webkit-animation-delay: 0.3s;
+svg #fish6 {
+  animation-delay: 0.3s;
+  -webkit-animation-delay: 0.3s;
 }
-
 
 @-moz-keyframes bounce {
-  0%, 50%, 100% {
+  0%,
+  50%,
+  100% {
     -moz-transform: translateY(0);
     transform: translateY(0);
   }
@@ -216,7 +240,9 @@ svg #fish6{
   }
 }
 @-webkit-keyframes bounce {
-  0%, 50%, 100% {
+  0%,
+  50%,
+  100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
@@ -230,7 +256,9 @@ svg #fish6{
   }
 }
 @keyframes bounce {
-  0%, 50%, 100% {
+  0%,
+  50%,
+  100% {
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
     -webkit-transform: translateY(0);
