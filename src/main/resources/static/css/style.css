@@ -188,7 +188,7 @@ h2 {
 	flex-direction: row;
 	text-align: center;
 	align-items: center;
-	margin: 3rem 4rem 2rem;
+	/* margin: 3rem 4rem 2rem; */
 	padding: 2rem 0;
 }
 
@@ -199,7 +199,7 @@ h2 {
 	justify-content: center;
 	margin: 0 auto;
 	padding: 0.5rem;
-	flex: 3;
+	flex: 5;
 }
 
 #footer-lg a {
@@ -211,10 +211,6 @@ h2 {
 
 #foot-img {
 	max-width: 200px;
-}
-
-#footer-lg a:hover {
-	text-decoration: underline;
 }
 
 #footer-lg a:visited {
@@ -271,6 +267,15 @@ h2 {
 	.footer {
 		flex-direction: column;
 	}
+	
+	#footer-sm {
+		margin-top: 2rem;
+	}
+
+	/* #footer-lg {
+		border: 1px solid yellow;
+		margin: 0 auto;
+	} */
 }
 
 .broadcast-tower-off {
