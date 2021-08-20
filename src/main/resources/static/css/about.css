@@ -3,17 +3,25 @@
 
 h1 {
   word-spacing: 15px;
+  letter-spacing: 3px;
+}
+
+h2{
+color:#ffffff;
+letter-spacing: 3px;
 }
 
 h3 {
-  color:yellow;
+  color:#e9d81cf5;
   font-size: 17pt;
   word-spacing: 5px;
+  text-shadow: 2px 2px #1c4a67;
 }
 
 h4{
-color: yellow;
+color: #e9d81cf5;
 letter-spacing: 5px;
+text-shadow: 2px 2px #1c4a67;
 }
 
 .footer {
@@ -46,11 +54,11 @@ object-fit: contain;
 justify-content: center;
 border-radius: 10%;
 margin-top: 3em;
-animation: fadeIn 5s;
--webkit-animation: fadeIn 5s;
--moz-animation: fadeIn 5s;
--o-animation: fadeIn 5s;
--ms-animation: fadeIn 5s;
+animation: fadeIn 7s;
+-webkit-animation: fadeIn 7s;
+-moz-animation: fadeIn 7s;
+-o-animation: fadeIn 7s;
+-ms-animation: fadeIn 7s;
 }
 @keyframes fadeIn {
 0% {opacity:0;}
@@ -75,6 +83,46 @@ animation: fadeIn 5s;
 @-ms-keyframes fadeIn {
 0% {opacity:0;}
 100% {opacity:1;}
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #5ea7d3;
+  color: yellow;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  justify-content: center;
+  text-align: center;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #e9d81cf5;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  width: 20%;
+  border-radius: 15px;
+  background-color: #1c4a67;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #e9d81cf5;
 }
 
 
