@@ -1,25 +1,23 @@
-console.log("hello home!")
-
 var slideIndex = 0;
 showSlides();
 
 function showSlides() {
-	var i;
-	var slides = document.getElementsByClassName('mySlides');
-	var dots = document.getElementsByClassName('dot');
-	for (i = 0; i < slides.length; i++) {
-		slides[i].style.display = 'none';
-	}
-	slideIndex++;
-	if (slideIndex > slides.length) {
-		slideIndex = 1;
-	}
-	for (i = 0; i < dots.length; i++) {
-		dots[i].className = dots[i].className.replace(' active', '');
-	}
-	slides[slideIndex - 1].style.display = 'block';
-	dots[slideIndex - 1].className += ' active';
-	setTimeout(showSlides, 4000); // Change image every 2 seconds
+    var i;
+    var slides = document.getElementsByClassName('mySlides');
+    var dots = document.getElementsByClassName('dot');
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none';
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(' active', '');
+    }
+    slides[slideIndex - 1].style.display = 'block';
+    dots[slideIndex - 1].className += ' active';
+    setTimeout(showSlides, 4000); // Change image every 2 seconds
 }
 
 $(document).ready(function () {
@@ -36,22 +34,3 @@ $(document).ready(function () {
         }, 750);
     });
 });
-
-    // const rightArrow = document.getElementsByClassName("arrow-right")[0]
-	// const vidListContainer = document.getElementsByClassName("vid-list-container")[0]
-	// const leftArrow = document.getElementsByClassName("arrow-left")[0]
-
-	// console.log (rightArrow)
-	// rightArrow.addEventListener("click", function (event) {
-    //     event.preventDefault();
-    //     vidListContainer.stop().animate({
-    //         scrollLeft: "+=336"
-    //     }, 750)
-    // })
-
-    // document.querySelector(".arrow-left").bind("click", function (event) {
-    //     event.preventDefault();
-    //     document.querySelector(".vid-list-container").stop().animate({
-    //         scrollLeft: "-=336"
-    //     }, 750);
-    // });

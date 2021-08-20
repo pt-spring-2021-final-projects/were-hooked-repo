@@ -1,15 +1,16 @@
-	<!DOCTYPE html>
-	<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
 	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
 	xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
-	
-	<head>
+
+<head>
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<link rel="stylesheet" type="text/css" href="../css/style.css" />
-	<link rel="stylesheet" type="text/css" href='https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css' />
+	<link rel="stylesheet" type="text/css"
+		href='https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css' />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;700&display=swap');
@@ -21,15 +22,12 @@
 		@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;800&display=swap");
 	</style>
 	<script src="https://kit.fontawesome.com/e0b3fedd11.js" crossorigin="anonymous"></script>
-	<!-- <href
-			="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-		/> -->
 	<title layout:title-pattern="$CONTENT_TITLE - $LAYOUT_TITLE">
 		We're Hooked
 	</title>
-	</head>
-	
-	<body>
+</head>
+
+<body>
 	<div id="base-wrapper">
 		<div class="base-container">
 			<div class="topnav" id="myTopnav">
@@ -51,7 +49,7 @@
 					<i class="fas fa-bars"></i>
 				</a>
 			</div>
-	
+
 			<div class="base-content">
 				<div layout:fragment="page_content">
 					<h1>test</h1>
@@ -63,27 +61,27 @@
 					</p>
 				</div>
 			</div>
-	
-				<div class="footer">
-					<div id="footer-lg">
-						<a href="/">
-							<img src="../images/backgrounds/logo.png" alt="" id="foot-img"/>
-							We're Hooked
-						</a>
-						<p>
-							Designed and built with all the love in the world by
-							the WE_CAN_CATCH_IT! team.
-						</p>
-					</div>
-					<div id="footer-sm">
-						COPYRIGHT &copy;2021 WE_CAN_CATCH_IT!
-					</div>
+
+			<div class="footer">
+				<div id="footer-lg">
+					<a href="/">
+						<img src="../images/backgrounds/logo.png" alt="" id="foot-img" />
+						We're Hooked
+					</a>
+					<p>
+						Designed and built with all the love in the world by
+						the WE_CAN_CATCH_IT! team.
+					</p>
+				</div>
+				<div id="footer-sm">
+					COPYRIGHT &copy;2021 WE_CAN_CATCH_IT!
 				</div>
 			</div>
 		</div>
 	</div>
+	</div>
 	<script type="text/javascript" th:src="@{/js/common.js}"></script>
 	<th:block layout:fragment="scripts"> </th:block>
-	</body>
-	
-	</html>
+</body>
+
+</html>

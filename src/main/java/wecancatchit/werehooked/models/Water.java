@@ -2,18 +2,12 @@ package wecancatchit.werehooked.models;
 
 import java.util.Arrays;
 import java.util.Collection;
-
-import javax.persistence.*;
-
-import java.util.*;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Lob;
 import javax.persistence.ManyToMany;
 import javax.persistence.OneToOne;
-
 
 @Entity
 public class Water {
@@ -25,12 +19,11 @@ public class Water {
     private String description;
     private Double area;
     private Double depth;
-    // private String coordinates;
     private String latitude;
     private String longitude;
     private String image;
     private String type;
-    private boolean isPublic;
+    private Boolean isPublic;
     
     @OneToOne
     private TackleShop tackleShop;
@@ -45,7 +38,6 @@ public class Water {
         this.description = description;
         this.area = area;
         this.depth = depth;
-        // this.coordinates = coordinates;
         this.latitude = latitude;
         this.longitude = longitude;
         this.image = image;
@@ -118,5 +110,4 @@ public class Water {
             return false;
         return true;
     }
-
 }

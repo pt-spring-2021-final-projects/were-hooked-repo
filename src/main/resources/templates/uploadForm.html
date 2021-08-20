@@ -1,72 +1,54 @@
 <!DOCTYPE html>
-<html
-	xmlns="http://www.w3.org/1999/xhtml"
-	xmlns:th="http://www.thymeleaf.org"
-	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-	xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
-	layout:decorator="~{base}"
->
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<script
-			src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"
-			type="text/javascript"
-		></script>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+	layout:decorator="~{base}">
 
-		<link
-			href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css"
-			rel="stylesheet"
-			type="text/css"
-		/>
-		<script
-			type="text/javascript"
-			src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"
-		></script>
-		<link rel="stylesheet" href="../css/uploadForm.css" />
-		<title>Document</title>
-	</head>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" type="text/javascript"></script>
 
-	<body>
-		<div layout:fragment="page_content">
-			<div id="gallery-wrapper">
-				<h1>Fish Gallery</h1>
-				<div th:if="${message}">
-					<h2 th:text="${message}" />
-				</div>
+	<link href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css" rel="stylesheet"
+		type="text/css" />
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js">
+	</script>
+	<link rel="stylesheet" href="../css/uploadForm.css" />
+	<title>Document</title>
+</head>
 
-				<div id="uploadForm">
-					<form
-						method="POST"
-						enctype="multipart/form-data"
-						action="/feed"
-					>
-						<div>
-							<span>File to upload:</span>
-							<label for="upload" class="label">
-								<input type="file" name="file" id="upload" />
-								Browse...</label
-							>
-							<input type="submit" value="Upload" />
-						</div>
-					</form>
-				</div>
+<body>
+	<div layout:fragment="page_content">
+		<div id="gallery-wrapper">
+			<h1>Fish Gallery</h1>
+			<div th:if="${message}">
+				<h2 th:text="${message}" />
+			</div>
 
-				<div
-					id="nanogallery2"
-					data-nanogallery2='{
+			<div id="uploadForm">
+				<form method="POST" enctype="multipart/form-data" action="/feed">
+					<div>
+						<span>File to upload:</span>
+						<label for="upload" class="label">
+							<input type="file" name="file" id="upload" />
+							Browse...</label>
+						<input type="submit" value="Upload" />
+					</div>
+				</form>
+			</div>
+
+			<div id="nanogallery2" data-nanogallery2='{
 						"thumbnailWidth":           400,
 						"thumbnailHeight":          "auto",
 						"thumbnailBaseGridHeight" : 100
-					}'
-				>
-					<div class="gallery" th:each="file : ${files}">
-						<a th:href="${file}"></a>
-					</div>
+					}'>
+				<div class="gallery" th:each="file : ${files}">
+					<a th:href="${file}"></a>
 				</div>
 			</div>
 		</div>
-	</body>
-	<div layout:fragment="scripts"></div>
+	</div>
+</body>
+<div layout:fragment="scripts"></div>
+
 </html>
